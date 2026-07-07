@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+@theme {
+  --color-primary: #5a0f2f;
+  --color-secondary: #5a0f2f;
+}
+
+:root{
+    --primary-color: #5a0f2f;
+    /* 4B0B22 */
+    --secondary-color: #5a0f2f;
+}
+body {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    overflow-x: hidden;
+    background: #f9f4ef
+}
