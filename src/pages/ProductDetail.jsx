@@ -171,52 +171,127 @@ const ProductDetail = () => {
       )}
       {product.slug === "windows" && (
         <Helmet>
-          <title>Windows Providers in Doha Qatar | Premium Window Supplier | ANAM</title>
-          <meta name="title" content="Windows Providers in Doha Qatar | Premium Window Supplier | ANAM" />
-          <meta name="description" content="ANAM is a trusted windows provider in Doha, Qatar, offering premium aluminium windows, UPVC windows, sliding windows, and custom window solutions for residential and commercial projects." />
-          <meta name="keywords" content="Windows Providers in Doha Qatar, Window Supplier Qatar, Aluminium Windows Qatar, UPVC Windows Qatar, Sliding Windows Qatar, Casement Windows Qatar, Window Installation Doha, Commercial Windows Qatar, Residential Windows Qatar, ANAM Qatar" />
-          <meta name="author" content="ANAM" />
+          <title>UPVC Windows in Qatar | Aluminium Windows Supplier | ANAM Qatar</title>
+          <meta name="title" content="UPVC Windows in Qatar | Aluminium Windows Supplier | ANAM Qatar" />
+          <meta name="description" content="ANAM Qatar provides high-quality UPVC windows and aluminium windows in Qatar for homes, villas, offices, and commercial buildings with durable designs and professional installation." />
+          <meta name="keywords" content="UPVC Windows in Qatar, UPVC Windows Qatar, Aluminium Windows in Qatar, Aluminium Window Supplier Qatar, UPVC Window Supplier Doha, Windows in Doha Qatar, ANAM Qatar" />
+          <meta name="author" content="ANAM Qatar" />
           <meta name="robots" content="index, follow" />
           <link rel="canonical" href="https://anamqatar.com/products/windows" />
 
-          {/* Open Graph / Facebook / WhatsApp */}
-          <meta property="og:type" content="website" />
+          {/* Open Graph Tags */}
+          <meta property="og:title" content="UPVC Windows in Qatar | Aluminium Windows Supplier | ANAM Qatar" />
+          <meta property="og:description" content="Explore premium UPVC windows and aluminium windows in Qatar from ANAM Qatar. Durable, stylish, and professionally installed for residential and commercial spaces." />
           <meta property="og:url" content="https://anamqatar.com/products/windows" />
-          <meta property="og:title" content="Windows Providers in Doha Qatar | Premium Window Supplier | ANAM" />
-          <meta property="og:description" content="Discover premium aluminium, UPVC, sliding, and custom windows in Doha, Qatar. ANAM provides high-quality window solutions with expert installation for homes and commercial projects." />
+          <meta property="og:type" content="website" />
+          <meta property="og:site_name" content="ANAM Qatar" />
           <meta property="og:image" content="https://anamqatar.com/images/windows-qatar.webp" />
 
-          {/* Twitter Card */}
+          {/* Twitter Card Tags */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:url" content="https://anamqatar.com/products/windows" />
-          <meta name="twitter:title" content="Windows Providers in Doha Qatar | Premium Window Supplier | ANAM" />
-          <meta name="twitter:description" content="ANAM supplies premium aluminium, UPVC, and sliding windows in Doha, Qatar with professional installation for residential and commercial projects." />
+          <meta name="twitter:title" content="UPVC Windows in Qatar | Aluminium Windows Supplier | ANAM Qatar" />
+          <meta name="twitter:description" content="ANAM Qatar offers durable UPVC windows and aluminium windows in Qatar with modern designs and expert installation services." />
           <meta name="twitter:image" content="https://anamqatar.com/images/windows-qatar.webp" />
         </Helmet>
       )}
       {product.slug === "partitions" && (
         <Helmet>
-          <title>Partition Services in Qatar | Office & Glass Partitions | ANAM</title>
-          <meta name="title" content="Partition Services in Qatar | Office & Glass Partitions | ANAM" />
-          <meta name="description" content="ANAM provides professional partition services in Qatar, including office partitions, glass partitions, gypsum partitions, aluminium partitions, and custom partition solutions." />
-          <meta name="keywords" content="Partition Services in Qatar, Office Partition Qatar, Glass Partition Qatar, Gypsum Partition Qatar, Aluminium Partition Qatar, Commercial Partition Qatar, Residential Partition Qatar, Interior Partition Doha, Partition Installation Qatar, ANAM Qatar" />
-          <meta name="author" content="ANAM" />
+          <title>Partitions in Qatar | Aluminium, Glass & Gypsum Partition Services | ANAM Qatar</title>
+          <meta name="title" content="Partitions in Qatar | Aluminium, Glass & Gypsum Partition Services | ANAM Qatar" />
+          <meta name="description" content="ANAM Qatar provides professional partition services in Qatar, including aluminium partitions, glass partitions, and gypsum partitions for offices, homes, and commercial spaces." />
+          <meta name="keywords" content="Partitions in Qatar, Partition Services in Qatar, Aluminium Partitions Qatar, Glass Partition Qatar, Gypsum Partition Qatar, Office Partitions Qatar, ANAM Qatar" />
+          <meta name="author" content="ANAM Qatar" />
           <meta name="robots" content="index, follow" />
           <link rel="canonical" href="https://anamqatar.com/products/partitions" />
 
-          {/* Open Graph / Facebook / WhatsApp */}
-          <meta property="og:type" content="website" />
+          {/* Open Graph Tags */}
+          <meta property="og:title" content="Partitions in Qatar | Aluminium, Glass & Gypsum Partition Services" />
+          <meta property="og:description" content="Get high-quality aluminium partitions, glass partitions, and gypsum partitions in Qatar from ANAM Qatar with professional installation." />
           <meta property="og:url" content="https://anamqatar.com/products/partitions" />
-          <meta property="og:title" content="Partition Services in Qatar | Office & Glass Partitions | ANAM" />
-          <meta property="og:description" content="Transform interiors with ANAM's partition services in Qatar, including office, glass, gypsum, and aluminium partitions with expert installation." />
+          <meta property="og:type" content="website" />
+          <meta property="og:site_name" content="ANAM Qatar" />
           <meta property="og:image" content="https://anamqatar.com/images/partition-services-qatar.webp" />
 
-          {/* Twitter Card */}
+          {/* Twitter Card Tags */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:url" content="https://anamqatar.com/products/partitions" />
-          <meta name="twitter:title" content="Partition Services in Qatar | Office & Glass Partitions | ANAM" />
-          <meta name="twitter:description" content="ANAM offers premium partition services in Qatar with office, glass, gypsum, and aluminium partition solutions." />
+          <meta name="twitter:title" content="Partitions in Qatar | Aluminium, Glass & Gypsum Partition Services" />
+          <meta name="twitter:description" content="ANAM Qatar offers aluminium, glass, and gypsum partition services in Qatar for modern residential and commercial interiors." />
           <meta name="twitter:image" content="https://anamqatar.com/images/partition-services-qatar.webp" />
+        </Helmet>
+      )}
+      {product.slug === "curtain-and-blinds" && (
+        <Helmet>
+          <title>Curtain and Blinds Sell & Installation Qatar | Luxury Curtains | ANAM Qatar</title>
+          <meta name="title" content="Curtain and Blinds Sell & Installation Qatar | Luxury Curtains | ANAM Qatar" />
+          <meta name="description" content="ANAM Qatar offers professional curtain and blinds sell & installation services in Qatar. We supply and install blackout blinds, luxury curtains, motorized blinds, Roman blinds, Venetian blinds, vertical blinds, sunscreen blinds, curtain track & rail systems, and PVC strip curtains for residential and commercial spaces." />
+          <meta name="keywords" content="Curtain and Blinds Sell & Installation Qatar, Curtains Qatar, Blinds Qatar, Luxury Curtains Qatar, Blackout Blinds Qatar, Motorized Blinds Qatar, Roman Blinds Qatar, Venetian Blinds Qatar, Vertical Blinds Qatar, Sunscreen Blinds Qatar, Curtain Track Qatar, Curtain Rail System Qatar, PVC Strip Curtain Qatar, Window Blinds Doha, Curtain Installation Qatar, ANAM Qatar" />
+          <meta name="author" content="ANAM Qatar" />
+          <meta name="robots" content="index, follow" />
+          <link rel="canonical" href="https://anamqatar.com/products/curtains-and-blinds" />
+
+          {/* Open Graph Tags */}
+          <meta property="og:title" content="Curtain and Blinds Sell & Installation Qatar | ANAM Qatar" />
+          <meta property="og:description" content="Premium curtain and blinds solutions in Qatar including luxury curtains, blackout blinds, motorized blinds, Roman blinds, Venetian blinds, vertical blinds, sunscreen blinds, curtain tracks, rail systems, and PVC strip curtains." />
+          <meta property="og:url" content="https://anamqatar.com/products/curtains-and-blinds" />
+          <meta property="og:type" content="website" />
+          <meta property="og:site_name" content="ANAM Qatar" />
+          <meta property="og:image" content="https://anamqatar.com/images/curtains-blinds-qatar.webp" />
+
+          {/* Twitter Card Tags */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="Curtain and Blinds Sell & Installation Qatar | ANAM Qatar" />
+          <meta name="twitter:description" content="Professional curtain and blinds supply & installation services in Qatar. Luxury curtains, blackout blinds, motorized blinds, Roman blinds, Venetian blinds, vertical blinds, sunscreen blinds, curtain tracks, and PVC strip curtains." />
+          <meta name="twitter:image" content="https://anamqatar.com/images/curtains-blinds-qatar.webp" />
+        </Helmet>
+      )}
+      {product.slug === "kitchen-wardrobe" && (
+        <Helmet>
+          <title>Premium Kitchen Cabinets, Wardrobes & Interiors in Qatar | ANAM Qatar</title>
+          <meta name="title" content="Premium Kitchen Cabinets, Wardrobes & Interiors in Qatar | ANAM Qatar" />
+          <meta name="description" content="ANAM Qatar offers premium kitchen cabinets, wardrobes, and interior solutions in Qatar with modern designs, quality materials, and professional installation for homes, villas, and apartments." />
+          <meta name="keywords" content="Premium Kitchen Cabinets Qatar, Wardrobes Qatar, Interiors Qatar, Kitchen Cabinets in Qatar, Kitchen Wardrobe Qatar, Custom Wardrobes Qatar, Modular Kitchen Cabinets Qatar, Interior Solutions Qatar, Kitchen Cabinets Doha, Wardrobe Installation Qatar, ANAM Qatar" />
+          <meta name="author" content="ANAM Qatar" />
+          <meta name="robots" content="index, follow" />
+          <link rel="canonical" href="https://anamqatar.com/products/kitchen-wardrobe" />
+
+          {/* Open Graph Tags */}
+          <meta property="og:title" content="Premium Kitchen Cabinets, Wardrobes & Interiors in Qatar | ANAM Qatar" />
+          <meta property="og:description" content="Get stylish kitchen cabinets, custom wardrobes, and premium interior solutions in Qatar from ANAM Qatar with expert design and installation services." />
+          <meta property="og:url" content="https://anamqatar.com/products/kitchen-wardrobe" />
+          <meta property="og:type" content="website" />
+          <meta property="og:site_name" content="ANAM Qatar" />
+          <meta property="og:image" content="https://anamqatar.com/images/kitchen-wardrobe-qatar.webp" />
+
+          {/* Twitter Card Tags */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="Premium Kitchen Cabinets, Wardrobes & Interiors in Qatar | ANAM Qatar" />
+          <meta name="twitter:description" content="ANAM Qatar provides premium kitchen cabinets, wardrobes, and interiors in Qatar for modern residential spaces." />
+          <meta name="twitter:image" content="https://anamqatar.com/images/kitchen-wardrobe-qatar.webp" />
+        </Helmet>
+      )}
+      {product.slug === "solid-surface-for-interior" && (
+        <Helmet>
+          <title>Best Solid Surface (Corian Top) Fixing Work in Qatar | ANAM Qatar</title>
+          <meta name="title" content="Best Solid Surface (Corian Top) Fixing Work in Qatar | ANAM Qatar" />
+          <meta name="description" content="ANAM Qatar provides the best solid surface (Corian top) fixing work in Qatar, including fabrication, supply, and installation of kitchen countertops, vanity tops, reception counters, wall cladding, worktops, and custom solid surface solutions for residential and commercial projects." />
+          <meta name="keywords" content="Best Solid Surface Fixing Work in Qatar, Corian Top Qatar, Corian Countertops Qatar, Solid Surface Qatar, Solid Surface Fabrication Qatar, Solid Surface Installation Qatar, Kitchen Countertop Qatar, Corian Kitchen Top Qatar, Vanity Top Qatar, Reception Counter Qatar, Corian Cladding Qatar, Acrylic Solid Surface Qatar, ANAM Qatar" />
+          <meta name="author" content="ANAM Qatar" />
+          <meta name="robots" content="index, follow" />
+          <link rel="canonical" href="https://anamqatar.com/products/solid-surface-for-interior" />
+
+          {/* Open Graph Tags */}
+          <meta property="og:title" content="Best Solid Surface (Corian Top) Fixing Work in Qatar | ANAM Qatar" />
+          <meta property="og:description" content="Professional solid surface (Corian top) fabrication and fixing services in Qatar. ANAM Qatar specializes in kitchen countertops, reception counters, vanity tops, wall cladding, and custom solid surface installations for homes and commercial spaces." />
+          <meta property="og:url" content="https://anamqatar.com/products/solid-surface-for-interior" />
+          <meta property="og:type" content="website" />
+          <meta property="og:site_name" content="ANAM Qatar" />
+          <meta property="og:image" content="https://anamqatar.com/images/solid-surface-qatar.webp" />
+
+          {/* Twitter Card Tags */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="Best Solid Surface (Corian Top) Fixing Work in Qatar | ANAM Qatar" />
+          <meta name="twitter:description" content="ANAM Qatar offers premium Corian top fabrication, supply, and solid surface fixing work in Qatar for kitchens, bathrooms, reception counters, commercial interiors, and custom projects." />
+          <meta name="twitter:image" content="https://anamqatar.com/images/solid-surface-qatar.webp" />
         </Helmet>
       )}
       <main>
@@ -287,7 +362,8 @@ const ProductDetail = () => {
                 >
                   <img
                     src={prod.image || "/placeholder.jpg"}
-                    alt={prod.name}
+                    alt={prod.alt || prod.name}
+                    title={prod.title}
                     className="w-full h-[250px] object-cover"
                   />
 

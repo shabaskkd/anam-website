@@ -19,20 +19,20 @@ import runningTrack from "../assets/images/sports/synthetic-running Track .jpg";
 import edmTrack from "../assets/images/sports/EPDM-flooring.jpg";
 import wpcDecking from "../assets/images/floooring/WPC decking  .jpg";
 import artificialGrass from "../assets/images/floooring/Artificial Grass .jpg";
-import solidWood from "../assets/images/wall panels/Solid Wooden  Panels.jpg";
-import spcWallPanel from "../assets/images/wall panels/SPC Wall Panel.jpg";
-import fiberCementPanels from "../assets/images/wall panels/Fiber Cement Panels.jpg";
-import wpcOutdoorPanels from "../assets/images/wall panels/WPC Outdoor  Panels.jpg";
+import solidWood from "../assets/images/imgi_8_Solid Wooden  Panels-CW4lJzT8.webp";
+import spcWallPanel from "../assets/images/imgi_3_SPC Wall Panel-DbIsQlc5.webp";
+import fiberCementPanels from "../assets/images/imgi_4_Fiber Cement Panels-CFvi0Grh.webp";
+import wpcOutdoorPanels from "../assets/images/imgi_5_WPC Outdoor  Panels-BcMiuwo9.webp";
 import mdf_item from "../assets/images/wooden/mdf.jpg";
 import hpl_item from "../assets/images/wooden/hpl.jpg";
-import wpc from "../assets/images/wall panels/wpc.jpg";
+import wpc from "../assets/images/imgi_7_wpc-CiAPtJp8.webp";
 import uv from "../assets/images/wall panels/uv-panel.jpg";
 import wallFinishes from "../assets/images/wall panels/wall finishes.jpg";
 import doors from "../assets/images/door/dooes.jpg";
-import aluminiumDoor from "../assets/images/door/door aluminium.jpeg";
-import woodenDoor from "../assets/images/door/woden door.jpg";
-import wpcDoor from "../assets/images/door/WPC Doors.jpg";
-import upvcDoor from "../assets/images/door/UPVC Doors.avif";
+import aluminiumDoor from "../assets/images/imgi_3_door aluminium-Ev0_TMsO.webp";
+import woodenDoor from "../assets/images/imgi_4_woden door-BneT9Mke.webp";
+import wpcDoor from "../assets/images/imgi_5_WPC Doors-DOpzdaDP.webp";
+import upvcDoor from "../assets/images/imgi_6_UPVC Doors-DC31HHfT.avif";
 import steelDoor from "../assets/images/door/doooooorss.webp";
 import aluminiumWindow from "../assets/images/windows/alu wind.jpg";
 import upvcWindow from "../assets/images/windows/UPVC Windows.webp";
@@ -79,7 +79,7 @@ import vertical from "../assets/images/Curtains/Vertical Blinds.webp";
 import hdpe from "../assets/images/shades/HDPE.jpeg";
 import kwikSpan from "../assets/images/shades/Kwik Span Shades.jpg";
 import modernPergola from "../assets/images/shades/Modern Pergolaa.jpg";
-import doorCover from "../assets/images/door/door-cover.jpg";
+import doorCover from "../assets/images/imgi_31_door-1L0GI1vW.webp";
 import wallPanelCover from "../assets/images/wall panels/wall panel cover.jpg";
 import windowsCover from "../assets/images/windows/windows cover .jpg";
 import partitionCover from "../assets/images/partition/partition cover.jpg";
@@ -96,7 +96,7 @@ import flooring_banner from "../assets/images/floooring/flooring-banner.jpg";
 import curtain_banner from "../assets/images/Curtains/curtain-banner.jpg";
 import fencing_banner from "../assets/images/fencing/fiber-banner.jpeg";
 import solid_banner from "../assets/images/solid surfaces/solid-banner.jpg";
-import wall_banner from "../assets/images/wall panels/wall-banner.jpg";
+import wall_banner from "../assets/images/imgi_33_wall-banner-Bs0XzEQE.webp";
 import wood_banner from "../assets/images/wooden/wood-banner.jpg";
 import atlas01 from "../assets/images/floooring/ATLAS-01.jpg";
 import atlas02 from "../assets/images/floooring/ATLAS-02.jpg";
@@ -342,6 +342,8 @@ export const productData = [
         name: "SPC Panel",
         slug: "spc-panel",
         image: spcWallPanel,
+        alt: "Wall panels in Qatar with premium SPC panel design by ANAM Qatar",
+        title: "Wall Panels in Qatar - SPC Panel",
         thickness: "1.5mm - 12mm",
         wearLayer: "30 years",
         warranty: "10 years",
@@ -350,6 +352,8 @@ export const productData = [
         name: "Fibre Cement Panel",
         slug: "fibre-cement-panel",
         image: fiberCementPanels,
+        alt: "Fibre cement wall panel in Qatar for durable interior and exterior spaces",
+        title: "Fibre Cement Panel in Qatar",
         thickness: "1.5mm - 12mm",
         wearLayer: "30 years",
         warranty: "10 years",
@@ -357,6 +361,8 @@ export const productData = [
       {
         name: "WPC Outdoor Panel",
         slug: "wpc-outdoor-panel",
+        alt: "WPC outdoor wall panel in Qatar for villas, gardens, and exterior walls",
+        title: "WPC Outdoor Panel Qatar",
         thickness: "1.5mm - 12mm",
         wearLayer: "30 years",
         warranty: "10 years",
@@ -365,6 +371,8 @@ export const productData = [
       {
         name: "UV Panel",
         slug: "uv-panel",
+        alt: "UV wall panel in Qatar for modern decorative interior wall designs",
+        title: "UV Panel in Qatar",
         thickness: "1.5mm - 12mm",
         wearLayer: "30 years",
         warranty: "10 years",
@@ -373,6 +381,8 @@ export const productData = [
       {
         name: "WPC Wall Panel",
         slug: "wpc-wall-panel",
+        alt: "WPC wall panel in Qatar for stylish home and office interior decoration",
+        title: "WPC Wall Panel Qatar",
         thickness: "1.5mm - 12mm",
         wearLayer: "30 years",
         warranty: "10 years",
@@ -389,6 +399,8 @@ export const productData = [
       {
         name: "Solid Wooden Panel",
         slug: "solid-wooden-panel",
+        alt: "Solid wooden wall panel in Qatar for premium luxury interior spaces",
+        title: "Solid Wooden Panel Qatar",
         thickness: "1.5mm - 12mm",
         wearLayer: "30 years",
         warranty: "10 years",
@@ -401,26 +413,36 @@ export const productData = [
     name: "Doors",
     slug: "doors",
     image: doorCover,
+    alt: "Premium interior and exterior doors in Qatar from trusted door supplier ANAM Qatar",
+    title: "Premium Door Supplier in Qatar",
     categories: [
       {
         name: "Aluminium Door",
         slug: "aluminium-door",
         image: aluminiumDoor,
+        alt: "Modern aluminium doors in Qatar with professional door supply and installation",
+        title: "Aluminium Doors in Qatar",
       },
       {
         name: "Wooden Door",
         slug: "wooden-door",
         image: woodenDoor,
+        alt: "Premium wooden doors in Qatar for homes, villas, and commercial buildings by ANAM Qatar",
+        title: "Wooden Doors in Qatar",
       },
       {
         name: "WPC Door",
         slug: "wpc-door",
         image: wpcDoor,
+        alt: "Durable WPC doors in Qatar for interior and exterior applications",
+        title: "WPC Doors in Qatar",
       },
       {
         name: "UPVC Door",
         slug: "upvc-door",
         image: upvcDoor,
+        alt: "High-quality UPVC doors in Qatar for residential and commercial spaces",
+        title: "UPVC Doors in Qatar",
       },
     ],
   },
