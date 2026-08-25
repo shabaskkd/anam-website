@@ -5,7 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 const WhatsAppButton = () => {
   return (
     <a
-      href="https://wa.me/yournumber"
+      href="https://wa.me/97430081007"
       target="_blank"
       rel="noopener noreferrer"
       whileHover={{ x: -10, backgroundColor: "#000" }}

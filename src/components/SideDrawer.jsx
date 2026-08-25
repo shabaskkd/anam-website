@@ -78,7 +78,7 @@ const SideDrawer = ({ isOpen, onClose }) => {
                 className="aspect-square rounded-2xl overflow-hidden group"
               >
                 <img
-                  src={`https://picsum.photos/400/400?random=${i}`}
+                  src={`/images/wall-panel-1.webp`}
                   alt="Gallery"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -97,13 +97,13 @@ const SideDrawer = ({ isOpen, onClose }) => {
           {/* Contact Details */}
           <div className="space-y-4 mb-12">
             <a
-              href="tel:+97499999999"
+              href="tel:+97430081007"
               className="block text-white hover:text-gray-400 transition-colors"
             >
-              +974 9999 99 999
+              +974 30081007
             </a>
             <p className="text-white hover:text-gray-400 max-w-[250px]">
-              5609 E Sprague Ave, Spokane Valley, WA 99212, USA
+              Street No.3083, Bld No. 136, Zone No. 91, Logistic Park, Birkat Al Awamer, Doha, Qatar
             </p>
           </div>
 
