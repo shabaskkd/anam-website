@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
 
 const WhatsAppButton = () => {
@@ -8,10 +7,10 @@ const WhatsAppButton = () => {
       href="https://wa.me/97430081007"
       target="_blank"
       rel="noopener noreferrer"
-      whileHover={{ x: -10, backgroundColor: "#000" }}
-      className="z-[9999] group -rotate-90 hover:opacity-60 transtion flex items-center justify-center gap-3 bg-[#25D366] text-white h-16 w-16 rounded-full shadow-xl transition-colors duration-300"
+      aria-label="Contact us on WhatsApp"
+      className="z-[9999] group flex items-center justify-center bg-[#25D366] hover:bg-[#20ba5a] text-white h-16 w-16 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-105"
     >
-      <FaWhatsapp size={24} className="rotate-90" />
+      <FaWhatsapp size={30} className="text-white" />
     </a>
   );
 };

@@ -1,112 +1,105 @@
 export const BLOGS = [
   {
     slug: "the-art-of-space-smart-designs",
-    category: "Home Appliance",
-    author: "Anam",
+    category: "Interior Design",
+    author: "ANAM Qatar",
     title: "The Art Of Space: Smart Designs For Elegant Living",
     excerpt:
-      "Modern interior design is all about creating a sleek, functional, and aesthetically pleasing space that reflects contemporary living.",
+      "Explore how intelligent layout planning, bespoke built-ins, and curated textures maximize square footage and transform luxury spaces across Qatar.",
     image:
       "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=1200",
     content: `
-  <p>Modern interior design is no longer just about looks — it is about creating meaningful spaces that balance beauty, comfort, and functionality.</p>
+  <p>Modern interior design in Qatar is no longer just about looks — it is about creating meaningful spaces that balance luxury, climatic comfort, and high-efficiency functionality.</p>
 
-  <p>Smart design focuses on maximizing every square foot while maintaining a clean and elegant aesthetic. Whether you live in a compact apartment or a spacious villa, thoughtful planning can dramatically transform how your space feels and functions.</p>
+  <p>Space-smart design focuses on maximizing every square foot while maintaining a clean, open, and elegant aesthetic. Whether you are designing a contemporary Lusail apartment or a spacious West Bay villa, thoughtful architectural fit-out planning dramatically elevates how your space feels and functions.</p>
 
   <h2>Understanding Space-Smart Design</h2>
 
-  <p>Space-smart design involves using intelligent layouts, multi-purpose furniture, and efficient storage solutions to reduce clutter and improve usability.</p>
+  <p>Space-smart design integrates bespoke cabinetry, multi-functional partitions, concealed door systems, and integrated storage to eliminate visual clutter while enhancing everyday ease.</p>
 
   <ul>
-    <li>Open floor plans that enhance movement</li>
-    <li>Built-in storage to reduce visual noise</li>
-    <li>Furniture that serves multiple purposes</li>
+    <li>Seamless open layouts that promote natural air flow and generous lighting</li>
+    <li>Full-height custom wardrobes and wall cladding that double as concealed storage</li>
+    <li>Acoustic gypsum and glass partitions that create quiet executive zones without closing off natural light</li>
   </ul>
 
-  <h2>Why Smart Design Matters</h2>
+  <h2>Why Smart Interior Planning Matters</h2>
 
-  <p>Well-designed spaces improve comfort, productivity, and mental well-being. A clutter-free environment promotes relaxation, while efficient layouts save time and energy in daily routines.</p>
+  <p>Well-planned interiors enhance comfort, elevate wellbeing, and improve daily functionality. A clutter-free, harmoniously designed environment provides a tranquil retreat from Doha's bustling lifestyle.</p>
 
-  <p>Smart interiors also increase property value by making homes more adaptable to modern lifestyles.</p>
+  <p>Custom, durable finishes and premium cabinetry also significantly increase real estate value, ensuring properties remain timeless and functional for decades.</p>
 
-  <h2>Design Tips for Elegant Living</h2>
+  <h2>Design Tips for Elegant Villa & Apartment Living</h2>
 
-  <p>Choose neutral color palettes, natural lighting, and minimal decor elements. Focus on quality materials and timeless finishes that age gracefully.</p>
+  <p>Opt for neutral color palettes with warm natural wood tones, fluted wall accents, and subtle marble counters. Emphasize indirect ambient LED profiles and high-durability surfaces like SPC flooring and Corian solid tops.</p>
 
-  <p>Elegance lies in simplicity — every element should have a purpose.</p>
-`
-,
+  <p>True luxury lies in craftsmanship and proportion — where every custom-built piece serves both aesthetic and practical purpose.</p>
+`,
   },
   {
     slug: "inspired-spaces-blending-function",
-    category: "Home Appliance",
-    author: "Anam",
-    title: "Inspired Spaces: Blending Function And Aesthetic",
+    category: "Fit-Out & Cabinetry",
+    author: "ANAM Qatar",
+    title: "Inspired Spaces: Blending Function And Aesthetics in Custom Kitchens",
     excerpt:
-      "Modern interior design is all about creating a sleek, functional, and aesthetically pleasing space that reflects contemporary living.",
+      "Discover the art of designing ergonomic, long-lasting modular kitchens and wardrobes tailored specifically to modern Middle Eastern family lifestyles.",
     image:
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&q=80&w=1200",
     content: `
-  <p>Great interior design finds the perfect balance between functionality and aesthetics. A visually stunning space is incomplete if it does not serve the needs of everyday living.</p>
+  <p>Great interior design finds the perfect harmony between visual elegance and effortless everyday usability. A spectacular kitchen or master dressing room is incomplete if it fails to endure the demands of daily life.</p>
 
-  <p>Inspired spaces are designed to adapt — offering comfort, efficiency, and visual harmony all at once.</p>
+  <p>At ANAM Qatar, our custom cabinetry and joinery solutions are engineered to adapt — delivering timeless aesthetics, high load-bearing capacity, and smart organization all in one cohesive layout.</p>
 
-  <h2>The Role of Functionality</h2>
+  <h2>The Pillars of Kitchen & Wardrobe Ergonomics</h2>
 
-  <p>Functionality ensures that each area of your home works effortlessly. From kitchen layouts to storage placement, good design simplifies daily tasks.</p>
+  <p>Functionality ensures each zone functions intuitively. From heavy-duty soft-close drawer slides to heat-and-moisture resistant quartz countertops, precision planning simplifies meal preparation and storage.</p>
 
   <ul>
-    <li>Ergonomic furniture for comfort</li>
-    <li>Smart storage solutions</li>
-    <li>Efficient lighting placement</li>
+    <li>Optimized work triangles between wash, prep, and cooking areas</li>
+    <li>Custom pull-out pantries and concealed accessory organizers</li>
+    <li>Integrated LED task lighting embedded directly within overhead cabinetry and wardrobes</li>
   </ul>
 
-  <h2>Creating Visual Harmony</h2>
+  <h2>Creating Visual & Material Harmony</h2>
 
-  <p>Aesthetic appeal comes from consistency in materials, colors, and textures. Using a cohesive design language creates a calming and inspiring environment.</p>
+  <p>Aesthetic impact comes from consistent textures and tones. Pairing matte lacquered cabinet doors with textured wood veneers and sleek black aluminium frames produces a contemporary architectural signature.</p>
 
-  <p>Natural elements such as wood, stone, and soft fabrics help bring warmth and character into modern spaces.</p>
+  <p>High-grade HPL, moisture-resistant MDF, and solid surface finishes ensure surfaces resist heat, moisture, and stains common in demanding culinary environments.</p>
 
-  <h2>Design That Inspires Everyday Living</h2>
+  <h2>Designs That Elevate Everyday Living</h2>
 
-  <p>Inspired interiors are not just beautiful — they encourage creativity, relaxation, and connection. When function and aesthetics work together, the result is a space that truly feels like home.</p>
-`
-,
+  <p>A masterfully designed kitchen is the social heart of any home. When premium craftsmanship and ergonomic layouts merge, cooking, entertaining, and family gatherings become effortless pleasures.</p>
+`,
   },
   {
     slug: "functional-design-trends-comfort",
-    category: "Power Tools",
-    author: "Anam",
-    title: "Functional Design Trends That Blend Style And Comfort",
+    category: "Architectural Trends",
+    author: "ANAM Qatar",
+    title: "Functional Architectural Trends That Blend Style And Durability",
     excerpt:
-      "Modern interior design is all about creating a sleek, functional, and aesthetically pleasing space that reflects contemporary living.",
+      "How acoustic ceilings, thermal-break aluminium windows, and composite cladding are redefining climate-resilient interior design in Qatar.",
     image:
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200",
     content: `
-  <p>Design trends are evolving to prioritize comfort without sacrificing style. Modern consumers seek interiors that look refined while supporting everyday living.</p>
+  <p>Architectural and fit-out trends in Qatar are rapidly shifting towards climate-responsive, high-durability materials that offer sleek modern luxury without intensive maintenance.</p>
 
-  <p>Functional design trends focus on durability, ease of use, and timeless appeal.</p>
+  <p>Modern property owners demand building materials and finishes that easily withstand high ambient heat, humidity, and intense sunlight while maintaining a flawless showroom appearance.</p>
 
-  <h2>Comfort-Driven Design</h2>
+  <h2>Climate-Resilient Material Innovations</h2>
 
-  <p>Comfort has become a key element in modern design. Soft seating, ergonomic layouts, and breathable materials are now standard rather than optional.</p>
+  <p>Modern engineering allows architects and interior designers to achieve warm, organic textures using advanced composites that never warp, crack, or fade.</p>
 
   <ul>
-    <li>Modular furniture systems</li>
-    <li>Soft textures and neutral tones</li>
-    <li>User-friendly layouts</li>
+    <li>WPC and PVC exterior wall panels resistant to UV degradation and moisture</li>
+    <li>High-performance acoustic ceiling systems that isolate noise in open floorplans</li>
+    <li>Thermally insulated UPVC and aluminium windows designed for optimal energy conservation</li>
   </ul>
 
-  <h2>Blending Style with Practicality</h2>
+  <h2>Balancing Modern Aesthetics with Longevity</h2>
 
-  <p>Designers are embracing solutions that combine aesthetics with everyday usability. Clean lines, smart storage, and flexible spaces help maintain visual appeal while enhancing comfort.</p>
+  <p>Modern architectural finishing favors clean lines, geometric shadow grooves, fluted accents, and floor-to-ceiling glass partitions that maximize spatial openness while conserving interior air conditioning.</p>
 
-  <h2>The Future of Functional Design</h2>
-
-  <p>The future lies in adaptable spaces that evolve with lifestyle changes. Functional design ensures longevity, making homes more sustainable and efficient over time.</p>
-
-  <p>Style may attract attention, but comfort ensures lasting satisfaction.</p>
-`
-
+  <p>Investing in precision-engineered architectural components ensures that homes, corporate offices, and commercial establishments retain their pristine luxury for decades to come.</p>
+`,
   },
 ];

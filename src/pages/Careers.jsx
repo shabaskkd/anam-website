@@ -1,52 +1,21 @@
 import { useState } from "react";
 import Layout from "../components/Layout";
 
-const jobs = [
-  // {
-  //   title: "Senior Frontend Engineer",
-  //   dept: "Engineering",
-  //   location: "Remote",
-  //   type: "Full-time",
-  //   desc: "Own the frontend experience of our core product. You'll work closely with design and backend to ship features millions of developers rely on.",
-  //   responsibilities: [
-  //     "Lead architecture decisions for the frontend layer",
-  //     "Ship features end-to-end with React and TypeScript",
-  //     "Mentor junior engineers and run code reviews",
-  //     "Collaborate with design to define interaction patterns",
-  //   ],
-  //   requirements: [
-  //     "5+ years with React and TypeScript",
-  //     "Strong opinions on DX and performance",
-  //     "Experience with bundlers and build tooling",
-  //     "Comfort working async across time zones",
-  //   ],
-  // },
-];
+// Currently no active vacancies
+const jobs = [];
 
-const FILTERS = ["All", "Engineering", "Design", "Product", "Growth"];
+const FILTERS = [
+  "All",
+  "Site & Projects",
+  "Design & 3D",
+  "Sales & Estimation",
+  "Joinery & Installation",
+];
 
 const PERKS = [
   {
-    name: "Remote-first culture",
-    desc: "Work from anywhere. We build async-first workflows that respect your time zone.",
-    icon: (
-      <svg viewBox="0 0 24 24" style={{ width: 16, height: 16, fill: "#fff" }}>
-        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z" />
-      </svg>
-    ),
-  },
-  {
-    name: "Equity & ownership",
-    desc: "Meaningful equity packages. You're building this company — you should own a piece of it.",
-    icon: (
-      <svg viewBox="0 0 24 24" style={{ width: 16, height: 16, fill: "#fff" }}>
-        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" />
-      </svg>
-    ),
-  },
-  {
-    name: "Health & wellbeing",
-    desc: "Full medical, dental, and vision. Plus a wellness stipend to invest in yourself.",
+    name: "Comprehensive Medical",
+    desc: "Full medical and health insurance coverage in compliance with Qatar labor regulations.",
     icon: (
       <svg viewBox="0 0 24 24" style={{ width: 16, height: 16, fill: "#fff" }}>
         <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z" />
@@ -54,8 +23,17 @@ const PERKS = [
     ),
   },
   {
-    name: "Learning budget",
-    desc: "$2,000/year for courses, books, conferences — whatever helps you grow.",
+    name: "Project Incentives",
+    desc: "Rewarding bonuses linked to on-time, high-quality project milestones and completions.",
+    icon: (
+      <svg viewBox="0 0 24 24" style={{ width: 16, height: 16, fill: "#fff" }}>
+        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" />
+      </svg>
+    ),
+  },
+  {
+    name: "Craft & Technical Training",
+    desc: "Continuous skill development with premium architectural materials and European hardware.",
     icon: (
       <svg viewBox="0 0 24 24" style={{ width: 16, height: 16, fill: "#fff" }}>
         <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z" />
@@ -63,8 +41,8 @@ const PERKS = [
     ),
   },
   {
-    name: "Async by default",
-    desc: "Deep work hours protected. Fewer meetings, more shipping.",
+    name: "Modern Equipment & Tools",
+    desc: "Work with precision measuring lasers, digital joinery tooling, and advanced design software.",
     icon: (
       <svg viewBox="0 0 24 24" style={{ width: 16, height: 16, fill: "#fff" }}>
         <path d="M11.5 2C6.81 2 3 5.81 3 10.5S6.81 19 11.5 19h.5v3c4.86-2.34 8-7 8-11.5C20 5.81 16.19 2 11.5 2zm1 14.5h-2v-2h2v2zm0-4h-2c0-3.25 3-3 3-5 0-1.1-.9-2-2-2s-2 .9-2 2h-2c0-2.21 1.79-4 4-4s4 1.79 4 4c0 2.5-3 2.75-3 5z" />
@@ -72,8 +50,17 @@ const PERKS = [
     ),
   },
   {
-    name: "Team retreats",
-    desc: "Annual in-person gathering. Real relationships, not just Slack handles.",
+    name: "Visa & Legal Sponsorship",
+    desc: "Complete Qatar residency (QID), legal sponsorship, and smooth onboarding.",
+    icon: (
+      <svg viewBox="0 0 24 24" style={{ width: 16, height: 16, fill: "#fff" }}>
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z" />
+      </svg>
+    ),
+  },
+  {
+    name: "Safety-First Environment",
+    desc: "Strict adherence to Qatar safety codes, premium PPE gear, and structured site protocols.",
     icon: (
       <svg viewBox="0 0 24 24" style={{ width: 16, height: 16, fill: "#fff" }}>
         <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
@@ -136,18 +123,18 @@ export default function CareerPage() {
                 marginBottom: 24,
               }}
             >
-              Build what <span style={{ color: s.brand }}>matters.</span>
+              Craft Inspiring <span style={{ color: s.brand }}>Spaces.</span>
             </div>
             <div
               style={{
                 fontSize: 15,
                 color: s.textMid,
                 lineHeight: 1.7,
-                maxWidth: 320,
+                maxWidth: 480,
               }}
             >
-              We're a team of builders, designers, and thinkers who believe
-              great tools change everything. Join us.
+              Join our passionate team of architects, site engineers, master craftsmen,
+              and project specialists delivering high-end interiors and architectural finishes across Qatar.
             </div>
           </div>
         </div>
@@ -209,151 +196,258 @@ export default function CareerPage() {
           ))}
         </div>
 
-        {/* JOBS */}
-        <SectionLabel>Open roles</SectionLabel>
+        {/* JOBS / OPEN ROLES */}
+        <SectionLabel>Current Openings</SectionLabel>
 
-        <div
-          style={{
-            display: "flex",
-            gap: 8,
-            marginBottom: 28,
-            flexWrap: "wrap",
-          }}
-        >
-          {FILTERS.map((f) => (
-            <button
-              key={f}
-              onClick={() => setActiveFilter(f)}
-              style={{
-                fontFamily: "'DM Sans', sans-serif",
-                fontSize: 12,
-                fontWeight: 500,
-                letterSpacing: "0.05em",
-                padding: "7px 16px",
-                background: activeFilter === f ? s.brand : "transparent",
-                border: `1px solid ${activeFilter === f ? s.brand : s.border}`,
-                color: activeFilter === f ? "#fff" : s.textMuted,
-                cursor: "pointer",
-                transition: "all 0.15s",
-              }}
-            >
-              {f}
-            </button>
-          ))}
-        </div>
-
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            gap: 1,
-            background: s.border,
-            border: `1px solid ${s.border}`,
-          }}
-        >
-          {filtered.map((job, i) => (
+        {jobs.length === 0 ? (
+          <div
+            style={{
+              background: "#fff",
+              border: `1px solid ${s.border}`,
+              borderLeft: `4px solid ${s.brand}`,
+              padding: "48px 36px",
+              textAlign: "center",
+              maxWidth: 780,
+              margin: "0 auto",
+            }}
+          >
             <div
-              key={job.title}
-              onMouseEnter={() => setHoveredJob(i)}
-              onMouseLeave={() => setHoveredJob(null)}
-              onClick={() => setSelectedJob(job)}
               style={{
-                background: hoveredJob === i ? "#fff" : s.cream,
-                padding: "24px 28px",
-                display: "grid",
-                gridTemplateColumns: "1fr auto",
+                display: "inline-flex",
                 alignItems: "center",
-                gap: 16,
-                cursor: "pointer",
-                borderLeft: `3px solid ${hoveredJob === i ? s.brand : "transparent"}`,
-                transition: "all 0.15s",
+                gap: 8,
+                padding: "6px 16px",
+                background: `${s.brand}12`,
+                color: s.brand,
+                fontSize: 12,
+                fontWeight: 700,
+                letterSpacing: "0.1em",
+                textTransform: "uppercase",
+                marginBottom: 20,
               }}
             >
-              <div>
-                <div
-                  style={{
-                    fontSize: 18,
-                    fontWeight: 700,
-                    color: s.textDark,
-                    marginBottom: 8,
-                  }}
-                >
-                  {job.title}
-                </div>
-                <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
-                  {[job.dept, job.location, job.type].map((tag) => (
-                    <span
-                      key={tag}
-                      style={{
-                        fontSize: 11,
-                        fontWeight: 500,
-                        letterSpacing: "0.08em",
-                        textTransform: "uppercase",
-                        color: s.textMuted,
-                        display: "flex",
-                        alignItems: "center",
-                        gap: 5,
-                      }}
-                    >
-                      <span
-                        style={{
-                          width: 5,
-                          height: 5,
-                          background: s.brand,
-                          flexShrink: 0,
-                          display: "inline-block",
-                        }}
-                      />
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setSelectedJob(job);
-                }}
+              <span
                 style={{
-                  fontFamily: "'DM Sans', sans-serif",
-                  fontSize: 12,
-                  fontWeight: 500,
-                  letterSpacing: "0.08em",
+                  width: 8,
+                  height: 8,
+                  borderRadius: "50%",
+                  background: s.brand,
+                }}
+              />
+              No Open Vacancies At Present
+            </div>
+
+            <h3
+              style={{
+                fontFamily: "'Playfair Display', serif",
+                fontSize: 28,
+                fontWeight: 700,
+                color: s.textDark,
+                marginBottom: 16,
+              }}
+            >
+              We Currently Have No Active Open Roles
+            </h3>
+
+            <p
+              style={{
+                fontSize: 15,
+                color: s.textMid,
+                lineHeight: 1.8,
+                maxWidth: 620,
+                margin: "0 auto 28px",
+              }}
+            >
+              Thank you for your interest in joining <strong>ANAM Trading & Contracting</strong>. There are no active vacancies open at this time. However, as our contracting and luxury fit-out projects across Qatar continue to grow, we welcome speculative applications from experienced talent for future opportunities.
+            </p>
+
+            <div
+              style={{
+                display: "flex",
+                gap: 16,
+                justifyContent: "center",
+                flexWrap: "wrap",
+                marginBottom: 24,
+              }}
+            >
+              <a
+                href="mailto:anamtradcontract@gmail.com?subject=Future%20Career%20Application%20-%20ANAM%20Qatar"
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: 8,
+                  background: s.brand,
+                  color: "#fff",
+                  padding: "14px 28px",
+                  fontSize: 13,
+                  fontWeight: 600,
+                  textDecoration: "none",
+                  letterSpacing: "0.05em",
                   textTransform: "uppercase",
-                  color: s.brand,
-                  background: "transparent",
-                  border: `1px solid ${s.brand}`,
-                  padding: "10px 20px",
-                  cursor: "pointer",
-                  whiteSpace: "nowrap",
-                  transition: "all 0.15s",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.background = s.brand;
-                  e.currentTarget.style.color = "#fff";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.background = "transparent";
-                  e.currentTarget.style.color = s.brand;
+                  transition: "background 0.2s",
                 }}
               >
-                View role
-              </button>
+                Send CV to HR Desk
+              </a>
+
+              <a
+                href="https://wa.me/97430081007?text=Hello%20ANAM%20Qatar%20HR,%20I%20would%20like%20to%20submit%20my%20CV%20for%20future%20vacancies."
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: 8,
+                  background: "#25D366",
+                  color: "#fff",
+                  padding: "14px 28px",
+                  fontSize: 13,
+                  fontWeight: 600,
+                  textDecoration: "none",
+                  letterSpacing: "0.05em",
+                  textTransform: "uppercase",
+                  transition: "background 0.2s",
+                }}
+              >
+                Inquire via WhatsApp
+              </a>
             </div>
-          ))}
-          {filtered.length === 0 && (
+
             <div
               style={{
-                padding: "40px 0",
-                textAlign: "center",
+                fontSize: 13,
                 color: s.textMuted,
-                fontSize: 14,
               }}
             >
-              No open roles in this category. Check back later!
+              Direct Line: <strong style={{ color: s.textDark }}>+974 30081007</strong> &nbsp;|&nbsp; Doha, State of Qatar
             </div>
-          )}
-        </div>
+          </div>
+        ) : (
+          <>
+            <div
+              style={{
+                display: "flex",
+                gap: 8,
+                marginBottom: 28,
+                flexWrap: "wrap",
+              }}
+            >
+              {FILTERS.map((f) => (
+                <button
+                  key={f}
+                  onClick={() => setActiveFilter(f)}
+                  style={{
+                    fontFamily: "'DM Sans', sans-serif",
+                    fontSize: 12,
+                    fontWeight: 500,
+                    letterSpacing: "0.05em",
+                    padding: "7px 16px",
+                    background: activeFilter === f ? s.brand : "transparent",
+                    border: `1px solid ${activeFilter === f ? s.brand : s.border}`,
+                    color: activeFilter === f ? "#fff" : s.textMuted,
+                    cursor: "pointer",
+                    transition: "all 0.15s",
+                  }}
+                >
+                  {f}
+                </button>
+              ))}
+            </div>
+
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: 1,
+                background: s.border,
+                border: `1px solid ${s.border}`,
+              }}
+            >
+              {filtered.map((job, i) => (
+                <div
+                  key={job.title}
+                  onMouseEnter={() => setHoveredJob(i)}
+                  onMouseLeave={() => setHoveredJob(null)}
+                  onClick={() => setSelectedJob(job)}
+                  style={{
+                    background: hoveredJob === i ? "#fff" : s.cream,
+                    padding: "24px 28px",
+                    display: "grid",
+                    gridTemplateColumns: "1fr auto",
+                    alignItems: "center",
+                    gap: 16,
+                    cursor: "pointer",
+                    borderLeft: `3px solid ${hoveredJob === i ? s.brand : "transparent"}`,
+                    transition: "all 0.15s",
+                  }}
+                >
+                  <div>
+                    <div
+                      style={{
+                        fontSize: 18,
+                        fontWeight: 700,
+                        color: s.textDark,
+                        marginBottom: 8,
+                      }}
+                    >
+                      {job.title}
+                    </div>
+                    <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
+                      {[job.dept, job.location, job.type].map((tag) => (
+                        <span
+                          key={tag}
+                          style={{
+                            fontSize: 11,
+                            fontWeight: 500,
+                            letterSpacing: "0.08em",
+                            textTransform: "uppercase",
+                            color: s.textMuted,
+                            display: "flex",
+                            alignItems: "center",
+                            gap: 5,
+                          }}
+                        >
+                          <span
+                            style={{
+                              width: 5,
+                              height: 5,
+                              background: s.brand,
+                              flexShrink: 0,
+                              display: "inline-block",
+                            }}
+                          />
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setSelectedJob(job);
+                    }}
+                    style={{
+                      fontFamily: "'DM Sans', sans-serif",
+                      fontSize: 12,
+                      fontWeight: 500,
+                      letterSpacing: "0.08em",
+                      textTransform: "uppercase",
+                      color: s.brand,
+                      background: "transparent",
+                      border: `1px solid ${s.brand}`,
+                      padding: "10px 20px",
+                      cursor: "pointer",
+                      whiteSpace: "nowrap",
+                      transition: "all 0.15s",
+                    }}
+                  >
+                    View role
+                  </button>
+                </div>
+              ))}
+            </div>
+          </>
+        )}
       </div>
 
       {/* MODAL */}

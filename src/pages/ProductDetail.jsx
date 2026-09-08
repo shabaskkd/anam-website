@@ -8,6 +8,7 @@ import DoorsSection from "../components/DoorsSection";
 import WindowsSection from "../components/WindowsSection";
 import PartitionsSection from "../components/PartitionsSection";
 import CeilingSolutionsSection from "../components/CeilingSolutionsSection";
+import KitchenWardrobeSection from "../components/KitchenWardrobeSection";
 
 const findNodeAndAncestors = (nodes, targetSlug, ancestors = []) => {
   for (const node of nodes) {
@@ -100,10 +101,21 @@ const ProductDetail = ({ overrideSlug }) => {
     }
   }
 
+  const isCatalogOverview = segments.length === 0 && !overrideSlug;
   const isFilterView = Boolean(filterTerm);
   const matchedItems = isFilterView ? collectAllLeafItems(productData, filterTerm) : [];
 
-  const product = isFilterView
+  const product = isCatalogOverview
+    ? {
+        name: "Our Products & Architectural Solutions",
+        description:
+          "Explore our comprehensive range of premium flooring, wall panels, doors, partitions, ceiling systems, and bespoke interior materials in Qatar.",
+        slug: "products",
+        image:
+          "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80",
+        categories: productData,
+      }
+    : isFilterView
     ? {
         name: filterTerm.toUpperCase() + " Products",
         description: `Discover our premium ${filterTerm} solutions, engineered for durability, modern aesthetics, and high performance.`,
@@ -114,14 +126,20 @@ const ProductDetail = ({ overrideSlug }) => {
 
   if (!product) {
     return (
-      <div className="py-40 text-center font-bold text-2xl">
-        Product Not Found
-      </div>
+      <Layout withBg>
+        <div className="py-40 text-center font-bold text-2xl text-gray-800">
+          Product Not Found
+        </div>
+      </Layout>
     );
   }
 
-  const activeSubproduct = isFilterView ? null : (resolvedPath.length > 1 ? resolvedNode : null);
-  const data = isFilterView ? { categories: matchedItems } : (activeSubproduct ? activeSubproduct : product);
+  const activeSubproduct = isCatalogOverview || isFilterView ? null : (resolvedPath.length > 1 ? resolvedNode : null);
+  const data = isCatalogOverview
+    ? { categories: productData }
+    : isFilterView
+    ? { categories: matchedItems }
+    : (activeSubproduct ? activeSubproduct : product);
 
   return (
     <Layout withBg>
@@ -265,13 +283,13 @@ const ProductDetail = ({ overrideSlug }) => {
           <meta property="og:url" content="https://anamqatar.com/products/kitchen-wardrobe" />
           <meta property="og:type" content="website" />
           <meta property="og:site_name" content="ANAM Qatar" />
-          <meta property="og:image" content="https://anamqatar.com/images/kitchen-wardrobe-qatar.webp" />
+          <meta property="og:image" content="https://anamqatar.com/images/premium-kitchen-cabinets-qatar.webp" />
 
           {/* Twitter Card Tags */}
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="Premium Kitchen Cabinets, Wardrobes & Interiors in Qatar | ANAM Qatar" />
           <meta name="twitter:description" content="ANAM Qatar provides premium kitchen cabinets, wardrobes, and interiors in Qatar for modern residential spaces." />
-          <meta name="twitter:image" content="https://anamqatar.com/images/kitchen-wardrobe-qatar.webp" />
+          <meta name="twitter:image" content="https://anamqatar.com/images/premium-kitchen-cabinets-qatar.webp" />
         </Helmet>
       )}
       {product.slug === "solid-surface-for-interior" && (
@@ -516,8 +534,12 @@ const ProductDetail = ({ overrideSlug }) => {
         </Helmet>
       )}
       <main>
-        {/* Hero Section */}
-        <section
+        {product.slug === "kitchen-wardrobe" && !activeSubproduct ? (
+          <KitchenWardrobeSection />
+        ) : (
+          <>
+            {/* Hero Section */}
+            <section
           className="relative h-[60vh] flex items-center px-10 bg-cover bg-center bg-gray-900"
           style={{
             backgroundImage: `url(${activeSubproduct?.image ||
@@ -567,61 +589,182 @@ const ProductDetail = ({ overrideSlug }) => {
                 : "Product Categories"}
             </h2>
 
-            {/* Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-              {data?.categories?.map((prod) => (
-                <div
-                  key={prod.slug}
-                  onClick={() => {
-                    if (prod.categories) {
-                      navigate(`/products/${segments.join("/")}/${prod.slug}`);
-                    }
-                  }}
-                  className={`bg-white p-4 shadow-sm border border-gray-100 transition hover:shadow-lg ${
-                    prod.categories ? "cursor-pointer" : ""
-                  }`}
-                >
-                  <img
-                    src={prod.image || "/placeholder.jpg"}
-                    alt={prod.alt || prod.name}
-                    title={prod.title}
-                    className="w-full h-[250px] object-cover"
-                  />
+            {activeSubproduct && (!data?.categories || data.categories.length === 0) ? (
+              <div className="space-y-16">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start bg-white p-8 md:p-12 shadow-sm border border-gray-100">
+                  <div className="overflow-hidden rounded-lg">
+                    <img
+                      src={activeSubproduct.image || "/placeholder.jpg"}
+                      alt={activeSubproduct.alt || activeSubproduct.name}
+                      title={activeSubproduct.title || activeSubproduct.name}
+                      className="w-full h-auto max-h-[500px] object-cover rounded-lg shadow-sm"
+                    />
+                  </div>
+                  <div className="space-y-6">
+                    <span className="text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 px-3 py-1.5 inline-block">
+                      {product.name}
+                    </span>
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+                      {activeSubproduct.name}
+                    </h2>
+                    <p className="text-gray-600 text-base leading-relaxed">
+                      {activeSubproduct.alt || activeSubproduct.description || `Premium quality ${activeSubproduct.name.toLowerCase()} supplied and professionally installed across Qatar by ANAM Trading & Contracting.`}
+                    </p>
 
-                  <h3 className="text-lg font-bold text-gray-900 mt-4">
-                    {prod.name}
-                  </h3>
+                    {/* Specifications */}
+                    <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4 border-t border-gray-100">
+                      {activeSubproduct.thickness && (
+                        <div className="bg-[#faf7f5] p-4 rounded-md">
+                          <span className="text-xs text-gray-400 block uppercase font-semibold">Thickness</span>
+                          <span className="text-sm font-bold text-gray-800 mt-1 block">{activeSubproduct.thickness}</span>
+                        </div>
+                      )}
+                      {activeSubproduct.warranty && (
+                        <div className="bg-[#faf7f5] p-4 rounded-md">
+                          <span className="text-xs text-gray-400 block uppercase font-semibold">Warranty</span>
+                          <span className="text-sm font-bold text-gray-800 mt-1 block">{activeSubproduct.warranty}</span>
+                        </div>
+                      )}
+                      {activeSubproduct.wearLayer && (
+                        <div className="bg-[#faf7f5] p-4 rounded-md">
+                          <span className="text-xs text-gray-400 block uppercase font-semibold">Wear Layer</span>
+                          <span className="text-sm font-bold text-gray-800 mt-1 block">{activeSubproduct.wearLayer}</span>
+                        </div>
+                      )}
+                      <div className="bg-[#faf7f5] p-4 rounded-md">
+                        <span className="text-xs text-gray-400 block uppercase font-semibold">Availability</span>
+                        <span className="text-sm font-bold text-gray-800 mt-1 block">In Stock / Doha</span>
+                      </div>
+                      <div className="bg-[#faf7f5] p-4 rounded-md">
+                        <span className="text-xs text-gray-400 block uppercase font-semibold">Installation</span>
+                        <span className="text-sm font-bold text-gray-800 mt-1 block">Turnkey Service</span>
+                      </div>
+                    </div>
 
-                  {/* Specs only for final items */}
-                  {activeSubproduct && (
-                    <div className="space-y-2 mt-4 text-sm">
-                      {prod.thickness && (
-                        <p>
-                          <strong>Thickness:</strong> {prod.thickness}
-                        </p>
-                      )}
-                      {prod.warranty && (
-                        <p>
-                          <strong>Warranty:</strong> {prod.warranty}
-                        </p>
-                      )}
-                      {prod.wearLayer && (
-                        <p>
-                          <strong>Wear Layer:</strong> {prod.wearLayer}
-                        </p>
+                    <div className="flex flex-wrap gap-4 pt-4">
+                      <a
+                        href="/contact"
+                        className="bg-primary text-white px-8 py-3.5 font-bold hover:bg-black transition uppercase text-xs tracking-widest shadow-md inline-flex items-center"
+                      >
+                        Request a Quote ↗
+                      </a>
+                      <a
+                        href="https://wa.me/97430081007"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-[#25D366] text-white px-8 py-3.5 font-bold hover:bg-[#1faa53] transition uppercase text-xs tracking-widest shadow-md inline-flex items-center gap-2"
+                      >
+                        Inquire via WhatsApp
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Related options in this product category */}
+                {product?.categories && product.categories.filter((c) => c.slug !== activeSubproduct.slug).length > 0 && (
+                  <div>
+                    <h3 className="text-2xl font-bold mb-6 text-gray-900">
+                      Other {product.name} Options
+                    </h3>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                      {product.categories
+                        .filter((c) => c.slug !== activeSubproduct.slug)
+                        .map((sibling) => (
+                          <div
+                            key={sibling.slug}
+                            onClick={() => navigate(`/products/${product.slug}/${sibling.slug}`)}
+                            className="bg-white p-4 shadow-sm border border-gray-100 transition hover:shadow-lg cursor-pointer group"
+                          >
+                            <div className="overflow-hidden h-[200px]">
+                              <img
+                                src={sibling.image || "/placeholder.jpg"}
+                                alt={sibling.alt || sibling.name}
+                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                              />
+                            </div>
+                            <h4 className="text-md font-bold text-gray-900 mt-3 group-hover:text-primary transition-colors">
+                              {sibling.name}
+                            </h4>
+                            <span className="text-xs text-primary font-semibold mt-2 inline-block">
+                              View Details →
+                            </span>
+                          </div>
+                        ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            ) : (
+              <>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                  {data?.categories?.map((prod) => (
+                    <div
+                      key={prod.slug || prod.name}
+                      onClick={() => {
+                        if (!prod.slug) return;
+                        if (isCatalogOverview) {
+                          navigate(`/products/${prod.slug}`);
+                        } else if (segments.length > 0) {
+                          navigate(`/products/${segments.join("/")}/${prod.slug}`);
+                        } else if (overrideSlug) {
+                          navigate(`/products/${overrideSlug}/${prod.slug}`);
+                        } else {
+                          navigate(`/products/${product.slug}/${prod.slug}`);
+                        }
+                      }}
+                      className="bg-white p-4 shadow-sm border border-gray-100 transition hover:shadow-lg cursor-pointer group flex flex-col justify-between"
+                    >
+                      <div>
+                        <div className="overflow-hidden h-[220px] bg-gray-100 rounded">
+                          <img
+                            src={prod.image || "/placeholder.jpg"}
+                            alt={prod.alt || prod.name}
+                            title={prod.title}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          />
+                        </div>
+                        <h3 className="text-lg font-bold text-gray-900 mt-4 group-hover:text-primary transition-colors">
+                          {prod.name}
+                        </h3>
+                      </div>
+                      <div className="mt-3 pt-2 border-t border-gray-50 flex items-center justify-between">
+                        <span className="text-xs text-primary font-bold tracking-wide group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">
+                          {prod.categories ? "Explore Options →" : "View Specifications →"}
+                        </span>
+                      </div>
+
+                      {/* Specs only for final items */}
+                      {activeSubproduct && (
+                        <div className="space-y-2 mt-4 text-sm">
+                          {prod.thickness && (
+                            <p>
+                              <strong>Thickness:</strong> {prod.thickness}
+                            </p>
+                          )}
+                          {prod.warranty && (
+                            <p>
+                              <strong>Warranty:</strong> {prod.warranty}
+                            </p>
+                          )}
+                          {prod.wearLayer && (
+                            <p>
+                              <strong>Wear Layer:</strong> {prod.wearLayer}
+                            </p>
+                          )}
+                        </div>
                       )}
                     </div>
-                  )}
+                  ))}
                 </div>
-              ))}
-            </div>
 
-            {/* CTA */}
-            <div className="flex justify-center">
-              <button className="mt-10 bg-primary text-white px-10 py-4 font-bold hover:bg-black transition uppercase text-sm tracking-widest shadow-lg">
-                Request a Quote ↗
-              </button>
-            </div>
+                {/* CTA */}
+                <div className="flex justify-center">
+                  <button className="mt-10 bg-primary text-white px-10 py-4 font-bold hover:bg-black transition uppercase text-sm tracking-widest shadow-lg">
+                    Request a Quote ↗
+                  </button>
+                </div>
+              </>
+            )}
           </div>
         </section>
         {product.slug === "wall-panels" && !activeSubproduct ? (
@@ -711,6 +854,8 @@ const ProductDetail = ({ overrideSlug }) => {
                 </div>
               </section>
             )}
+          </>
+        )}
           </>
         )}
       </main>

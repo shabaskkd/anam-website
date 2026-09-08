@@ -51,7 +51,7 @@ const ContactUs = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label className="text-sm font-semibold text-gray-700 ml-1">
-                    Firs Name
+                    First Name
                   </label>
                   <input
                     type="text"

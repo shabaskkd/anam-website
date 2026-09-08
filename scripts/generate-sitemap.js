@@ -26,6 +26,7 @@ const staticPages = [
   { path: "windows", priority: "0.9", changefreq: "weekly" },
   { path: "partitions", priority: "0.9", changefreq: "weekly" },
   { path: "ceiling-solutions", priority: "0.9", changefreq: "weekly" },
+  { path: "kitchen-wardrobe", priority: "0.9", changefreq: "weekly" },
   { path: "about", priority: "0.8", changefreq: "weekly" },
   { path: "projects", priority: "0.8", changefreq: "weekly" },
   { path: "contact", priority: "0.8", changefreq: "weekly" },
@@ -94,18 +95,7 @@ try {
   productCode = productCode.replace(/wearLayer:\s*[a-zA-Z0-9_ -.]+,/g, "");
   productCode = productCode.replace(/warranty:\s*[a-zA-Z0-9_ -.]+,/g, "");
 
-  // Create mock environment variables for any other unhandled image imports
-  const context = {
-    productData: []
-  };
 
-  // We will find categories, nested arrays, and construct nested paths.
-  // To be safe, let's parse using basic regex/JSON-like extraction
-  const evalCode = `
-    const productData = [];
-    \n${productCode}\n
-    globalThis.__products = productData;
-  `;
   
   const allImports = [...productCode.matchAll(/import\s+(\w+)/g)].map(m => m[1]);
   let declarationHeader = allImports.map(name => `const ${name} = "";`).join("\n");

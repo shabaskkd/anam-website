@@ -31,9 +31,14 @@ function App() {
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/services/:slug" element={<ServiceDetail />} />
         <Route path="/blog/:slug" element={<BlogDetail />} />
+        <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/products/*" element={<ProductDetail />} />
         <Route path="/wall-panels" element={<ProductDetail overrideSlug="wall-panels" />} />
         <Route path="/doors" element={<ProductDetail overrideSlug="doors" />} />
+        <Route path="/windows" element={<ProductDetail overrideSlug="windows" />} />
+        <Route path="/partitions" element={<ProductDetail overrideSlug="partitions" />} />
+        <Route path="/ceiling-solutions" element={<ProductDetail overrideSlug="ceiling-solutions" />} />
+        <Route path="/kitchen-wardrobe" element={<ProductDetail overrideSlug="kitchen-wardrobe" />} />
       </Routes>
 
       {/* whatsapp icon */}

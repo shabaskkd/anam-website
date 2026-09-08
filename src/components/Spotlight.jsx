@@ -45,42 +45,53 @@ const Spotlight = () => {
   const sectionRef = useRef(null);
 
   const onSlideChange = (swiper) => {
+    if (!swiper || !swiper.slides) return;
     const activeSlide = swiper.slides[swiper.activeIndex];
+    if (!activeSlide) return;
+
     const titleLines = activeSlide.querySelectorAll(".title-line");
     const descLines = activeSlide.querySelectorAll(".desc-line");
     const bgImage = activeSlide.querySelector(".bg-image");
 
     const tl = gsap.timeline();
 
-    gsap.fromTo(
-      bgImage,
-      { scale: 1.2, filter: "blur(10px) brightness(0.5)" },
-      {
-        scale: 1,
-        filter: "blur(0px) brightness(1)",
-        duration: 2,
-        ease: "power2.out",
-      },
-    );
+    if (bgImage) {
+      gsap.fromTo(
+        bgImage,
+        { scale: 1.2, filter: "blur(10px) brightness(0.5)" },
+        {
+          scale: 1,
+          filter: "blur(0px) brightness(1)",
+          duration: 2,
+          ease: "power2.out",
+        },
+      );
+    }
 
-    tl.fromTo(
-      titleLines,
-      { y: 100, rotate: 5, opacity: 0 },
-      {
-        y: 0,
-        rotate: 0,
-        opacity: 1,
-        duration: 1.2,
-        stagger: 0.15,
-        ease: "expo.out",
-      },
-      0.3,
-    ).fromTo(
-      descLines,
-      { y: 30, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1, ease: "power3.out" },
-      "-=0.8",
-    );
+    if (titleLines && titleLines.length > 0) {
+      tl.fromTo(
+        titleLines,
+        { y: 100, rotate: 5, opacity: 0 },
+        {
+          y: 0,
+          rotate: 0,
+          opacity: 1,
+          duration: 1.2,
+          stagger: 0.15,
+          ease: "expo.out",
+        },
+        0.3,
+      );
+    }
+
+    if (descLines && descLines.length > 0) {
+      tl.fromTo(
+        descLines,
+        { y: 30, opacity: 0 },
+        { y: 0, opacity: 1, duration: 1, ease: "power3.out" },
+        "-=0.8",
+      );
+    }
   };
 
   return (

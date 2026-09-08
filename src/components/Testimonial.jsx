@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import { LuStar } from "react-icons/lu";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
@@ -37,9 +37,9 @@ const testimonials = [
   },
 ];
 
+const bgImages = [IMAGES.bg_3, IMAGES.dark_bg_2, IMAGES.bg_4];
+
 const Testimonial = () => {
-  const scrollRef = useRef(null);
-  const bgImages = [IMAGES.bg_3, IMAGES.dark_bg_2, IMAGES.bg_4];
   const [bgIndex, setBgIndex] = useState(0);
 
   useEffect(() => {
@@ -50,13 +50,6 @@ const Testimonial = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const { scrollYProgress } = useScroll({
-    target: scrollRef,
-    offset: ["start end", "end start"],
-  });
-
-  const scale = useTransform(scrollYProgress, [0, 0.4], [0.7, 1]);
-  const opacity = useTransform(scrollYProgress, [0, 0.3], [0, 1]);
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
@@ -123,7 +116,7 @@ const Testimonial = () => {
 
         <div className="w-1/2 items-center">
           {/* Right Side (Swiper Testimonials) */}
-          <div
+          <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -177,7 +170,7 @@ const Testimonial = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

@@ -29,43 +29,43 @@ const AboutSection = () => {
                 <br />
               </h2>
               <p className="text-gray-600 max-w-xl leading-relaxed">
-                Welcome to Anam Trading and Contracting, a pioneering venture of
-                Aspire Furniture, established in Qatar in 2012. With a passion
-                for delivering exceptional interior solutions, we’ve grown into
-                a leading provider of premium products and services for
-                residential and commercial spaces. <br />
-                <br /> Anam Trading and Contracting, a venture of Aspire Blinds,
-                is your go-to provider for high-quality finishing and
-                landscaping solutions in Qatar. We specialize in a wide range of
-                products, including parquet flooring, SPC flooring, wall panels,
-                WPC and wooden doors, curtains, and blinds. <br />
+                Welcome to ANAM Trading and Contracting, established in Qatar in
+                2012. With a passion for delivering exceptional interior and
+                architectural finishing solutions, we have grown into a leading
+                provider of premium products and services for residential,
+                commercial, and hospitality spaces across Qatar. <br />
+                <br /> We specialize in a wide range of premium products and
+                turnkey fit-out solutions, including custom kitchen cabinets,
+                wardrobes, parquet and SPC flooring, decorative wall panels,
+                WPC and wooden doors, partitions, ceilings, curtains, and blinds. <br />
                 <br />
-                Founded on the principles of quality, innovation, and customer
-                satisfaction, Anam Trading and Contracting has built a
-                reputation for excellence. Our journey began with a simple
-                vision: to transform spaces, enhance lives. Today, we’re proud
-                to offer a comprehensive range of interior solutions, tailored
-                to meet the unique needs of our clients.
+                Founded on the principles of quality, innovation, and client
+                satisfaction, ANAM Trading and Contracting has built an enduring
+                reputation for excellence. Our journey began with a clear
+                vision: to transform spaces and enhance lives. Today, we take pride
+                in offering comprehensive, tailor-made interior solutions designed
+                to meet the exact requirements of every client.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pt-12 lg:pt-0">
               <div>
                 <h4 className="text-xl font-bold mb-4">Mission</h4>
                 <p className="text-gray-500 text-sm leading-relaxed">
-                  ANAM group is committed to make the world better place through
-                  innovative business which provide inspiration for luxury ( or
-                  better ) living. having the largest /(best) collection of
-                  trend setting decors for floor, wall, sanitary wares products
-                  and building materials by the world’s best house, Anam carries
-                  a mission to serve the customers better forever.
+                  ANAM is committed to elevating interior spaces through
+                  innovative solutions and premium craftsmanship that inspire modern
+                  living. By bringing together the finest collections of trendsetting
+                  decors for floors, walls, doors, and architectural finishing from
+                  world-class manufacturers, ANAM is dedicated to delivering excellence
+                  and enduring customer satisfaction.
                 </p>
               </div>
               <div>
                 <h4 className="text-xl font-bold mb-4">Vision</h4>
                 <p className="text-gray-500 text-sm leading-relaxed">
-                  At ANAM constructions, our focus is on YOU and what YOU want
-                  to achieve. we provide ourselves on forging strong, lasting
-                  relationship which help us to continue to thrive and develop.
+                  At ANAM Trading and Contracting, our focus is on you and the vision
+                  you want to achieve. We pride ourselves on forging strong, lasting
+                  client partnerships built on trust, transparency, and top-tier execution
+                  that help us continuously innovate and lead the industry.
                 </p>
               </div>
             </div>

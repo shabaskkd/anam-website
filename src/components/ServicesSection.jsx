@@ -25,17 +25,17 @@ const ServiceSection = () => {
             <p className="text-zinc-400 text-md md:text-lg leading-relaxed max-w-2xl">
               Welcome to{" "}
               <span className="text-primary font-semibold ">
-                ANAM Trading Company
+                ANAM Trading &amp; Contracting
               </span>
-              , your trusted partner for over 30 years in elevating living and
-              working environments. Specializing in premium interior planning,
+              , your trusted partner for over 10+ years in elevating living and
+              working environments across Qatar. Specializing in premium interior planning,
               architectural design, and high-end finishes, we ensure every space
               is crafted for both beauty and lasting durability.
             </p>
             <p className="text-zinc-400 text-md md:text-lg leading-relaxed max-w-2xl">
-              At ANAM constructions, our focus is on YOU and what YOU want to
-              achieve. we provide ourselves on forging strong, lasting
-              relationship which help us to continue to thrive and develop.
+              At ANAM Trading &amp; Contracting, our focus is on you and what you want to
+              achieve. We pride ourselves on forging strong, lasting
+              relationships that help us to continue to thrive and develop.
             </p>
 
             <button className="bg-[#5a0f2f] hover:bg-[#4B0B22] text-white px-8 py-4 font-bold transition-all group">

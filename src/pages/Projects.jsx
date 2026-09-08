@@ -1,9 +1,16 @@
 import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import Layout from "../components/Layout";
 import { projectsData } from "../data/projectsData";
 
-const categories = ["All", "Interior", "Doors", "Wallpaper", "Lighting"];
+const categories = [
+  "All",
+  "Interior",
+  "Doors",
+  "Kitchen & Wardrobe",
+  "Partitions",
+  "Ceiling & Lighting",
+];
 
 const ProjectsPage = () => {
   const [activeTab, setActiveTab] = useState("All");

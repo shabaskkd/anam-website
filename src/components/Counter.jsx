@@ -29,9 +29,9 @@ const Counter = () => {
 
       cards.forEach((card) => {
         const numberElement = card.querySelector(".count-up");
-        const { number, symbol } = getNumberAndSymbol(
-          numberElement.getAttribute("data-target"),
-        );
+        if (!numberElement) return;
+        const targetVal = numberElement.getAttribute("data-target") || "0";
+        const { number, symbol } = getNumberAndSymbol(targetVal);
 
         // Target object for GSAP to animate
         const countObj = { val: 0 };
