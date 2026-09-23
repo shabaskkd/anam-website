@@ -46,6 +46,17 @@ const Spotlight = () => {
 
   const onSlideChange = (swiper) => {
     if (!swiper || !swiper.slides) return;
+
+    // Reset non-active slides to prevent overlapping text
+    swiper.slides.forEach((slide, idx) => {
+      if (idx !== swiper.activeIndex) {
+        const otherTitles = slide.querySelectorAll(".title-line");
+        const otherDescs = slide.querySelectorAll(".desc-line");
+        gsap.set(otherTitles, { opacity: 0, y: 50 });
+        gsap.set(otherDescs, { opacity: 0, y: 25 });
+      }
+    });
+
     const activeSlide = swiper.slides[swiper.activeIndex];
     if (!activeSlide) return;
 
@@ -102,6 +113,7 @@ const Spotlight = () => {
       <Swiper
         modules={[Autoplay, EffectFade, Pagination, Navigation]}
         effect="fade"
+        fadeEffect={{ crossFade: true }}
         speed={1200}
         autoplay={{ delay: 6000, disableOnInteraction: false }}
         onSlideChange={onSlideChange}
@@ -128,14 +140,14 @@ const Spotlight = () => {
                 <h1 className="text-white text-3xl md:text-5xl font-bold leading-[1.1em] mt-4">
                   {slide.title.map((line, idx) => (
                     <span key={idx} className="block overflow-hidden">
-                      <span className="title-line block text-[#fff]">
+                      <span className="title-line block text-[#fff] opacity-0">
                         {line}
                       </span>
                     </span>
                   ))}
                 </h1>
 
-                <p className="desc-line mt-6 text-[#fff] text-md md:text-lg leading-relaxed max-w-xl">
+                <p className="desc-line mt-6 text-[#fff] text-md md:text-lg leading-relaxed max-w-xl opacity-0">
                   {slide.desc}
                 </p>
 

@@ -202,12 +202,12 @@ const ProductDetail = ({ overrideSlug }) => {
           <meta name="keywords" content="Windows Providers in Doha Qatar, Window Supplier Qatar, Aluminium Windows Qatar, UPVC Windows Qatar, Sliding Windows Qatar, Casement Windows Qatar, Window Installation Doha, Commercial Windows Qatar, Residential Windows Qatar, ANAM Qatar" />
           <meta name="author" content="ANAM Qatar" />
           <meta name="robots" content="index, follow" />
-          <link rel="canonical" href="https://anamqatar.com/products/windows" />
+          <link rel="canonical" href="https://anamqatar.com/windows" />
 
           {/* Open Graph Tags */}
           <meta property="og:title" content="Windows Providers in Doha Qatar | Premium Window Supplier" />
           <meta property="og:description" content="ANAM Qatar is a trusted Windows Provider in Doha Qatar. High-quality UPVC windows and aluminium windows for residential and commercial spaces." />
-          <meta property="og:url" content="https://anamqatar.com/products/windows" />
+          <meta property="og:url" content="https://anamqatar.com/windows" />
           <meta property="og:type" content="website" />
           <meta property="og:site_name" content="ANAM Qatar" />
           <meta property="og:image" content="https://anamqatar.com/images/windows-hero-qatar.webp" />
@@ -277,12 +277,12 @@ const ProductDetail = ({ overrideSlug }) => {
           <meta name="keywords" content="Premium Kitchen Cabinets Qatar, Wardrobes Qatar, Interiors Qatar, Kitchen Cabinets in Qatar, Kitchen Wardrobe Qatar, Custom Wardrobes Qatar, Modular Kitchen Cabinets Qatar, Interior Solutions Qatar, Kitchen Cabinets Doha, Wardrobe Installation Qatar, ANAM Qatar" />
           <meta name="author" content="ANAM Qatar" />
           <meta name="robots" content="index, follow" />
-          <link rel="canonical" href="https://anamqatar.com/products/kitchen-wardrobe" />
+          <link rel="canonical" href="https://anamqatar.com/kitchen-wardrobe" />
 
           {/* Open Graph Tags */}
           <meta property="og:title" content="Premium Kitchen Cabinets, Wardrobes & Interiors in Qatar | ANAM Qatar" />
           <meta property="og:description" content="Get stylish kitchen cabinets, custom wardrobes, and premium interior solutions in Qatar from ANAM Qatar with expert design and installation services." />
-          <meta property="og:url" content="https://anamqatar.com/products/kitchen-wardrobe" />
+          <meta property="og:url" content="https://anamqatar.com/kitchen-wardrobe" />
           <meta property="og:type" content="website" />
           <meta property="og:site_name" content="ANAM Qatar" />
           <meta property="og:image" content="https://anamqatar.com/images/premium-kitchen-cabinets-qatar.webp" />
