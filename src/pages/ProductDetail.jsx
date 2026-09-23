@@ -9,6 +9,8 @@ import WindowsSection from "../components/WindowsSection";
 import PartitionsSection from "../components/PartitionsSection";
 import CeilingSolutionsSection from "../components/CeilingSolutionsSection";
 import KitchenWardrobeSection from "../components/KitchenWardrobeSection";
+import FlooringHero from "../components/FlooringHero";
+import ProductHero from "../components/ProductHero";
 
 const findNodeAndAncestors = (nodes, targetSlug, ancestors = []) => {
   for (const node of nodes) {
@@ -145,34 +147,34 @@ const ProductDetail = ({ overrideSlug }) => {
     <Layout withBg>
       {product.slug === "wall-panels" && (
         <Helmet>
-          <title>Wall Panels in Qatar | Wall Cladding & Decorative Wall Panels | ANAM Qatar</title>
-          <meta name="title" content="Wall Panels in Qatar | Wall Cladding & Decorative Wall Panels | ANAM Qatar" />
+          <title>Wall Panels in Qatar: Top Wall Cladding Supplier</title>
+          <meta name="title" content="Wall Panels in Qatar: Top Wall Cladding Supplier" />
           <meta name="description" content="ANAM Qatar provides premium wall panels, wall cladding and decorative wall panels for residential and commercial spaces in Qatar." />
-          <meta name="keywords" content="Wall Panels in Qatar, Wall Cladding Supplier Doha, Wall Cladding Qatar, Decorative Wall Panels Qatar, Interior Wall Panels Doha" />
+          <meta name="keywords" content="Wall Panels in Qatar, Wall Cladding Supplier Doha, Wall Cladding Qatar, Decorative Wall Panels Qatar, Interior Wall Panels Doha, ANAM Qatar" />
           <meta name="robots" content="index, follow" />
           <link rel="canonical" href="https://anamqatar.com/wall-panels" />
 
           {/* Open Graph / Facebook / WhatsApp */}
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://anamqatar.com/wall-panels" />
-          <meta property="og:title" content="Wall Panels in Qatar | Wall Cladding & Decorative Wall Panels | ANAM Qatar" />
+          <meta property="og:title" content="Wall Panels in Qatar: Top Wall Cladding Supplier" />
           <meta property="og:description" content="ANAM Qatar provides premium wall panels, wall cladding and decorative wall panels for residential and commercial spaces in Qatar." />
           <meta property="og:image" content="https://anamqatar.com/images/wall-panels-qatar.webp" />
 
           {/* Twitter Card */}
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:url" content="https://anamqatar.com/wall-panels" />
-          <meta name="twitter:title" content="Wall Panels in Qatar | Wall Cladding & Decorative Wall Panels | ANAM Qatar" />
+          <meta name="twitter:title" content="Wall Panels in Qatar: Top Wall Cladding Supplier" />
           <meta name="twitter:description" content="ANAM Qatar provides premium wall panels, wall cladding and decorative wall panels for residential and commercial spaces in Qatar." />
           <meta name="twitter:image" content="https://anamqatar.com/images/wall-panels-qatar.webp" />
         </Helmet>
       )}
       {product.slug === "doors" && (
         <Helmet>
-          <title>Doors in Qatar | Premium Wooden, Aluminium, WPC & UPVC Doors | ANAM</title>
-          <meta name="title" content="Doors in Qatar | Premium Wooden, Aluminium, WPC & UPVC Doors | ANAM" />
+          <title>Doors in Qatar | Premium Door Supplier|</title>
+          <meta name="title" content="Doors in Qatar | Premium Door Supplier|" />
           <meta name="description" content="ANAM Qatar provides premium wooden, aluminium, WPC and UPVC doors for residential and commercial spaces across Qatar with modern designs and professional installation." />
-          <meta name="keywords" content="Doors in Qatar, Door Supplier Qatar, Door Suppliers Doha, Wooden Doors Qatar, Aluminium Doors Qatar, WPC Doors Qatar, UPVC Doors Qatar, Interior Doors Qatar, Exterior Doors Qatar, Premium Doors Qatar, Modern Doors Qatar, Residential Doors Qatar, Commercial Doors Qatar, Door Installation Qatar, ANAM Qatar" />
+          <meta name="keywords" content="Doors in Qatar, Door Supplier Qatar, Door Suppliers Doha, Wooden Doors Qatar, Aluminium Doors Qatar, WPC Doors Qatar, UPVC Doors Qatar, Interior Doors Qatar, Exterior Doors Qatar, Premium Doors Qatar, Modern Doors Qatar, Residential Doors Qatar, Commercial Doors Qatar, Door Installation Qatar, ANAM" />
           <meta name="author" content="ANAM" />
           <meta name="robots" content="index, follow" />
           <link rel="canonical" href="https://anamqatar.com/doors" />
@@ -180,30 +182,30 @@ const ProductDetail = ({ overrideSlug }) => {
           {/* Open Graph / Facebook / WhatsApp */}
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://anamqatar.com/doors" />
-          <meta property="og:title" content="Doors in Qatar | Premium Wooden, Aluminium, WPC & UPVC Doors | ANAM" />
+          <meta property="og:title" content="Doors in Qatar | Premium Door Supplier|" />
           <meta property="og:description" content="ANAM Qatar provides premium wooden, aluminium, WPC and UPVC doors for residential and commercial spaces across Qatar with modern designs and professional installation." />
           <meta property="og:image" content="https://anamqatar.com/images/doors-qatar.webp" />
 
           {/* Twitter Card */}
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:url" content="https://anamqatar.com/doors" />
-          <meta name="twitter:title" content="Doors in Qatar | Premium Wooden, Aluminium, WPC & UPVC Doors | ANAM" />
+          <meta name="twitter:title" content="Doors in Qatar | Premium Door Supplier|" />
           <meta name="twitter:description" content="ANAM Qatar provides premium wooden, aluminium, WPC and UPVC doors for residential and commercial spaces across Qatar with modern designs and professional installation." />
           <meta name="twitter:image" content="https://anamqatar.com/images/doors-qatar.webp" />
         </Helmet>
       )}
       {product.slug === "windows" && (
         <Helmet>
-          <title>Windows Providers in Doha Qatar | UPVC & Aluminium Windows | ANAM Qatar</title>
-          <meta name="title" content="Windows Providers in Doha Qatar | UPVC & Aluminium Windows | ANAM Qatar" />
+          <title>Windows Providers in Doha Qatar | Premium Window Supplier</title>
+          <meta name="title" content="Windows Providers in Doha Qatar | Premium Window Supplier" />
           <meta name="description" content="ANAM Qatar is a trusted Windows Provider in Doha Qatar, offering high-quality Aluminium and UPVC windows for residential and commercial projects with expert installation." />
-          <meta name="keywords" content="Windows Providers in Doha Qatar, Windows Provider in Doha Qatar, Window Supplier Qatar, UPVC Windows Qatar, Aluminium Windows Qatar, Sliding Windows Qatar, Casement Windows Qatar, Window Installation Doha, ANAM Qatar" />
+          <meta name="keywords" content="Windows Providers in Doha Qatar, Window Supplier Qatar, Aluminium Windows Qatar, UPVC Windows Qatar, Sliding Windows Qatar, Casement Windows Qatar, Window Installation Doha, Commercial Windows Qatar, Residential Windows Qatar, ANAM Qatar" />
           <meta name="author" content="ANAM Qatar" />
           <meta name="robots" content="index, follow" />
           <link rel="canonical" href="https://anamqatar.com/products/windows" />
 
           {/* Open Graph Tags */}
-          <meta property="og:title" content="Windows Providers in Doha Qatar | UPVC & Aluminium Windows | ANAM Qatar" />
+          <meta property="og:title" content="Windows Providers in Doha Qatar | Premium Window Supplier" />
           <meta property="og:description" content="ANAM Qatar is a trusted Windows Provider in Doha Qatar. High-quality UPVC windows and aluminium windows for residential and commercial spaces." />
           <meta property="og:url" content="https://anamqatar.com/products/windows" />
           <meta property="og:type" content="website" />
@@ -212,23 +214,23 @@ const ProductDetail = ({ overrideSlug }) => {
 
           {/* Twitter Card Tags */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Windows Providers in Doha Qatar | UPVC & Aluminium Windows | ANAM Qatar" />
+          <meta name="twitter:title" content="Windows Providers in Doha Qatar | Premium Window Supplier" />
           <meta name="twitter:description" content="ANAM Qatar is a trusted Windows Provider in Doha Qatar, offering durable UPVC windows and aluminium windows with expert installation." />
           <meta name="twitter:image" content="https://anamqatar.com/images/windows-hero-qatar.webp" />
         </Helmet>
       )}
       {product.slug === "partitions" && (
         <Helmet>
-          <title>Partition Services in Qatar | Glass, Gypsum & Aluminium Partitions | ANAM Qatar</title>
-          <meta name="title" content="Partition Services in Qatar | Glass, Gypsum & Aluminium Partitions | ANAM Qatar" />
+          <title>Partition Services in Qatar | Office & Glass Partitions</title>
+          <meta name="title" content="Partition Services in Qatar | Office & Glass Partitions" />
           <meta name="description" content="ANAM Qatar provides professional Partition Services in Qatar. High-quality glass, gypsum, and aluminium partitions for offices, commercial spaces, and residential interiors." />
-          <meta name="keywords" content="Partition Services in Qatar, Partition Services Qatar, Office Partition Qatar, Glass Partition Qatar, Gypsum Partition Qatar, Aluminium Partition Qatar, Commercial Partition Qatar, Residential Partition Qatar, Interior Partition Doha, Partition Installation Qatar, ANAM Qatar" />
+          <meta name="keywords" content="Partition Services in Qatar, Office Partition Qatar, Glass Partition Qatar, Gypsum Partition Qatar, Aluminium Partition Qatar, Commercial Partition Qatar, Residential Partition Qatar, Interior Partition Doha, Partition Installation Qatar, ANAM Qatar" />
           <meta name="author" content="ANAM Qatar" />
           <meta name="robots" content="index, follow" />
           <link rel="canonical" href="https://anamqatar.com/products/partitions" />
 
           {/* Open Graph Tags */}
-          <meta property="og:title" content="Partition Services in Qatar | Glass, Gypsum & Aluminium Partitions | ANAM Qatar" />
+          <meta property="og:title" content="Partition Services in Qatar | Office & Glass Partitions" />
           <meta property="og:description" content="ANAM Qatar provides professional Partition Services in Qatar for offices, commercial spaces, and homes with expert installation." />
           <meta property="og:url" content="https://anamqatar.com/products/partitions" />
           <meta property="og:type" content="website" />
@@ -237,15 +239,15 @@ const ProductDetail = ({ overrideSlug }) => {
 
           {/* Twitter Card Tags */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Partition Services in Qatar | Glass, Gypsum & Aluminium Partitions | ANAM Qatar" />
+          <meta name="twitter:title" content="Partition Services in Qatar | Office & Glass Partitions" />
           <meta name="twitter:description" content="ANAM Qatar offers glass, gypsum, and aluminium partition services in Qatar for modern office and residential interiors." />
           <meta name="twitter:image" content="https://anamqatar.com/images/partition-services-qatar.webp" />
         </Helmet>
       )}
       {product.slug === "curtain-and-blinds" && (
         <Helmet>
-          <title>Curtain and Blinds Sell & Installation Qatar | Luxury Curtains | ANAM Qatar</title>
-          <meta name="title" content="Curtain and Blinds Sell & Installation Qatar | Luxury Curtains | ANAM Qatar" />
+          <title>Curtain and Blinds Sale & Installation Qatar | Luxury Curtains | ANAM Qatar</title>
+          <meta name="title" content="Curtain and Blinds Sale & Installation Qatar | Luxury Curtains | ANAM Qatar" />
           <meta name="description" content="ANAM Qatar offers professional curtain and blinds sell & installation services in Qatar. We supply and install blackout blinds, luxury curtains, motorized blinds, Roman blinds, Venetian blinds, vertical blinds, sunscreen blinds, curtain track & rail systems, and PVC strip curtains for residential and commercial spaces." />
           <meta name="keywords" content="Curtain and Blinds Sell & Installation Qatar, Curtains Qatar, Blinds Qatar, Luxury Curtains Qatar, Blackout Blinds Qatar, Motorized Blinds Qatar, Roman Blinds Qatar, Venetian Blinds Qatar, Vertical Blinds Qatar, Sunscreen Blinds Qatar, Curtain Track Qatar, Curtain Rail System Qatar, PVC Strip Curtain Qatar, Window Blinds Doha, Curtain Installation Qatar, ANAM Qatar" />
           <meta name="author" content="ANAM Qatar" />
@@ -253,7 +255,7 @@ const ProductDetail = ({ overrideSlug }) => {
           <link rel="canonical" href="https://anamqatar.com/products/curtains-and-blinds" />
 
           {/* Open Graph Tags */}
-          <meta property="og:title" content="Curtain and Blinds Sell & Installation Qatar | ANAM Qatar" />
+          <meta property="og:title" content="Curtain and Blinds Sale & Installation Qatar | Luxury Curtains | ANAM Qatar" />
           <meta property="og:description" content="Premium curtain and blinds solutions in Qatar including luxury curtains, blackout blinds, motorized blinds, Roman blinds, Venetian blinds, vertical blinds, sunscreen blinds, curtain tracks, rail systems, and PVC strip curtains." />
           <meta property="og:url" content="https://anamqatar.com/products/curtains-and-blinds" />
           <meta property="og:type" content="website" />
@@ -262,7 +264,7 @@ const ProductDetail = ({ overrideSlug }) => {
 
           {/* Twitter Card Tags */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Curtain and Blinds Sell & Installation Qatar | ANAM Qatar" />
+          <meta name="twitter:title" content="Curtain and Blinds Sale & Installation Qatar | Luxury Curtains | ANAM Qatar" />
           <meta name="twitter:description" content="Professional curtain and blinds supply & installation services in Qatar. Luxury curtains, blackout blinds, motorized blinds, Roman blinds, Venetian blinds, vertical blinds, sunscreen blinds, curtain tracks, and PVC strip curtains." />
           <meta name="twitter:image" content="https://anamqatar.com/images/curtains-blinds-qatar.webp" />
         </Helmet>
@@ -322,7 +324,7 @@ const ProductDetail = ({ overrideSlug }) => {
           <title>Carpentry Accessories in Qatar | Handles, Hinges & Locks | ANAM Qatar</title>
           <meta name="title" content="Carpentry Accessories in Qatar | Handles, Hinges & Locks | ANAM Qatar" />
           <meta name="description" content="Looking for premium carpentry accessories in Qatar? ANAM Qatar supplies high-quality handles, hinges, locks, and hardware accessories for residential, commercial, and industrial woodworking projects." />
-          <meta name="keywords" content="Carpentry Accessories in Qatar, Carpentry Accessories Qatar, Door Handles Qatar, Cabinet Handles Qatar, Hinges Qatar, Door Hinges Qatar, Cabinet Hinges Qatar, Door Locks Qatar, Cabinet Locks Qatar, Furniture Hardware Qatar" />
+          <meta name="keywords" content="Looking for premium carpentry accessories in Qatar? ANAM Qatar supplies high-quality handles, hinges, locks, and hardware accessories for residential, commercial, and industrial woodworking" />
           <meta name="author" content="ANAM Qatar" />
           <meta name="robots" content="index, follow" />
           <meta name="language" content="English" />
@@ -331,7 +333,7 @@ const ProductDetail = ({ overrideSlug }) => {
 
           {/* Open Graph Tags */}
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Carpentry Accessories in Qatar | ANAM Qatar" />
+          <meta property="og:title" content="Carpentry Accessories in Qatar | Handles, Hinges & Locks | ANAM Qatar" />
           <meta property="og:description" content="ANAM Qatar offers premium carpentry accessories including handles, hinges, locks, and furniture hardware for homes, offices, hotels, and commercial projects across Qatar." />
           <meta property="og:url" content="https://anamqatar.com/products/carpentry-accessories" />
           <meta property="og:site_name" content="ANAM Qatar" />
@@ -339,7 +341,7 @@ const ProductDetail = ({ overrideSlug }) => {
 
           {/* Twitter Card Tags */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Carpentry Accessories in Qatar | ANAM Qatar" />
+          <meta name="twitter:title" content="Carpentry Accessories in Qatar | Handles, Hinges & Locks | ANAM Qatar" />
           <meta name="twitter:description" content="Premium handles, hinges, locks, and carpentry hardware solutions in Qatar." />
           <meta name="twitter:image" content="https://anamqatar.com/images/carpentry-accessories-qatar.webp" />
         </Helmet>
@@ -349,7 +351,7 @@ const ProductDetail = ({ overrideSlug }) => {
           <title>Ceiling Solutions in Qatar | Acoustic, Aluminium, Wooden & PVC Gypsum Ceilings | ANAM Qatar</title>
           <meta name="title" content="Ceiling Solutions in Qatar | Acoustic, Aluminium, Wooden & PVC Gypsum Ceilings | ANAM Qatar" />
           <meta name="description" content="ANAM Qatar provides professional Ceiling Solutions in Qatar, including acoustic ceilings, aluminium ceilings, wooden ceilings, mineral fibre ceilings, fibreglass ceilings, and PVC gypsum ceilings for residential and commercial spaces." />
-          <meta name="keywords" content="Ceiling Solutions in Qatar, Ceiling Solutions Qatar, Acoustic Ceilings in Qatar, Aluminium Ceilings in Qatar, Wooden Ceilings in Qatar, Mineral Fibre Ceilings in Qatar, Fibreglass Ceilings in Qatar, PVC Gypsum Ceilings in Qatar, Commercial Ceiling Solutions Qatar, Residential Ceiling Solutions Qatar, False Ceiling Qatar, ANAM Qatar" />
+          <meta name="keywords" content="Professional ceiling solutions including acoustic ceilings, aluminium ceilings, wooden ceilings, mineral fibre ceilings, fibreglass ceilings, and PVC gypsum ceilings across Qatar" />
           <meta name="author" content="ANAM Qatar" />
           <meta name="robots" content="index, follow" />
           <meta name="language" content="English" />
@@ -358,7 +360,7 @@ const ProductDetail = ({ overrideSlug }) => {
 
           {/* Open Graph Tags */}
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Ceiling Solutions in Qatar | ANAM Qatar" />
+          <meta property="og:title" content="Ceiling Solutions in Qatar | Acoustic, Aluminium, Wooden & PVC Gypsum Ceilings | ANAM Qatar" />
           <meta property="og:description" content="ANAM Qatar provides professional Ceiling Solutions in Qatar, including acoustic ceilings, aluminium ceilings, wooden ceilings, mineral fibre ceilings, fibreglass ceilings, and PVC gypsum ceilings." />
           <meta property="og:url" content="https://anamqatar.com/products/ceiling-solutions" />
           <meta property="og:site_name" content="ANAM Qatar" />
@@ -367,7 +369,7 @@ const ProductDetail = ({ overrideSlug }) => {
 
           {/* Twitter Card Tags */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Ceiling Solutions in Qatar | ANAM Qatar" />
+          <meta name="twitter:title" content="Ceiling Solutions in Qatar | Acoustic, Aluminium, Wooden & PVC Gypsum Ceilings | ANAM Qatar" />
           <meta name="twitter:description" content="ANAM Qatar provides professional Ceiling Solutions in Qatar for homes, offices and commercial projects." />
           <meta name="twitter:image" content="https://anamqatar.com/images/ceiling-solutions-qatar.webp" />
         </Helmet>
@@ -384,14 +386,14 @@ const ProductDetail = ({ overrideSlug }) => {
 
           {/* Open Graph Tags */}
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Profile & Accessories in Qatar | Decorative Profiles & Skirting | ANAM Qatar" />
+          <meta property="og:title" content="Profile & Accessories in Qatar | Decorative Profiles, Skirting & Tile Finishing | ANAM Qatar" />
           <meta property="og:description" content="Discover premium profile & accessories in Qatar, including decorative profiles, skirting profiles, stair nosing, safety profiles, and tile finishing profiles from ANAM Qatar." />
           <meta property="og:url" content="https://anamqatar.com/products/profile-accessories" />
           <meta property="og:site_name" content="ANAM Qatar" />
 
           {/* Twitter Card Tags */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Profile & Accessories in Qatar | ANAM Qatar" />
+          <meta name="twitter:title" content="Profile & Accessories in Qatar | Decorative Profiles, Skirting & Tile Finishing | ANAM Qatar" />
           <meta name="twitter:description" content="ANAM Qatar supplies premium decorative profiles, skirting profiles, stair step nosing, safety profiles, and tile finishing profiles across Qatar." />
         </Helmet>
       )}
@@ -407,14 +409,14 @@ const ProductDetail = ({ overrideSlug }) => {
 
           {/* Open Graph Tags */}
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Wood Materials in Qatar | MDF, HPL & Chipboard | ANAM Qatar" />
+          <meta property="og:title" content="Wood Materials in Qatar | MDF, HPL & Chipboard Supplier | ANAM Qatar" />
           <meta property="og:description" content="Explore premium MDF boards, HPL sheets, and chipboards in Qatar from ANAM Qatar for furniture, carpentry, cabinetry, and interior applications." />
           <meta property="og:url" content="https://anamqatar.com/products/wood-materials" />
           <meta property="og:site_name" content="ANAM Qatar" />
 
           {/* Twitter Card Tags */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Wood Materials in Qatar | MDF, HPL & Chipboard | ANAM Qatar" />
+          <meta name="twitter:title" content="Wood Materials in Qatar | MDF, HPL & Chipboard Supplier | ANAM Qatar" />
           <meta name="twitter:description" content="ANAM Qatar supplies high-quality MDF, HPL, and chipboard materials for furniture, cabinetry, carpentry, and interior projects across Qatar." />
         </Helmet>
       )}
@@ -430,14 +432,14 @@ const ProductDetail = ({ overrideSlug }) => {
 
           {/* Open Graph Tags */}
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Shades Manufacturers in Qatar | HDPE Shades & Modern Pergolas | ANAM Qatar" />
+          <meta property="og:title" content="Shades Manufacturers in Qatar | HDPE, Kwik Span Shades & Modern Pergolas | ANAM Qatar" />
           <meta property="og:description" content="Explore premium HDPE shades, Kwik Span shades, and modern pergola solutions in Qatar from ANAM Qatar with professional manufacturing and installation services." />
           <meta property="og:url" content="https://anamqatar.com/products/shades" />
           <meta property="og:site_name" content="ANAM Qatar" />
 
           {/* Twitter Card Tags */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Shades Manufacturers in Qatar | ANAM Qatar" />
+          <meta name="twitter:title" content="Shades Manufacturers in Qatar | HDPE, Kwik Span Shades & Modern Pergolas | ANAM Qatar" />
           <meta name="twitter:description" content="ANAM Qatar manufactures and installs HDPE shades, Kwik Span shades, and modern pergolas for residential and commercial outdoor spaces across Qatar." />
         </Helmet>
       )}
@@ -460,7 +462,7 @@ const ProductDetail = ({ overrideSlug }) => {
 
           {/* Twitter Card Tags */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Fencing Products in Qatar | ANAM Qatar" />
+          <meta name="twitter:title" content="Fencing Products in Qatar | WPC, PVC & Chain Link Fencing | ANAM Qatar" />
           <meta name="twitter:description" content="ANAM Qatar supplies and installs WPC, PVC, and PVC-coated chain link fencing for villas, gardens, and commercial spaces across Qatar." />
         </Helmet>
       )}
@@ -499,14 +501,14 @@ const ProductDetail = ({ overrideSlug }) => {
 
           {/* Open Graph Tags */}
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Best Aluminium Company in Qatar | ANAM Qatar" />
+          <meta property="og:title" content="Best Aluminium Company in Qatar | Doors, Windows & Partitions | ANAM" />
           <meta property="og:description" content="Explore modern aluminium doors, windows, partitions, and ceiling solutions in Qatar with professional supply, fabrication, and installation services from ANAM." />
           <meta property="og:url" content="https://anamqatar.com/products/aluminum" />
           <meta property="og:site_name" content="ANAM Qatar" />
 
           {/* Twitter Card Tags */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Best Aluminium Company in Qatar | Doors, Windows & Partitions" />
+          <meta name="twitter:title" content="Best Aluminium Company in Qatar | Doors, Windows & Partitions | ANAM" />
           <meta name="twitter:description" content="ANAM Qatar supplies and installs premium aluminium doors, windows, partitions, and ceiling systems for residential and commercial properties." />
         </Helmet>
       )}
@@ -536,53 +538,87 @@ const ProductDetail = ({ overrideSlug }) => {
       <main>
         {product.slug === "kitchen-wardrobe" && !activeSubproduct ? (
           <KitchenWardrobeSection />
+        ) : product.slug === "windows" && !activeSubproduct ? (
+          <WindowsSection />
+        ) : product.slug === "partitions" && !activeSubproduct ? (
+          <PartitionsSection />
+        ) : product.slug === "ceiling-solutions" && !activeSubproduct ? (
+          <CeilingSolutionsSection />
+        ) : product.slug === "wall-panels" && !activeSubproduct ? (
+          <WallPanelsSection />
+        ) : product.slug === "doors" && !activeSubproduct ? (
+          <DoorsSection />
         ) : (
           <>
-            {/* Hero Section */}
-            <section
-          className="relative h-[60vh] flex items-center px-10 bg-cover bg-center bg-gray-900"
-          style={{
-            backgroundImage: `url(${activeSubproduct?.image ||
-              product.image ||
-              "https://plus.unsplash.com/premium_photo-1683129627035-e5a145c3d705"
-              })`,
-          }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-t from-[#5a0f2f]/80 to-transparent" />
-          <div className="z-10 max-w-7xl mx-auto w-full absolute bottom-12 text-center left-1/2 -translate-x-1/2">
-            {(activeSubproduct || isFilterView) && (
-              <button
-                onClick={() => {
-                  if (isFilterView) {
-                    navigate("/");
-                  } else {
-                    const parentSegments = segments.slice(0, -1);
-                    navigate(`/products/${parentSegments.join("/")}`);
+            {/* Top Hero Section */}
+            {!activeSubproduct ? (
+              product.slug === "flooring" ? (
+                <FlooringHero />
+              ) : (
+                <ProductHero
+                  title={product.name}
+                  categoryTag={`Premium ${product.name} Solutions`}
+                  description={
+                    product.description ||
+                    `ANAM Qatar provides high-quality ${product.name.toLowerCase()} solutions for residential and commercial spaces across Qatar.`
                   }
+                  image={product.image}
+                  badgeTitle={`${product.name} Specialists`}
+                  badgeSubtitle="Doha, Qatar"
+                  ctaText={`Explore ${product.name}`}
+                  ctaLink={product.slug === "flooring" ? "#flooring-categories" : "#product-categories"}
+                />
+              )
+            ) : (
+              /* Subproduct Breadcrumb Hero */
+              <section
+                className="relative h-[50vh] min-h-[380px] flex items-center px-6 md:px-10 bg-cover bg-center bg-gray-900"
+                style={{
+                  backgroundImage: `url(${
+                    activeSubproduct?.image ||
+                    product.image ||
+                    "https://plus.unsplash.com/premium_photo-1683129627035-e5a145c3d705"
+                  })`,
                 }}
-                className="mb-6 text-sm font-bold text-white cursor-pointer"
               >
-                ← Back to {isFilterView ? "Home" : "Categories"}
-              </button>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#5a0f2f]/90 via-black/40 to-black/20" />
+                <div className="z-10 max-w-7xl mx-auto w-full absolute bottom-10 text-center left-1/2 -translate-x-1/2 px-4">
+                  {(activeSubproduct || isFilterView) && (
+                    <button
+                      onClick={() => {
+                        if (isFilterView) {
+                          navigate("/");
+                        } else {
+                          const parentSegments = segments.slice(0, -1);
+                          navigate(`/products/${parentSegments.join("/")}`);
+                        }
+                      }}
+                      className="mb-4 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#C9A86A] bg-black/40 px-4 py-2 border border-[#C9A86A]/40 backdrop-blur-sm cursor-pointer hover:bg-black/60 transition"
+                    >
+                      ← Back to {isFilterView ? "Home" : "Categories"}
+                    </button>
+                  )}
+                  <h1 className="text-white text-3xl sm:text-5xl md:text-6xl font-black uppercase tracking-tight">
+                    {activeSubproduct ? activeSubproduct.name : product.name}
+                  </h1>
+                  <p className="text-white/90 text-sm sm:text-base max-w-2xl mx-auto mt-2 leading-relaxed">
+                    {activeSubproduct
+                      ? activeSubproduct.description
+                      : product.description}
+                  </p>
+                </div>
+              </section>
             )}
-            <h1 className="text-white text-5xl md:text-7xl font-bold capitalize">
-              {activeSubproduct ? activeSubproduct.name : product.name}
-            </h1>
-            <p className="text-white text-lg max-w-2xl mt-2">
-              {activeSubproduct
-                ? activeSubproduct.description
-                : product.description}
-            </p>
-          </div>
-        </section>
 
-        {/* Content */}
-        <section className="py-20 px-6 bg-[#f9f4ef]">
-          <div className="max-w-7xl mx-auto">
-            {/* 🔙 Back Button */}
-
-            <h2 className="text-4xl font-bold mb-10">
-              {isFilterView
+            {/* Content */}
+            <section
+              id={product.slug === "flooring" ? "flooring-categories" : "product-categories"}
+              className="py-20 px-6 bg-[#f9f4ef]"
+            >
+              <div className="max-w-7xl mx-auto">
+                {/* 🔙 Back Button */}
+                <h2 className="text-4xl font-bold mb-10">
+                  {isFilterView
                 ? `${product.name}`
                 : activeSubproduct
                 ? `${activeSubproduct.name} Products`
@@ -767,20 +803,9 @@ const ProductDetail = ({ overrideSlug }) => {
             )}
           </div>
         </section>
-        {product.slug === "wall-panels" && !activeSubproduct ? (
-          <WallPanelsSection />
-        ) : product.slug === "doors" && !activeSubproduct ? (
-          <DoorsSection />
-        ) : product.slug === "windows" && !activeSubproduct ? (
-          <WindowsSection />
-        ) : product.slug === "partitions" && !activeSubproduct ? (
-          <PartitionsSection />
-        ) : product.slug === "ceiling-solutions" && !activeSubproduct ? (
-          <CeilingSolutionsSection />
-        ) : (
-          <>
-            {data?.applications && (
-              <section className="bg-primary py-16 px-6 text-white">
+
+        {data?.applications && (
+          <section className="bg-primary py-16 px-6 text-white">
                 <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
                   <div className="w-1/2">
                     <h2 className="text-3xl font-bold uppercase tracking-tighter">
@@ -854,8 +879,6 @@ const ProductDetail = ({ overrideSlug }) => {
                 </div>
               </section>
             )}
-          </>
-        )}
           </>
         )}
       </main>

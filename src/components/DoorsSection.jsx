@@ -148,12 +148,174 @@ const DoorsSection = () => {
           transform: translateY(-4px);
           box-shadow: 0 10px 25px rgba(0,0,0,.2);
         }
+        .door-hero-grid {
+          display: grid;
+          grid-template-columns: 44% 56%;
+          min-height: 560px;
+          position: relative;
+        }
+        .door-hero-left {
+          background: #ffffff;
+          display: flex;
+          align-items: center;
+          padding: 64px 8% 64px 10%;
+          position: relative;
+          z-index: 10;
+        }
+        .door-hero-tag {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          color: #5A0F2F;
+          font-size: 13px;
+          font-weight: 800;
+          letter-spacing: 0.18em;
+          text-transform: uppercase;
+          margin-bottom: 18px;
+        }
+        .door-hero-tag::before {
+          content: "";
+          display: inline-block;
+          width: 28px;
+          height: 2px;
+          background: #5A0F2F;
+        }
+        .door-hero-title {
+          font-size: clamp(36px, 4.2vw, 58px);
+          line-height: 1.04;
+          font-weight: 900;
+          color: #171717;
+          text-transform: uppercase;
+          letter-spacing: -0.02em;
+          margin: 0 0 24px;
+        }
+        .door-hero-underline-bar {
+          display: block;
+          height: 5px;
+          width: 140px;
+          background: #5A0F2F;
+          border-radius: 999px;
+          margin-top: 8px;
+        }
+        .door-hero-btn {
+          display: inline-flex;
+          align-items: center;
+          gap: 12px;
+          background: #5A0F2F;
+          color: #ffffff;
+          padding: 16px 30px;
+          font-size: 12px;
+          font-weight: 800;
+          letter-spacing: 0.16em;
+          text-transform: uppercase;
+          text-decoration: none;
+          box-shadow: 0 10px 24px rgba(90, 15, 47, 0.22);
+          transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+          cursor: pointer;
+        }
+        .door-hero-btn:hover {
+          background: #420820;
+          transform: translateY(-3px);
+          box-shadow: 0 16px 32px rgba(90, 15, 47, 0.32);
+        }
+        .door-hero-right {
+          position: relative;
+          min-height: 560px;
+          overflow: hidden;
+          background: #111;
+        }
+        .door-hero-right img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+          transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .door-hero-right:hover img {
+          transform: scale(1.035);
+        }
+        .door-floating-badge {
+          position: absolute;
+          bottom: 28px;
+          right: 28px;
+          background: #5A0F2F;
+          color: #ffffff;
+          padding: 14px 22px;
+          z-index: 15;
+          border: 1px solid rgba(255, 255, 255, 0.15);
+          box-shadow: 0 14px 35px rgba(0, 0, 0, 0.4);
+          display: flex;
+          align-items: center;
+          gap: 14px;
+        }
+        @media (max-width: 1024px) {
+          .door-hero-grid { grid-template-columns: 1fr; }
+          .door-hero-left { padding: 48px 6%; }
+          .door-hero-right { min-height: 400px; }
+        }
+        @media (max-width: 640px) {
+          .door-hero-title { font-size: 32px; }
+          .door-hero-underline-bar { width: 110px; }
+          .door-floating-badge { bottom: 16px; right: 16px; padding: 10px 16px; }
+          .door-hero-right { min-height: 300px; }
+        }
       `}</style>
+
+      {/* =====================================================
+           LUXURY SPLIT HERO
+      ===================================================== */}
+      <section className="door-hero-grid">
+        <div className="door-hero-left">
+          <div className="max-w-[540px]">
+            <div className="door-hero-tag">Premium Door Systems</div>
+            <h1 className="door-hero-title">
+              Doors <br />
+              <span className="inline-block">
+                In Qatar
+                <span className="door-hero-underline-bar" />
+              </span>
+            </h1>
+            <p className="text-[#444] text-[16px] leading-[1.65] mb-4">
+              ANAM Qatar provides handcrafted wooden doors, modern aluminium systems, waterproof WPC doors, and high-performance UPVC doors for residential villas, towers, and luxury developments in Doha.
+            </p>
+            <p className="text-[#666] text-[14.5px] leading-[1.65] mb-8">
+              Engineered with advanced acoustic isolation, multi-point security hardware, and weather-resistant finishes designed to withstand Qatar's extreme climate.
+            </p>
+            <a
+              href="#door-collections"
+              onClick={(e) => {
+                e.preventDefault();
+                const elem = document.getElementById("door-collections");
+                if (elem) elem.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="door-hero-btn"
+            >
+              Explore Door Collections <span>→</span>
+            </a>
+          </div>
+        </div>
+
+        <div className="door-hero-right">
+          <img
+            src="/images/doors-qatar.webp"
+            alt="Doors in Qatar - Luxury Villa Front Entrance"
+            loading="eager"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/10 pointer-events-none" />
+          <div className="door-floating-badge">
+            <div className="w-2.5 h-2.5 rounded-full bg-[#C9A86A] shadow-[0_0_10px_#C9A86A] animate-pulse" />
+            <div>
+              <div className="text-[10px] uppercase font-bold tracking-[0.2em] text-[#C9A86A]">Doha, Qatar</div>
+              <div className="text-xs md:text-sm font-extrabold tracking-wide uppercase text-white">Luxury Doors Specialists</div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* =====================================================
            FEATURES STRIP
       ===================================================== */}
-      <section className="bg-white border-b border-[#eee]">
+      <section id="door-collections" className="bg-white border-b border-[#eee]">
         <div className="max-w-[1180px] w-[92%] mx-auto">
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 divide-y sm:divide-y-0 sm:divide-x divide-[#e8e8e8]">
             {features.map((item, idx) => (

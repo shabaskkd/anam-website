@@ -1059,13 +1059,17 @@ const CeilingSolutionsSection = () => {
       `}</style>
 
       {/* 1. HERO */}
-      <section className="ceiling-hero">
+      <section className="ceiling-hero relative">
         <div className="ceiling-hero-content">
           <div className="ceiling-hero-inner">
             <div className="ceiling-eyebrow">Premium Ceiling Solutions</div>
 
             <h1>
-              Ceiling Solutions <span>in Qatar</span>
+              Ceiling Solutions <br />
+              <span className="inline-block relative">
+                in Qatar
+                <span className="block h-[5px] w-[140px] bg-[#5A0F2F] mt-2 rounded-full" />
+              </span>
             </h1>
 
             <p className="ceiling-hero-description">
@@ -1091,12 +1095,20 @@ const CeilingSolutionsSection = () => {
           </div>
         </div>
 
-        <div className="ceiling-hero-image">
+        <div className="ceiling-hero-image relative">
           <img
             src="/images/ceiling-solutions-qatar.webp"
             alt="Ceiling Solutions in Qatar"
             loading="eager"
           />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/10 pointer-events-none" />
+          <div className="absolute bottom-6 right-6 md:bottom-7 md:right-7 bg-[#5A0F2F] text-white px-5 py-3 shadow-2xl border border-white/15 backdrop-blur-sm z-10 flex items-center gap-3">
+            <div className="w-2.5 h-2.5 rounded-full bg-[#C9A86A] shadow-[0_0_10px_#C9A86A] animate-pulse" />
+            <div>
+              <div className="text-[10px] uppercase font-bold tracking-[0.2em] text-[#C9A86A]">Doha, Qatar</div>
+              <div className="text-xs md:text-sm font-extrabold tracking-wide uppercase text-white">Ceiling Systems Specialists</div>
+            </div>
+          </div>
         </div>
       </section>
 

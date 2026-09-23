@@ -825,12 +825,16 @@ const WindowsSection = () => {
       `}</style>
 
       {/* HERO */}
-      <section className="windows-hero">
+      <section className="windows-hero relative">
         <div className="windows-hero-content">
           <div className="windows-hero-text">
             <div className="windows-label">Premium Window Solutions</div>
             <h1>
-              Windows Providers <span>in Doha Qatar</span>
+              Windows Providers <br />
+              <span className="inline-block relative">
+                in Doha Qatar
+                <span className="block h-[5px] w-[140px] bg-[#5A0F2F] mt-2 rounded-full" />
+              </span>
             </h1>
             <p>
               ANAM Qatar is a trusted{" "}
@@ -848,12 +852,20 @@ const WindowsSection = () => {
           </div>
         </div>
 
-        <div className="windows-hero-image">
+        <div className="windows-hero-image relative">
           <img
             src="/images/windows-hero-qatar.webp"
             alt="Windows Providers in Doha Qatar"
             loading="eager"
           />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/10 pointer-events-none" />
+          <div className="absolute bottom-6 right-6 md:bottom-7 md:right-7 bg-[#5A0F2F] text-white px-5 py-3 shadow-2xl border border-white/15 backdrop-blur-sm z-10 flex items-center gap-3">
+            <div className="w-2.5 h-2.5 rounded-full bg-[#C9A86A] shadow-[0_0_10px_#C9A86A] animate-pulse" />
+            <div>
+              <div className="text-[10px] uppercase font-bold tracking-[0.2em] text-[#C9A86A]">Doha, Qatar</div>
+              <div className="text-xs md:text-sm font-extrabold tracking-wide uppercase text-white">Aluminium & UPVC Windows</div>
+            </div>
+          </div>
         </div>
       </section>
 

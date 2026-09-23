@@ -759,12 +759,16 @@ const PartitionsSection = () => {
       `}</style>
 
       {/* HERO */}
-      <section className="partition-hero">
+      <section className="partition-hero relative">
         <div className="partition-hero-content">
           <div className="partition-hero-inner">
             <div className="partition-eyebrow">Premium Partition Solutions</div>
             <h1>
-              Partition Services <span>in Qatar</span>
+              Partition Services <br />
+              <span className="inline-block relative">
+                in Qatar
+                <span className="block h-[5px] w-[140px] bg-[#5A0F2F] mt-2 rounded-full" />
+              </span>
             </h1>
 
             <p className="partition-hero-description">
@@ -788,12 +792,20 @@ const PartitionsSection = () => {
           </div>
         </div>
 
-        <div className="partition-hero-image">
+        <div className="partition-hero-image relative">
           <img
             src="/images/partition-services-qatar.webp"
             alt="Partition Services in Qatar"
             loading="eager"
           />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/10 pointer-events-none" />
+          <div className="absolute bottom-6 right-6 md:bottom-7 md:right-7 bg-[#5A0F2F] text-white px-5 py-3 shadow-2xl border border-white/15 backdrop-blur-sm z-10 flex items-center gap-3">
+            <div className="w-2.5 h-2.5 rounded-full bg-[#C9A86A] shadow-[0_0_10px_#C9A86A] animate-pulse" />
+            <div>
+              <div className="text-[10px] uppercase font-bold tracking-[0.2em] text-[#C9A86A]">Doha, Qatar</div>
+              <div className="text-xs md:text-sm font-extrabold tracking-wide uppercase text-white">Glass & Gypsum Partitions</div>
+            </div>
+          </div>
         </div>
       </section>
 
