@@ -162,16 +162,20 @@ const DoorsSection = () => {
           position: relative;
           z-index: 10;
         }
+        .doors-container {
+          font-family: Arial, Helvetica, sans-serif;
+        }
         .door-hero-tag {
+          font-family: Arial, Helvetica, sans-serif;
           display: inline-flex;
           align-items: center;
           gap: 10px;
           color: #5A0F2F;
           font-size: 13px;
-          font-weight: 800;
-          letter-spacing: 0.18em;
+          font-weight: 700;
+          letter-spacing: 1.8px;
           text-transform: uppercase;
-          margin-bottom: 18px;
+          margin-bottom: 16px;
         }
         .door-hero-tag::before {
           content: "";
@@ -181,13 +185,16 @@ const DoorsSection = () => {
           background: #5A0F2F;
         }
         .door-hero-title {
-          font-size: clamp(36px, 4.2vw, 58px);
-          line-height: 1.04;
-          font-weight: 900;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: clamp(42px, 5vw, 68px);
+          line-height: .98;
+          font-weight: normal;
           color: #171717;
-          text-transform: uppercase;
-          letter-spacing: -0.02em;
+          letter-spacing: -2px;
           margin: 0 0 24px;
+        }
+        .door-hero-title span {
+          color: #5A0F2F;
         }
         .door-hero-underline-bar {
           display: block;
@@ -213,10 +220,18 @@ const DoorsSection = () => {
           transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
           cursor: pointer;
         }
+        .door-hero-btn span {
+          display: inline-flex;
+          align-items: center;
+          transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
         .door-hero-btn:hover {
           background: #420820;
           transform: translateY(-3px);
           box-shadow: 0 16px 32px rgba(90, 15, 47, 0.32);
+        }
+        .door-hero-btn:hover span {
+          transform: translateX(4px);
         }
         .door-hero-right {
           position: relative;
@@ -253,8 +268,8 @@ const DoorsSection = () => {
           .door-hero-left { padding: 48px 6%; }
           .door-hero-right { min-height: 400px; }
         }
-        @media (max-width: 640px) {
-          .door-hero-title { font-size: 32px; }
+        @media (max-width: 768px) {
+          .door-hero-title { font-size: 34px; letter-spacing: -1px; }
           .door-hero-underline-bar { width: 110px; }
           .door-floating-badge { bottom: 16px; right: 16px; padding: 10px 16px; }
           .door-hero-right { min-height: 300px; }
@@ -267,12 +282,12 @@ const DoorsSection = () => {
       <section className="door-hero-grid">
         <div className="door-hero-left">
           <div className="max-w-[540px]">
-            <div className="door-hero-tag">Premium Door Systems</div>
-            <h1 className="door-hero-title">
+            <div className="door-hero-tag anam-hero-eyebrow">Premium Door Systems</div>
+            <h1 className="door-hero-title anam-hero-title">
               Doors <br />
-              <span className="inline-block">
+              <span className="inline-block relative">
                 In Qatar
-                <span className="door-hero-underline-bar" />
+                <span className="door-hero-underline-bar anam-underline-bar" />
               </span>
             </h1>
             <p className="text-[#444] text-[16px] leading-[1.65] mb-4">
@@ -305,8 +320,8 @@ const DoorsSection = () => {
           <div className="door-floating-badge">
             <div className="w-2.5 h-2.5 rounded-full bg-[#C9A86A] shadow-[0_0_10px_#C9A86A] animate-pulse" />
             <div>
-              <div className="text-[10px] uppercase font-bold tracking-[0.2em] text-[#C9A86A]">Doha, Qatar</div>
-              <div className="text-xs md:text-sm font-extrabold tracking-wide uppercase text-white">Luxury Doors Specialists</div>
+              <div className="text-[10px] font-bold tracking-[0.15em] text-[#C9A86A]">Doha, Qatar</div>
+              <div className="text-xs md:text-sm font-extrabold tracking-wide text-white">Luxury Doors Specialists</div>
             </div>
           </div>
         </div>
@@ -316,7 +331,7 @@ const DoorsSection = () => {
            FEATURES STRIP
       ===================================================== */}
       <section id="door-collections" className="bg-white border-b border-[#eee]">
-        <div className="max-w-[1180px] w-[92%] mx-auto">
+        <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 divide-y sm:divide-y-0 sm:divide-x divide-[#e8e8e8]">
             {features.map((item, idx) => (
               <div
@@ -327,7 +342,7 @@ const DoorsSection = () => {
                 <div className="w-[38px] h-[38px] border-[1.5px] border-[#5A0F2F] rounded-full flex items-center justify-center mx-auto mb-2 text-[#5A0F2F] text-[16px]">
                   {item.icon}
                 </div>
-                <h3 className="text-[10px] md:text-[11px] font-bold uppercase mb-[3px] text-[#222]">
+                <h3 className="text-[10px] md:text-[11px] font-bold mb-[3px] text-[#222]">
                   {item.title}
                 </h3>
                 <p className="text-[9px] md:text-[10px] text-[#777] leading-[1.4]">
@@ -343,7 +358,7 @@ const DoorsSection = () => {
            OUR DOOR COLLECTIONS
       ===================================================== */}
       <section className="py-[75px] bg-white">
-        <div className="max-w-[1180px] w-[92%] mx-auto">
+        <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-[40px]">
             <div className="text-[#5A0F2F] uppercase text-[11px] font-bold tracking-[1.8px] mb-[7px]">
               <span className="inline-block w-[25px] h-[1.5px] bg-[#5A0F2F] align-middle mr-2"></span>
@@ -371,7 +386,7 @@ const DoorsSection = () => {
                   />
                 </div>
                 <div className="p-[18px_15px_20px] text-center">
-                  <h3 className="text-[14px] font-bold uppercase mb-[7px] text-[#171717]">
+                  <h3 className="text-[14px] font-bold mb-[7px] text-[#171717]">
                     {col.name}
                   </h3>
                   <p className="text-[11px] text-[#777] min-h-[40px]">
@@ -394,13 +409,13 @@ const DoorsSection = () => {
            WHY CHOOSE ANAM QATAR
       ===================================================== */}
       <section className="bg-[#f8f6f5]">
-        <div className="max-w-[1180px] w-[92%] mx-auto">
+        <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-[42%_58%] min-h-[360px]">
             <div className="p-[45px_30px] md:p-[45px_50px] flex flex-col justify-center">
               <div className="text-[#5A0F2F] text-[10px] uppercase font-bold tracking-[1.5px] mb-[8px]">
                 Why Choose ANAM Qatar
               </div>
-              <h2 className="text-[26px] sm:text-[31px] font-extrabold leading-[1.05] uppercase mb-[25px] text-[#171717]">
+              <h2 className="text-[26px] sm:text-[31px] font-extrabold leading-[1.05] mb-[25px] text-[#171717]">
                 Quality Doors,<br />
                 Exceptional Service
               </h2>
@@ -433,7 +448,7 @@ const DoorsSection = () => {
            APPLICATIONS
       ===================================================== */}
       <section className="py-[75px] bg-white">
-        <div className="max-w-[1180px] w-[92%] mx-auto">
+        <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-[40px]">
             <div className="text-[#5A0F2F] uppercase text-[11px] font-bold tracking-[1.8px] mb-[7px]">
               <span className="inline-block w-[25px] h-[1.5px] bg-[#5A0F2F] align-middle mr-2"></span>
@@ -460,7 +475,7 @@ const DoorsSection = () => {
                   />
                 </div>
                 <div className="p-[15px]">
-                  <h3 className="text-[13px] font-bold uppercase mb-[4px] text-[#171717]">
+                  <h3 className="text-[13px] font-bold mb-[4px] text-[#171717]">
                     {app.title}
                   </h3>
                   <p className="text-[10px] text-[#777]">
@@ -477,10 +492,10 @@ const DoorsSection = () => {
            CTA
       ===================================================== */}
       <section className="bg-[#5A0F2F] py-[45px] text-white">
-        <div className="max-w-[1180px] w-[92%] mx-auto">
+        <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-[30px]">
             <div>
-              <h2 className="text-[24px] sm:text-[28px] font-extrabold leading-[1.1] uppercase mb-[8px]">
+              <h2 className="text-[24px] sm:text-[28px] font-extrabold leading-[1.1] mb-[8px]">
                 Looking for the Perfect<br />
                 Door Solution?
               </h2>

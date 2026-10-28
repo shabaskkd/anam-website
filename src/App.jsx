@@ -17,6 +17,7 @@ const ServicesPage = lazy(() => import("./components/Service"));
 const ServiceDetail = lazy(() => import("./pages/ServiceDetail"));
 const BlogDetail = lazy(() => import("./pages/BlogDetail"));
 const ProductDetail = lazy(() => import("./pages/ProductDetail"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 function PageLoader() {
   return (
@@ -45,12 +46,21 @@ function App() {
           <Route path="/blog/:slug" element={<BlogDetail />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/products/*" element={<ProductDetail />} />
+          <Route path="/flooring" element={<ProductDetail overrideSlug="flooring" />} />
           <Route path="/wall-panels" element={<ProductDetail overrideSlug="wall-panels" />} />
           <Route path="/doors" element={<ProductDetail overrideSlug="doors" />} />
           <Route path="/windows" element={<ProductDetail overrideSlug="windows" />} />
           <Route path="/partitions" element={<ProductDetail overrideSlug="partitions" />} />
           <Route path="/ceiling-solutions" element={<ProductDetail overrideSlug="ceiling-solutions" />} />
           <Route path="/kitchen-wardrobe" element={<ProductDetail overrideSlug="kitchen-wardrobe" />} />
+          <Route path="/profile-accessories" element={<ProductDetail overrideSlug="profile-accessories" />} />
+          <Route path="/upvc" element={<ProductDetail overrideSlug="upvc" />} />
+          <Route path="/aluminum" element={<ProductDetail overrideSlug="aluminum" />} />
+          <Route path="/aluminium" element={<ProductDetail overrideSlug="aluminium" />} />
+          <Route path="/stainless-steel" element={<ProductDetail overrideSlug="stainless-steel" />} />
+          <Route path="/fencing" element={<ProductDetail overrideSlug="fencing" />} />
+          <Route path="/shades" element={<ProductDetail overrideSlug="shades" />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
 

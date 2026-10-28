@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import kitchenWardrobeHero from "../assets/images/kitchen & wardrob/kitchen & wardrobe cover.jpg";
 
 const KitchenWardrobeSection = () => {
   useEffect(() => {
@@ -74,7 +75,7 @@ const KitchenWardrobeSection = () => {
         .kw-hero-content {
             display: flex;
             align-items: center;
-            padding: 65px 9%;
+            padding: 64px 8%;
         }
 
         .kw-hero-inner {
@@ -83,19 +84,19 @@ const KitchenWardrobeSection = () => {
 
         .kw-eyebrow {
             color: var(--kw-maroon);
-            font-size: 12px;
+            font-size: 13px;
             font-weight: 700;
             letter-spacing: 1.8px;
             text-transform: uppercase;
-            margin-bottom: 15px;
+            margin-bottom: 16px;
         }
 
         .kw-hero h1 {
-            font-size: clamp(40px, 5vw, 65px);
+            font-size: clamp(42px, 5vw, 68px);
             line-height: .98;
             letter-spacing: -2px;
-            text-transform: uppercase;
-            margin: 0 0 23px;
+            margin: 0 0 24px;
+            font-weight: 700;
         }
 
         .kw-hero h1 span {
@@ -106,7 +107,7 @@ const KitchenWardrobeSection = () => {
             color: #555;
             font-size: 15px;
             max-width: 510px;
-            margin: 0 0 27px;
+            margin: 0 0 24px;
         }
 
         .kw-hero-text strong {
@@ -116,14 +117,14 @@ const KitchenWardrobeSection = () => {
         .kw-hero-features {
             display: flex;
             flex-wrap: wrap;
-            gap: 17px;
+            gap: 16px;
             margin-bottom: 28px;
         }
 
         .kw-hero-feature {
             display: flex;
             align-items: center;
-            gap: 7px;
+            gap: 8px;
             font-size: 10px;
             font-weight: 600;
         }
@@ -165,8 +166,10 @@ const KitchenWardrobeSection = () => {
         }
 
         .kw-hero-image img {
+            width: 100%;
             height: 100%;
             object-fit: cover;
+            object-position: center;
             transition: transform .8s ease;
         }
 
@@ -218,7 +221,6 @@ const KitchenWardrobeSection = () => {
 
         .kw-feature-box h3 {
             font-size: 10px;
-            text-transform: uppercase;
             margin: 0 0 5px;
         }
 
@@ -403,7 +405,6 @@ const KitchenWardrobeSection = () => {
 
         .kw-why-card h3 {
             font-size: 11px;
-            text-transform: uppercase;
             margin: 0 0 5px;
         }
 
@@ -519,7 +520,6 @@ const KitchenWardrobeSection = () => {
 
         .kw-process-step h3 {
             font-size: 11px;
-            text-transform: uppercase;
             margin: 0 0 5px;
         }
 
@@ -767,9 +767,10 @@ const KitchenWardrobeSection = () => {
             }
         }
 
-        @media(max-width:500px) {
+        @media(max-width:768px) {
             .kw-hero h1 {
-                font-size: 40px;
+                font-size: 34px;
+                letter-spacing: -1px;
             }
 
             .kw-solutions,
@@ -796,12 +797,16 @@ const KitchenWardrobeSection = () => {
       <section className="kw-hero">
         <div className="kw-hero-content">
           <div className="kw-hero-inner">
-            <div className="kw-eyebrow">
+            <div className="kw-eyebrow anam-hero-eyebrow">
               Premium Kitchen & Wardrobe Solutions
             </div>
 
-            <h1>
-              Premium Kitchen <span>Cabinets Qatar</span>
+            <h1 className="anam-hero-title">
+              Kitchen & Wardrobe <br />
+              <span className="inline-block relative">
+                Cabinets Qatar
+                <span className="anam-underline-bar block h-[5px] w-[140px] bg-[#5A0F2F] mt-2 rounded-full" />
+              </span>
             </h1>
 
             <p className="kw-hero-text">
@@ -841,8 +846,8 @@ const KitchenWardrobeSection = () => {
 
         <div className="kw-hero-image">
           <img
-            src="/images/premium-kitchen-cabinets-qatar.webp"
-            alt="Premium Kitchen Cabinets Qatar"
+            src={kitchenWardrobeHero}
+            alt="Premium Kitchen & Wardrobe Cabinets Qatar"
             loading="eager"
           />
         </div>

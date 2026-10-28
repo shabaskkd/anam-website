@@ -227,15 +227,15 @@ const WindowsSection = () => {
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1.8px;
-            margin-bottom: 15px;
+            margin-bottom: 16px;
         }
 
         .windows-hero h1 {
-            font-size: clamp(40px, 5vw, 65px);
+            font-size: clamp(42px, 5vw, 68px);
             line-height: .98;
-            text-transform: uppercase;
-            margin: 0 0 25px;
+            margin: 0 0 24px;
             letter-spacing: -2px;
+            font-weight: 700;
         }
 
         .windows-hero h1 span {
@@ -329,7 +329,6 @@ const WindowsSection = () => {
 
         .windows-trust-card h3 {
             font-size: 11px;
-            text-transform: uppercase;
             margin: 0 0 5px;
         }
 
@@ -430,7 +429,6 @@ const WindowsSection = () => {
 
         .windows-product-content h3 {
             font-size: 15px;
-            text-transform: uppercase;
             margin: 0 0 10px;
         }
 
@@ -484,7 +482,6 @@ const WindowsSection = () => {
         .windows-why-content h2 {
             font-size: clamp(32px, 4vw, 48px);
             line-height: 1.05;
-            text-transform: uppercase;
             margin: 0 0 28px;
         }
 
@@ -560,7 +557,6 @@ const WindowsSection = () => {
 
         .windows-stat-title {
             font-size: 12px;
-            text-transform: uppercase;
         }
 
         /* =========================================================
@@ -605,7 +601,6 @@ const WindowsSection = () => {
 
         .windows-application-content h3 {
             font-size: 14px;
-            text-transform: uppercase;
             margin: 0 0 7px;
         }
 
@@ -644,7 +639,6 @@ const WindowsSection = () => {
 
         .windows-benefit h3 {
             font-size: 12px;
-            text-transform: uppercase;
             margin: 0 0 6px;
         }
 
@@ -708,7 +702,6 @@ const WindowsSection = () => {
         .windows-cta h2 {
             font-size: clamp(28px, 4vw, 42px);
             line-height: 1.05;
-            text-transform: uppercase;
             margin: 0 0 10px;
         }
 
@@ -807,9 +800,10 @@ const WindowsSection = () => {
             }
         }
 
-        @media(max-width:500px) {
+        @media(max-width:768px) {
             .windows-hero h1 {
-                font-size: 42px;
+                font-size: 34px;
+                letter-spacing: -1px;
             }
             .windows-trust-grid {
                 grid-template-columns: 1fr;
@@ -828,12 +822,12 @@ const WindowsSection = () => {
       <section className="windows-hero relative">
         <div className="windows-hero-content">
           <div className="windows-hero-text">
-            <div className="windows-label">Premium Window Solutions</div>
-            <h1>
+            <div className="windows-label anam-hero-eyebrow">Premium Window Solutions</div>
+            <h1 className="anam-hero-title">
               Windows Providers <br />
               <span className="inline-block relative">
-                in Doha Qatar
-                <span className="block h-[5px] w-[140px] bg-[#5A0F2F] mt-2 rounded-full" />
+                In Doha Qatar
+                <span className="anam-underline-bar block h-[5px] w-[140px] bg-[#5A0F2F] mt-2 rounded-full" />
               </span>
             </h1>
             <p>
@@ -862,8 +856,8 @@ const WindowsSection = () => {
           <div className="absolute bottom-6 right-6 md:bottom-7 md:right-7 bg-[#5A0F2F] text-white px-5 py-3 shadow-2xl border border-white/15 backdrop-blur-sm z-10 flex items-center gap-3">
             <div className="w-2.5 h-2.5 rounded-full bg-[#C9A86A] shadow-[0_0_10px_#C9A86A] animate-pulse" />
             <div>
-              <div className="text-[10px] uppercase font-bold tracking-[0.2em] text-[#C9A86A]">Doha, Qatar</div>
-              <div className="text-xs md:text-sm font-extrabold tracking-wide uppercase text-white">Aluminium & UPVC Windows</div>
+              <div className="text-[10px] font-bold tracking-[0.15em] text-[#C9A86A]">Doha, Qatar</div>
+              <div className="text-xs md:text-sm font-extrabold tracking-wide text-white">Aluminium & UPVC Windows</div>
             </div>
           </div>
         </div>

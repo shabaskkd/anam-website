@@ -17,7 +17,7 @@ const GalleryCard = memo(({ image, index }) => (
       className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110"
     />
     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
-      <p className="text-[#c29d59] text-xs font-bold uppercase tracking-[0.2em] mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+      <p className="text-[#c29d59] text-xs font-bold tracking-[0.15em] mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
         {image.category}
       </p>
       <h3 className="text-white text-xl font-bold transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">
@@ -36,11 +36,6 @@ const MasonryGallery = () => {
       setPrevIndex(bgIndex);
       setBgIndex((prev) => (prev + 1) % galleryImages.length);
     }, 5000);
-
-    galleryImages.forEach((image) => {
-      const img = new Image();
-      img.src = image.src;
-    });
 
     return () => clearInterval(interval);
   }, [bgIndex]);
@@ -75,10 +70,10 @@ const MasonryGallery = () => {
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.3, duration: 0.8 }}
                 >
-                  <p className="text-[#c29d59] font-bold uppercase tracking-widest text-xs mb-3">
+                  <p className="text-[#c29d59] font-bold tracking-widest text-xs mb-3">
                     Featured Interior
                   </p>
-                  <h2 className="text-2xl md:text-5xl font-bold uppercase tracking-tighter leading-none">
+                  <h2 className="text-2xl md:text-5xl font-bold tracking-tight leading-none">
                     {galleryImages[bgIndex].title}
                   </h2>
                 </motion.div>

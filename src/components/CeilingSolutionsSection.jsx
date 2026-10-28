@@ -326,19 +326,19 @@ const CeilingSolutionsSection = () => {
 
         .ceiling-eyebrow {
             color: var(--maroon);
-            font-size: 12px;
+            font-size: 13px;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 15px;
+            letter-spacing: 1.8px;
+            margin-bottom: 16px;
         }
 
         .ceiling-hero h1 {
             font-size: clamp(42px, 5vw, 68px);
             line-height: .98;
             letter-spacing: -2px;
-            text-transform: uppercase;
-            margin: 0 0 25px;
+            margin: 0 0 24px;
+            font-weight: 700;
         }
 
         .ceiling-hero h1 span {
@@ -666,7 +666,6 @@ const CeilingSolutionsSection = () => {
 
         .ceiling-why-card h3 {
             font-size: 12px;
-            text-transform: uppercase;
             margin: 0 0 7px;
         }
 
@@ -720,7 +719,6 @@ const CeilingSolutionsSection = () => {
 
         .ceiling-application-content h3 {
             font-size: 13px;
-            text-transform: uppercase;
             margin: 0 0 5px;
         }
 
@@ -759,7 +757,6 @@ const CeilingSolutionsSection = () => {
 
         .ceiling-performance-card h3 {
             font-size: 12px;
-            text-transform: uppercase;
             margin: 0 0 7px;
         }
 
@@ -816,7 +813,6 @@ const CeilingSolutionsSection = () => {
 
         .ceiling-process-step h3 {
             font-size: 12px;
-            text-transform: uppercase;
             margin: 0 0 7px;
         }
 
@@ -1037,9 +1033,10 @@ const CeilingSolutionsSection = () => {
             }
         }
 
-        @media(max-width:500px) {
+        @media(max-width:768px) {
             .ceiling-hero h1 {
-                font-size: 42px;
+                font-size: 34px;
+                letter-spacing: -1px;
             }
             .ceiling-types,
             .ceiling-applications,
@@ -1062,13 +1059,13 @@ const CeilingSolutionsSection = () => {
       <section className="ceiling-hero relative">
         <div className="ceiling-hero-content">
           <div className="ceiling-hero-inner">
-            <div className="ceiling-eyebrow">Premium Ceiling Solutions</div>
+            <div className="ceiling-eyebrow anam-hero-eyebrow">Premium Ceiling Solutions</div>
 
-            <h1>
+            <h1 className="anam-hero-title">
               Ceiling Solutions <br />
               <span className="inline-block relative">
-                in Qatar
-                <span className="block h-[5px] w-[140px] bg-[#5A0F2F] mt-2 rounded-full" />
+                In Qatar
+                <span className="anam-underline-bar block h-[5px] w-[140px] bg-[#5A0F2F] mt-2 rounded-full" />
               </span>
             </h1>
 

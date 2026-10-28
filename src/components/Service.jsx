@@ -35,7 +35,7 @@ export default function ServicesPage() {
                 <span className="w-2 h-2 rounded-full bg-white animate-ping" />
                 Turnkey & Fit-out Excellence
               </div>
-              <h1 className="text-white text-4xl md:text-6xl font-extrabold tracking-tight uppercase leading-tight">
+              <h1 className="anam-hero-title !text-white text-center">
                 Our Services & Contracting Solutions
               </h1>
               <p className="text-white/85 text-base md:text-lg max-w-2xl mx-auto font-light leading-relaxed">
@@ -48,10 +48,10 @@ export default function ServicesPage() {
         {/* SERVICES GRID SECTION */}
         <div className="max-w-7xl mx-auto py-20 px-6 md:px-12">
           <div className="text-center mb-16 space-y-3">
-            <span className="text-primary text-xs font-bold tracking-[0.2em] uppercase">
+            <span className="anam-hero-eyebrow justify-center">
               Tailored Architectural Execution
             </span>
-            <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-gray-900 uppercase">
+            <h2 className="anam-section-title">
               Comprehensive Contracting Capabilities
             </h2>
             <div className="w-20 h-1 bg-primary mx-auto mt-4" />
@@ -79,10 +79,10 @@ export default function ServicesPage() {
 
                 <div className="p-8 flex flex-col flex-grow justify-between space-y-6">
                   <div className="space-y-3">
-                    <h3 className="text-2xl font-bold text-gray-900 group-hover:text-primary transition-colors leading-snug">
+                    <h3 className="anam-h3 !mt-0 !mb-2 group-hover:text-primary transition-colors">
                       {service.name}
                     </h3>
-                    <p className="text-gray-600 text-sm leading-relaxed font-normal">
+                    <p className="anam-small-p text-gray-600 font-normal">
                       {service.tagline}
                     </p>
                   </div>
@@ -110,8 +110,8 @@ export default function ServicesPage() {
                 <CheckCircle2 className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h4 className="font-bold uppercase tracking-wider text-base mb-1">Quality Assurance</h4>
-                <p className="text-white/75 text-xs leading-relaxed">Compliant with strict Qatar building standards and high durability requirements.</p>
+                <h4 className="anam-h4 !text-white !mb-1">Quality Assurance</h4>
+                <p className="anam-small-p !text-white/75">Compliant with strict Qatar building standards and high durability requirements.</p>
               </div>
             </div>
 
@@ -120,8 +120,8 @@ export default function ServicesPage() {
                 <CheckCircle2 className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h4 className="font-bold uppercase tracking-wider text-base mb-1">On-Time Delivery</h4>
-                <p className="text-white/75 text-xs leading-relaxed">Structured project scheduling, milestone tracking, and efficient execution.</p>
+                <h4 className="anam-h4 !text-white !mb-1">On-Time Delivery</h4>
+                <p className="anam-small-p !text-white/75">Structured project scheduling, milestone tracking, and efficient execution.</p>
               </div>
             </div>
 
@@ -130,8 +130,8 @@ export default function ServicesPage() {
                 <CheckCircle2 className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h4 className="font-bold uppercase tracking-wider text-base mb-1">End-to-End Support</h4>
-                <p className="text-white/75 text-xs leading-relaxed">From initial brief and material selection to final handover and maintenance support.</p>
+                <h4 className="anam-h4 !text-white !mb-1">End-to-End Support</h4>
+                <p className="anam-small-p !text-white/75">From initial brief and material selection to final handover and maintenance support.</p>
               </div>
             </div>
           </div>
@@ -140,10 +140,10 @@ export default function ServicesPage() {
         {/* CTA BANNER */}
         <div className="py-20 px-6 md:px-12 bg-white text-center">
           <div className="max-w-4xl mx-auto space-y-6">
-            <h2 className="text-3xl md:text-4xl font-extrabold uppercase tracking-tight text-gray-900">
+            <h2 className="anam-section-title">
               Have a Project in Mind?
             </h2>
-            <p className="text-gray-600 max-w-xl mx-auto text-base leading-relaxed">
+            <p className="anam-lead-p mx-auto">
               Speak to our contracting and engineering experts to discuss specifications, site visits, and competitive quotations.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4 pt-4">

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Layout from "../components/Layout";
 import { projectsData } from "../data/projectsData";
 
@@ -25,12 +25,13 @@ const ProjectsPage = () => {
       <section className="min-h-screen pt-32 pb-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h1 className="text-6xl font-bold tracking-tighter text-[#1a1a1a] mb-4">
+            <span className="anam-hero-eyebrow">Portfolio Showcase</span>
+            <h1 className="anam-hero-title text-center text-[#1a1a1a]">
               Our <span className="text-primary">Projects</span>
             </h1>
-            <p className="text-gray-500 max-w-xl mx-auto">
+            <p className="anam-lead-p mx-auto text-center">
               Discover our diverse portfolio ranging from bespoke interior
-              designs to premium architectural finishes.
+              designs to premium architectural finishes across Qatar.
             </p>
           </div>
 
@@ -39,11 +40,11 @@ const ProjectsPage = () => {
               <button
                 key={cat}
                 onClick={() => setActiveTab(cat)}
-                className={`px-8 py-3 rounded-full text-sm font-bold uppercase tracking-widest transition-all duration-300 border-2
+                className={`px-8 py-3 rounded-full text-sm font-bold tracking-wide transition-all duration-300 border-2
                 ${
                   activeTab === cat
                     ? "bg-primary border-primary text-white shadow-lg"
-                    : "bg-transparent border-gray-200 text-gray-400 hover:border-primary hover:text-primary"
+                    : "bg-transparent border-gray-200 text-gray-600 hover:border-primary hover:text-primary"
                 }`}
               >
                 {cat}
@@ -69,15 +70,15 @@ const ProjectsPage = () => {
                   <img
                     src={`${project.src}?auto=format&fit=crop&q=80&w=800`}
                     alt={project.title}
-                    className="w-full h-auto object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+                    className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
                   />
 
-                  {/* Hover Label */}
-                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
-                    <span className="text-[#c29d59] font-bold text-xs uppercase tracking-widest mb-1">
+                  {/* Hover / Touch Label */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-90 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 md:p-8">
+                    <span className="text-[#c29d59] font-bold text-xs tracking-wider mb-1">
                       {project.category}
                     </span>
-                    <h3 className="text-white text-2xl font-bold uppercase tracking-tighter">
+                    <h3 className="text-white text-xl md:text-2xl font-bold tracking-tight">
                       {project.title}
                     </h3>
                   </div>

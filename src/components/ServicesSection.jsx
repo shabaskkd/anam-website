@@ -5,7 +5,7 @@ import qatar from "../assets/images/qatar.jpeg";
 
 const ServiceSection = () => {
   return (
-    <div className="mx-autotext-black py-10">
+    <div className="mx-auto text-black py-10">
       <div className="container px-6 mx-auto flex items-center justify-center md:flex-row flex-col gap-16 ">
         <div className="md:h-[400px] h-[200px]">
           <div className="relative w-full max-w-sm h-full overflow-hidden group">

@@ -162,16 +162,20 @@ const WallPanelsSection = () => {
           position: relative;
           z-index: 10;
         }
+        .wall-panels-container {
+          font-family: Arial, Helvetica, sans-serif;
+        }
         .wp-hero-tag {
+          font-family: Arial, Helvetica, sans-serif;
           display: inline-flex;
           align-items: center;
           gap: 10px;
           color: #5A0F2F;
           font-size: 13px;
-          font-weight: 800;
-          letter-spacing: 0.18em;
+          font-weight: 700;
+          letter-spacing: 1.8px;
           text-transform: uppercase;
-          margin-bottom: 18px;
+          margin-bottom: 16px;
         }
         .wp-hero-tag::before {
           content: "";
@@ -181,13 +185,16 @@ const WallPanelsSection = () => {
           background: #5A0F2F;
         }
         .wp-hero-title {
-          font-size: clamp(36px, 4.2vw, 58px);
-          line-height: 1.04;
-          font-weight: 900;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: clamp(42px, 5vw, 68px);
+          line-height: .98;
+          font-weight: normal;
           color: #171717;
-          text-transform: uppercase;
-          letter-spacing: -0.02em;
+          letter-spacing: -2px;
           margin: 0 0 24px;
+        }
+        .wp-hero-title span {
+          color: #5A0F2F;
         }
         .wp-hero-underline-bar {
           display: block;
@@ -213,10 +220,18 @@ const WallPanelsSection = () => {
           transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
           cursor: pointer;
         }
+        .wp-hero-btn span {
+          display: inline-flex;
+          align-items: center;
+          transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
         .wp-hero-btn:hover {
           background: #420820;
           transform: translateY(-3px);
           box-shadow: 0 16px 32px rgba(90, 15, 47, 0.32);
+        }
+        .wp-hero-btn:hover span {
+          transform: translateX(4px);
         }
         .wp-hero-right {
           position: relative;
@@ -253,8 +268,8 @@ const WallPanelsSection = () => {
           .wp-hero-left { padding: 48px 6%; }
           .wp-hero-right { min-height: 400px; }
         }
-        @media (max-width: 640px) {
-          .wp-hero-title { font-size: 32px; }
+        @media (max-width: 768px) {
+          .wp-hero-title { font-size: 34px; letter-spacing: -1px; }
           .wp-hero-underline-bar { width: 110px; }
           .wp-floating-badge { bottom: 16px; right: 16px; padding: 10px 16px; }
           .wp-hero-right { min-height: 300px; }
@@ -267,12 +282,12 @@ const WallPanelsSection = () => {
       <section className="wp-hero-grid">
         <div className="wp-hero-left">
           <div className="max-w-[540px]">
-            <div className="wp-hero-tag">Premium Wall Panel Solutions</div>
-            <h1 className="wp-hero-title">
+            <div className="wp-hero-tag anam-hero-eyebrow">Premium Wall Panel Solutions</div>
+            <h1 className="wp-hero-title anam-hero-title">
               Wall Panels <br />
-              <span className="inline-block">
+              <span className="inline-block relative">
                 In Qatar
-                <span className="wp-hero-underline-bar" />
+                <span className="wp-hero-underline-bar anam-underline-bar" />
               </span>
             </h1>
             <p className="text-[#444] text-[16px] leading-[1.65] mb-4">
@@ -306,7 +321,7 @@ const WallPanelsSection = () => {
             <div className="w-2.5 h-2.5 rounded-full bg-[#C9A86A] shadow-[0_0_10px_#C9A86A] animate-pulse" />
             <div>
               <div className="text-[10px] uppercase font-bold tracking-[0.2em] text-[#C9A86A]">Doha, Qatar</div>
-              <div className="text-xs md:text-sm font-extrabold tracking-wide uppercase text-white">Wall Cladding Specialists</div>
+              <div className="text-xs md:text-sm font-extrabold tracking-wide text-white">Wall Cladding Specialists</div>
             </div>
           </div>
         </div>
@@ -314,36 +329,36 @@ const WallPanelsSection = () => {
 
       {/* Trust & Guarantee Strip */}
       <section className="bg-white border-b border-[#e8e8e8]">
-        <div className="max-w-[1240px] w-[94%] mx-auto">
+        <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 divide-y md:divide-y-0 md:divide-x divide-[#e8e8e8]">
             <div className="p-5 text-center transition hover:-translate-y-1">
               <div className="text-[#5A0F2F] font-bold text-xl mb-1">✓</div>
-              <h3 className="text-xs font-bold uppercase tracking-wider text-[#171717]">Waterproof & Durable</h3>
+              <h3 className="text-xs font-bold tracking-wider text-[#171717]">Waterproof & Durable</h3>
               <p className="text-[11px] text-[#666] mt-0.5">Moisture & termite resistant</p>
             </div>
             <div className="p-5 text-center transition hover:-translate-y-1">
               <div className="text-[#5A0F2F] font-bold text-xl mb-1">⚒</div>
-              <h3 className="text-xs font-bold uppercase tracking-wider text-[#171717]">Expert Fitting</h3>
+              <h3 className="text-xs font-bold tracking-wider text-[#171717]">Expert Fitting</h3>
               <p className="text-[11px] text-[#666] mt-0.5">Seamless installation Doha</p>
             </div>
             <div className="p-5 text-center transition hover:-translate-y-1">
               <div className="text-[#5A0F2F] font-bold text-xl mb-1">▣</div>
-              <h3 className="text-xs font-bold uppercase tracking-wider text-[#171717]">Modern Finishes</h3>
+              <h3 className="text-xs font-bold tracking-wider text-[#171717]">Modern Finishes</h3>
               <p className="text-[11px] text-[#666] mt-0.5">Wood, marble & fluted</p>
             </div>
             <div className="p-5 text-center transition hover:-translate-y-1">
               <div className="text-[#5A0F2F] font-bold text-xl mb-1">◆</div>
-              <h3 className="text-xs font-bold uppercase tracking-wider text-[#171717]">UV Protected</h3>
+              <h3 className="text-xs font-bold tracking-wider text-[#171717]">UV Protected</h3>
               <p className="text-[11px] text-[#666] mt-0.5">Fade-resistant colours</p>
             </div>
             <div className="p-5 text-center transition hover:-translate-y-1">
               <div className="text-[#5A0F2F] font-bold text-xl mb-1">◉</div>
-              <h3 className="text-xs font-bold uppercase tracking-wider text-[#171717]">Villas & Offices</h3>
+              <h3 className="text-xs font-bold tracking-wider text-[#171717]">Villas & Offices</h3>
               <p className="text-[11px] text-[#666] mt-0.5">Feature walls & majlis</p>
             </div>
             <div className="p-5 text-center transition hover:-translate-y-1">
               <div className="text-[#5A0F2F] font-bold text-xl mb-1">✦</div>
-              <h3 className="text-xs font-bold uppercase tracking-wider text-[#171717]">Quality Assurance</h3>
+              <h3 className="text-xs font-bold tracking-wider text-[#171717]">Quality Assurance</h3>
               <p className="text-[11px] text-[#666] mt-0.5">Certified premium grade</p>
             </div>
           </div>
@@ -354,7 +369,7 @@ const WallPanelsSection = () => {
            WALL PANEL CATEGORIES GRID
       ===================================================== */}
       <section id="wall-panel-categories" className="py-16 bg-[#faf8f7] border-b border-[#eee]">
-        <div className="max-w-[1240px] w-[92%] mx-auto">
+        <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-3 text-[#5A0F2F] text-[13px] font-bold uppercase tracking-[2px] mb-2">
               <span className="w-[30px] h-[2px] bg-[#5A0F2F] inline-block" />
@@ -445,7 +460,7 @@ const WallPanelsSection = () => {
               Our Solutions
               <span className="w-[35px] h-[2px] bg-[#5A0F2F] inline-block"></span>
             </div>
-            <h2 className="text-[30px] sm:text-[38px] md:text-[46px] font-extrabold leading-[1.1] mb-[15px] text-[#171717]">
+            <h2 className="text-[30px] sm:text-[38px] md:text-[46px] font-extrabold leading-[1.1] mb-4 text-[#171717]">
               Premium Wall Panel Solutions
             </h2>
             <p className="max-w-[720px] mx-auto text-[#666] text-[16px] leading-[1.6]">
@@ -490,7 +505,7 @@ const WallPanelsSection = () => {
               ANAM Qatar?
             </h2>
 
-            <ul className="space-y-[15px] list-none">
+            <ul className="space-y-4 list-none">
               {whyList.map((item, idx) => (
                 <li key={idx} className="flex items-center gap-3 text-[14px]">
                   <span className="w-[22px] h-[22px] min-w-[22px] rounded-full bg-white text-[#5A0F2F] flex items-center justify-center text-[12px] font-bold shrink-0">
@@ -545,7 +560,7 @@ const WallPanelsSection = () => {
               Applications
               <span className="w-[35px] h-[2px] bg-[#5A0F2F] inline-block"></span>
             </div>
-            <h2 className="text-[30px] sm:text-[38px] md:text-[46px] font-extrabold leading-[1.1] mb-[15px] text-[#171717]">
+            <h2 className="text-[30px] sm:text-[38px] md:text-[46px] font-extrabold leading-[1.1] mb-4 text-[#171717]">
               Applications of Wall Panels
             </h2>
             <p className="max-w-[720px] mx-auto text-[#666] text-[16px] leading-[1.6]">
@@ -711,7 +726,7 @@ const WallPanelsSection = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-[15px] max-w-[1000px] mx-auto items-start">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-[1000px] mx-auto items-start">
             {faqs.map((faq, idx) => {
               const isOpen = openFaq === idx;
               return (
@@ -759,8 +774,8 @@ const WallPanelsSection = () => {
         <div className="max-w-[1200px] w-[92%] mx-auto">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-10">
             <div className="max-w-[650px]">
-              <h2 className="text-[32px] sm:text-[42px] md:text-[50px] font-extrabold leading-[1.05] mb-[15px]">
-                Get Wall Panels<br />in Qatar
+              <h2 className="text-[32px] sm:text-[42px] md:text-[50px] font-extrabold leading-[1.05] mb-4">
+                Get Wall Panels<br />In Qatar
               </h2>
               <p className="text-white/85 text-[16px] leading-[1.6]">
                 Upgrade your interiors with modern and durable wall panel solutions

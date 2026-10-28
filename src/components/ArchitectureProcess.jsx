@@ -46,8 +46,9 @@ const ArchitectureProcess = () => {
         <div className="md:mb-20 mb-10 gap-8 flex flex-col lg:flex-row">
           <div>
             <div className="max-w-2xl">
-              <h2 className="md:text-5xl text-3xl text-[#1a1a1a] ">
-                How we work
+              <span className="anam-hero-eyebrow">Execution Methodology</span>
+              <h2 className="anam-section-title">
+                How We Work
               </h2>
             </div>
             <div className="max-w-md">

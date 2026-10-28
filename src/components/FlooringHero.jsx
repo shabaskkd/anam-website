@@ -28,16 +28,21 @@ const FlooringHero = () => {
           z-index: 10;
         }
 
+        .flooring-hero-wrapper {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
         .flooring-hero-tag {
+          font-family: Arial, Helvetica, sans-serif;
           display: inline-flex;
           align-items: center;
           gap: 10px;
           color: #5A0F2F;
           font-size: 13px;
-          font-weight: 800;
-          letter-spacing: 0.18em;
+          font-weight: 700;
+          letter-spacing: 1.8px;
           text-transform: uppercase;
-          margin-bottom: 18px;
+          margin-bottom: 16px;
         }
 
         .flooring-hero-tag::before {
@@ -49,13 +54,17 @@ const FlooringHero = () => {
         }
 
         .flooring-hero-title {
-          font-size: clamp(38px, 4.4vw, 62px);
-          line-height: 1.02;
-          font-weight: 900;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: clamp(42px, 5vw, 68px);
+          line-height: .98;
+          font-weight: normal;
           color: #171717;
-          text-transform: uppercase;
-          letter-spacing: -0.02em;
+          letter-spacing: -2px;
           margin: 0 0 24px;
+        }
+
+        .flooring-hero-title span {
+          color: #5A0F2F;
         }
 
         .flooring-hero-underline-wrapper {
@@ -105,10 +114,20 @@ const FlooringHero = () => {
           cursor: pointer;
         }
 
+        .flooring-hero-btn span {
+          display: inline-flex;
+          align-items: center;
+          transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
         .flooring-hero-btn:hover {
           background: #420820;
           transform: translateY(-3px);
           box-shadow: 0 16px 32px rgba(90, 15, 47, 0.32);
+        }
+
+        .flooring-hero-btn:hover span {
+          transform: translateX(4px);
         }
 
         .flooring-hero-right {
@@ -166,9 +185,10 @@ const FlooringHero = () => {
           }
         }
 
-        @media (max-width: 640px) {
+        @media (max-width: 768px) {
           .flooring-hero-title {
             font-size: 34px;
+            letter-spacing: -1px;
           }
           .flooring-hero-underline-bar {
             width: 110px;
@@ -190,15 +210,15 @@ const FlooringHero = () => {
         {/* Left Content Card */}
         <div className="flooring-hero-left">
           <div className="max-w-[540px]">
-            <div className="flooring-hero-tag">
+            <div className="flooring-hero-tag anam-hero-eyebrow">
               Premium Flooring Solutions
             </div>
 
-            <h1 className="flooring-hero-title">
+            <h1 className="flooring-hero-title anam-hero-title">
               Flooring <br />
-              <span className="flooring-hero-underline-wrapper">
+              <span className="flooring-hero-underline-wrapper inline-block relative">
                 In Qatar
-                <span className="flooring-hero-underline-bar" />
+                <span className="flooring-hero-underline-bar anam-underline-bar" />
               </span>
             </h1>
 
@@ -237,10 +257,10 @@ const FlooringHero = () => {
           <div className="flooring-floating-badge">
             <div className="flooring-badge-dot animate-pulse" />
             <div>
-              <div className="text-[10px] uppercase font-bold tracking-[0.2em] text-[#C9A86A]">
+              <div className="text-[10px] font-bold tracking-[0.15em] text-[#C9A86A]">
                 Doha, Qatar
               </div>
-              <div className="text-xs md:text-sm font-extrabold tracking-wide uppercase text-white">
+              <div className="text-xs md:text-sm font-extrabold tracking-wide text-white">
                 Luxury Flooring Specialists
               </div>
             </div>
@@ -250,36 +270,36 @@ const FlooringHero = () => {
 
       {/* Trust & Guarantee Strip */}
       <section className="bg-white border-b border-[#e8e8e8]">
-        <div className="max-w-[1240px] w-[94%] mx-auto">
+        <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 divide-y md:divide-y-0 md:divide-x divide-[#e8e8e8]">
             <div className="p-5 text-center transition hover:-translate-y-1">
               <div className="text-[#5A0F2F] font-bold text-xl mb-1">✓</div>
-              <h3 className="text-xs font-bold uppercase tracking-wider text-[#171717]">High Durability</h3>
+              <h3 className="text-xs font-bold tracking-wider text-[#171717]">High Durability</h3>
               <p className="text-[11px] text-[#666] mt-0.5">Heavy foot-traffic ready</p>
             </div>
             <div className="p-5 text-center transition hover:-translate-y-1">
               <div className="text-[#5A0F2F] font-bold text-xl mb-1">⚒</div>
-              <h3 className="text-xs font-bold uppercase tracking-wider text-[#171717]">Expert Installation</h3>
+              <h3 className="text-xs font-bold tracking-wider text-[#171717]">Expert Installation</h3>
               <p className="text-[11px] text-[#666] mt-0.5">Skilled Doha fitters</p>
             </div>
             <div className="p-5 text-center transition hover:-translate-y-1">
               <div className="text-[#5A0F2F] font-bold text-xl mb-1">▣</div>
-              <h3 className="text-xs font-bold uppercase tracking-wider text-[#171717]">Modern Aesthetics</h3>
+              <h3 className="text-xs font-bold tracking-wider text-[#171717]">Modern Aesthetics</h3>
               <p className="text-[11px] text-[#666] mt-0.5">Herringbone & wide planks</p>
             </div>
             <div className="p-5 text-center transition hover:-translate-y-1">
               <div className="text-[#5A0F2F] font-bold text-xl mb-1">◆</div>
-              <h3 className="text-xs font-bold uppercase tracking-wider text-[#171717]">100% Water Resistant</h3>
+              <h3 className="text-xs font-bold tracking-wider text-[#171717]">100% Water Resistant</h3>
               <p className="text-[11px] text-[#666] mt-0.5">SPC & vinyl solutions</p>
             </div>
             <div className="p-5 text-center transition hover:-translate-y-1">
               <div className="text-[#5A0F2F] font-bold text-xl mb-1">◉</div>
-              <h3 className="text-xs font-bold uppercase tracking-wider text-[#171717]">Villas & Commercial</h3>
+              <h3 className="text-xs font-bold tracking-wider text-[#171717]">Villas & Commercial</h3>
               <p className="text-[11px] text-[#666] mt-0.5">Custom projects support</p>
             </div>
             <div className="p-5 text-center transition hover:-translate-y-1">
               <div className="text-[#5A0F2F] font-bold text-xl mb-1">✦</div>
-              <h3 className="text-xs font-bold uppercase tracking-wider text-[#171717]">Trusted Brand</h3>
+              <h3 className="text-xs font-bold tracking-wider text-[#171717]">Trusted Brand</h3>
               <p className="text-[11px] text-[#666] mt-0.5">Serving clients across Qatar</p>
             </div>
           </div>

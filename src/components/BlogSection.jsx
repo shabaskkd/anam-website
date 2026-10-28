@@ -29,16 +29,19 @@ const BlogSection = () => {
         <div className="max-w-[1400px] mx-auto px-12">
           {/* Section Header */}
           <div className="mb-20">
-            <motion.h2
+            <span className="anam-hero-eyebrow block mb-3">
+              Insights & Architectural Articles
+            </span>
+            <motion.h1
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-5xl font-bold leading-tight text-gray-900"
+              className="anam-hero-title"
             >
-              Take A Look At <span className="text-primary">Our Latest</span>{" "}
+              Take A Look At <span>Our Latest</span>{" "}
               <br />
-              <span className="text-primary">Blog</span> & Articles.
-            </motion.h2>
+              <span>Blog</span> & Articles.
+            </motion.h1>
           </div>
 
           {/* Blog Grid */}
@@ -74,11 +77,11 @@ const BlogSection = () => {
                       <span className="text-primary">{post.author}</span>
                     </div>
 
-                    <h3 className="text-2xl font-bold text-gray-900 leading-snug group-hover:text-primary transition-colors duration-300">
+                    <h3 className="anam-h3 !mt-0 !mb-2 group-hover:text-primary transition-colors duration-300">
                       {post.title}
                     </h3>
 
-                    <p className="text-gray-500 leading-relaxed line-clamp-3 text-sm font-medium">
+                    <p className="anam-small-p text-gray-500 line-clamp-3">
                       {post.excerpt}
                     </p>
                   </div>

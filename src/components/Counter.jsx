@@ -9,7 +9,7 @@ const Counter = () => {
   const sectionRef = useRef(null);
 
   const stats = [
-    { value: "860+", label: "Customers served" },
+    { value: "860+", label: "Customers Served" },
     { value: "10+", label: "Years of Experience" },
     { value: "4.8/5", label: "Customer Satisfaction Score" },
     { value: "156+", label: "Completed Projects" },
@@ -90,7 +90,7 @@ const Counter = () => {
                 0
               </div>
 
-              <div className="text-sm md:text-sm font-medium text-black uppercase">
+              <div className="text-sm md:text-sm font-medium text-black">
                 {item.label}
               </div>
             </div>

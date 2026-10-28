@@ -18,8 +18,9 @@ const TailoredServices = () => {
   return (
     <section className="container mx-auto pt-24 px-4">
       <div className="mx-auto">
-        <div className="flex items-center justify-between mb-12">
-          <h2 className="md:text-5xl text-3xl text-gray-800">Best Products</h2>
+        <div className="mb-12">
+          <span className="anam-hero-eyebrow">Featured Collections</span>
+          <h2 className="anam-section-title">Best Products</h2>
         </div>
 
         <Swiper
@@ -58,7 +59,7 @@ const TailoredServices = () => {
                 </div>
 
                 <div className="p-6 flex items-center justify-between bg-gradient-to-t from-primary to-transparent text-white absolute w-full left-0 -bottom-[100%] group-hover:bottom-0 transition-all duration-500">
-                  <h5 className="text-sm font-bold text-white leading-tight uppercase tracking-wider">
+                  <h5 className="text-sm font-bold text-white leading-tight tracking-wider">
                     {product?.name}
                   </h5>
                   <Link

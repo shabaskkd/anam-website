@@ -50,7 +50,7 @@ const BlogDetail = () => {
             {blog.category}
           </span>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight mb-6 text-gray-900">
+          <h1 className="anam-hero-title mb-6">
             {blog.title}
           </h1>
 

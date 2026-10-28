@@ -21,9 +21,9 @@ const slides = [
   {
     image: IMAGES.LP3,
     title: ["Elegant &", "Modern Partitions"],
-    subtitle: "Transform Your Walls",
+    subtitle: "Flexible Space Solutions",
     desc: "Create stylish and functional spaces with our sleek aluminium partitions designed for flexibility, durability, and modern interior aesthetics.",
-    cta: "View Wallpapers",
+    cta: "Explore Partitions",
   },
   {
     image: IMAGES.LP1,

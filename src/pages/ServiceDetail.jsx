@@ -32,10 +32,10 @@ const ServiceDetail = () => {
         >
           <div className="absolute inset-0 bg-gradient-to-t from-[#5a0f2f]/80 to-transparent" />
           <div className="z-10 max-w-7xl mx-auto w-full absolute bottom-12 text-center left-1/2 -translate-x-1/2 px-4">
-            <h1 className="text-white text-4xl sm:text-5xl md:text-7xl font-bold capitalize">
+            <h1 className="anam-hero-title !text-white text-center">
               {service.name}
             </h1>
-            <p className="text-white text-base md:text-lg max-w-2xl mx-auto mt-3">
+            <p className="anam-lead-p !text-white/90 text-center mx-auto mt-3">
               {service.tagline}
             </p>
           </div>
@@ -43,12 +43,12 @@ const ServiceDetail = () => {
 
         <section className="py-16 md:py-20 px-6 bg-[#f9f4ef]">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-gray-900">
-              About this service
+            <h2 className="anam-section-title mb-8">
+              About This Service
             </h2>
-            <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
+            <div className="space-y-4">
               {service.paragraphs.map((paragraph, i) => (
-                <p key={i}>{paragraph}</p>
+                <p key={i} className="anam-body-p">{paragraph}</p>
               ))}
             </div>
             <div className="mt-12 flex flex-wrap gap-4 justify-center sm:justify-start">

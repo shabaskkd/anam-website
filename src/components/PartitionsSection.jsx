@@ -212,8 +212,8 @@ const PartitionsSection = () => {
             font-size: clamp(42px, 5vw, 68px);
             line-height: .98;
             letter-spacing: -2px;
-            text-transform: uppercase;
             margin: 0 0 24px;
+            font-weight: normal;
         }
 
         .partition-hero h1 span {
@@ -384,7 +384,6 @@ const PartitionsSection = () => {
         .partition-type-content h3 {
             font-size: 15px;
             margin: 0 0 10px;
-            text-transform: uppercase;
         }
 
         .partition-type-content p {
@@ -463,7 +462,6 @@ const PartitionsSection = () => {
 
         .partition-why-card h3 {
             font-size: 12px;
-            text-transform: uppercase;
             margin: 0 0 7px;
         }
 
@@ -587,7 +585,6 @@ const PartitionsSection = () => {
 
         .partition-process-step h3 {
             font-size: 12px;
-            text-transform: uppercase;
             margin: 0 0 7px;
         }
 
@@ -762,12 +759,12 @@ const PartitionsSection = () => {
       <section className="partition-hero relative">
         <div className="partition-hero-content">
           <div className="partition-hero-inner">
-            <div className="partition-eyebrow">Premium Partition Solutions</div>
-            <h1>
+            <div className="partition-eyebrow anam-hero-eyebrow">Premium Partition Solutions</div>
+            <h1 className="anam-hero-title">
               Partition Services <br />
               <span className="inline-block relative">
                 in Qatar
-                <span className="block h-[5px] w-[140px] bg-[#5A0F2F] mt-2 rounded-full" />
+                <span className="anam-underline-bar block h-[5px] w-[140px] bg-[#5A0F2F] mt-2 rounded-full" />
               </span>
             </h1>
 
@@ -802,8 +799,8 @@ const PartitionsSection = () => {
           <div className="absolute bottom-6 right-6 md:bottom-7 md:right-7 bg-[#5A0F2F] text-white px-5 py-3 shadow-2xl border border-white/15 backdrop-blur-sm z-10 flex items-center gap-3">
             <div className="w-2.5 h-2.5 rounded-full bg-[#C9A86A] shadow-[0_0_10px_#C9A86A] animate-pulse" />
             <div>
-              <div className="text-[10px] uppercase font-bold tracking-[0.2em] text-[#C9A86A]">Doha, Qatar</div>
-              <div className="text-xs md:text-sm font-extrabold tracking-wide uppercase text-white">Glass & Gypsum Partitions</div>
+              <div className="text-[10px] font-bold tracking-[0.15em] text-[#C9A86A]">Doha, Qatar</div>
+              <div className="text-xs md:text-sm font-extrabold tracking-wide text-white">Glass & Gypsum Partitions</div>
             </div>
           </div>
         </div>

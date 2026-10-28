@@ -64,12 +64,12 @@ const Header = () => {
   };
 
   const navLinks = [
-    { name: "HOME", path: "/" },
-    { name: "ABOUT US", path: "/about" },
-    { name: "SERVICES", path: "/services" },
-    { name: "CAREERS", path: "/careers" },
-    { name: "BLOG", path: "/blog" },
-    { name: "CONTACT", path: "/contact" },
+    { name: "Home", path: "/" },
+    { name: "About Us", path: "/about" },
+    { name: "Services", path: "/services" },
+    { name: "Careers", path: "/careers" },
+    { name: "Blog", path: "/blog" },
+    { name: "Contact", path: "/contact" },
   ];
 
   return (
@@ -108,8 +108,8 @@ const Header = () => {
             onMouseEnter={() => setIsMegaMenuOpen(true)}
             onMouseLeave={() => setIsMegaMenuOpen(false)}
           >
-            <button className="flex items-center gap-1.5 text-[13px] font-bold tracking-widest text-white hover:opacity-70 transition-colors h-full uppercase">
-              PRODUCTS{" "}
+            <button className="flex items-center gap-1.5 text-[13px] font-bold tracking-widest text-white hover:opacity-70 transition-colors h-full">
+              Products{" "}
               <ChevronDown
                 size={14}
                 className={
@@ -147,8 +147,8 @@ const Header = () => {
             onMouseEnter={() => setIsServiceMenuOpen(true)}
             onMouseLeave={() => setIsServiceMenuOpen(false)}
           >
-            <button className="flex items-center gap-1.5 text-[13px] font-bold tracking-widest text-white hover:opacity-70 transition-colors h-full uppercase">
-              SERVICES{" "}
+            <button className="flex items-center gap-1.5 text-[13px] font-bold tracking-widest text-white hover:opacity-70 transition-colors h-full">
+              Services{" "}
               <ChevronDown
                 size={14}
                 className={
@@ -307,7 +307,7 @@ const Header = () => {
                     onClick={() => setMobileProductsOpen(!mobileProductsOpen)}
                     className="flex items-center justify-between w-full text-sm font-bold tracking-widest text-black"
                   >
-                    PRODUCTS{" "}
+                    Products{" "}
                     <ChevronDown
                       size={18}
                       className={mobileProductsOpen ? "rotate-180" : ""}
@@ -334,7 +334,7 @@ const Header = () => {
                     onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
                     className="flex items-center justify-between w-full text-sm font-bold tracking-widest text-black"
                   >
-                    SERVICES{" "}
+                    Services{" "}
                     <ChevronDown
                       size={18}
                       className={mobileServicesOpen ? "rotate-180" : ""}

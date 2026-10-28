@@ -52,16 +52,21 @@ const ProductHero = ({
           z-index: 10;
         }
 
+        .product-hero-wrapper {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
         .product-hero-tag {
+          font-family: Arial, Helvetica, sans-serif;
           display: inline-flex;
           align-items: center;
           gap: 10px;
           color: #5A0F2F;
           font-size: 13px;
-          font-weight: 800;
-          letter-spacing: 0.18em;
+          font-weight: 700;
+          letter-spacing: 1.8px;
           text-transform: uppercase;
-          margin-bottom: 18px;
+          margin-bottom: 16px;
         }
 
         .product-hero-tag::before {
@@ -73,13 +78,17 @@ const ProductHero = ({
         }
 
         .product-hero-title {
-          font-size: clamp(36px, 4.2vw, 58px);
-          line-height: 1.04;
-          font-weight: 900;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: clamp(42px, 5vw, 68px);
+          line-height: .98;
+          font-weight: normal;
           color: #171717;
-          text-transform: uppercase;
-          letter-spacing: -0.02em;
+          letter-spacing: -2px;
           margin: 0 0 24px;
+        }
+
+        .product-hero-title span {
+          color: #5A0F2F;
         }
 
         .product-hero-underline-wrapper {
@@ -129,10 +138,20 @@ const ProductHero = ({
           cursor: pointer;
         }
 
+        .product-hero-btn span {
+          display: inline-flex;
+          align-items: center;
+          transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
         .product-hero-btn:hover {
           background: #420820;
           transform: translateY(-3px);
           box-shadow: 0 16px 32px rgba(90, 15, 47, 0.32);
+        }
+
+        .product-hero-btn:hover span {
+          transform: translateX(4px);
         }
 
         .product-hero-right {
@@ -190,9 +209,10 @@ const ProductHero = ({
           }
         }
 
-        @media (max-width: 640px) {
+        @media (max-width: 768px) {
           .product-hero-title {
-            font-size: 32px;
+            font-size: 34px;
+            letter-spacing: -1px;
           }
           .product-hero-underline-bar {
             width: 110px;
@@ -214,13 +234,13 @@ const ProductHero = ({
         {/* Left Content Card */}
         <div className="product-hero-left">
           <div className="max-w-[540px]">
-            <div className="product-hero-tag">{categoryTag}</div>
+            <div className="product-hero-tag anam-hero-eyebrow">{categoryTag}</div>
 
-            <h1 className="product-hero-title">
+            <h1 className="product-hero-title anam-hero-title">
               {mainTitle} <br />
-              <span className="product-hero-underline-wrapper">
+              <span className="product-hero-underline-wrapper inline-block relative">
                 {locationText}
-                <span className="product-hero-underline-bar" />
+                <span className="product-hero-underline-bar anam-underline-bar" />
               </span>
             </h1>
 
@@ -250,10 +270,10 @@ const ProductHero = ({
           <div className="product-floating-badge">
             <div className="product-badge-dot animate-pulse" />
             <div>
-              <div className="text-[10px] uppercase font-bold tracking-[0.2em] text-[#C9A86A]">
+              <div className="text-[10px] font-bold tracking-[0.15em] text-[#C9A86A]">
                 {badgeSubtitle}
               </div>
-              <div className="text-xs md:text-sm font-extrabold tracking-wide uppercase text-white">
+              <div className="text-xs md:text-sm font-extrabold tracking-wide text-white">
                 {badgeTitle}
               </div>
             </div>
@@ -263,36 +283,36 @@ const ProductHero = ({
 
       {/* Trust & Assurance Strip */}
       <section className="bg-white border-b border-[#e8e8e8]">
-        <div className="max-w-[1240px] w-[94%] mx-auto">
+        <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 divide-y md:divide-y-0 md:divide-x divide-[#e8e8e8]">
             <div className="p-5 text-center transition hover:-translate-y-1">
               <div className="text-[#5A0F2F] font-bold text-xl mb-1">✓</div>
-              <h3 className="text-xs font-bold uppercase tracking-wider text-[#171717]">Premium Quality</h3>
+              <h3 className="text-xs font-bold tracking-wider text-[#171717]">Premium Quality</h3>
               <p className="text-[11px] text-[#666] mt-0.5">Top-grade materials</p>
             </div>
             <div className="p-5 text-center transition hover:-translate-y-1">
               <div className="text-[#5A0F2F] font-bold text-xl mb-1">⚒</div>
-              <h3 className="text-xs font-bold uppercase tracking-wider text-[#171717]">Expert Installation</h3>
+              <h3 className="text-xs font-bold tracking-wider text-[#171717]">Expert Installation</h3>
               <p className="text-[11px] text-[#666] mt-0.5">Experienced Qatar team</p>
             </div>
             <div className="p-5 text-center transition hover:-translate-y-1">
               <div className="text-[#5A0F2F] font-bold text-xl mb-1">▣</div>
-              <h3 className="text-xs font-bold uppercase tracking-wider text-[#171717]">Modern Designs</h3>
+              <h3 className="text-xs font-bold tracking-wider text-[#171717]">Modern Designs</h3>
               <p className="text-[11px] text-[#666] mt-0.5">Tailored to your space</p>
             </div>
             <div className="p-5 text-center transition hover:-translate-y-1">
               <div className="text-[#5A0F2F] font-bold text-xl mb-1">◆</div>
-              <h3 className="text-xs font-bold uppercase tracking-wider text-[#171717]">Wide Range</h3>
+              <h3 className="text-xs font-bold tracking-wider text-[#171717]">Wide Range</h3>
               <p className="text-[11px] text-[#666] mt-0.5">Multiple finishes & styles</p>
             </div>
             <div className="p-5 text-center transition hover:-translate-y-1">
               <div className="text-[#5A0F2F] font-bold text-xl mb-1">◉</div>
-              <h3 className="text-xs font-bold uppercase tracking-wider text-[#171717]">Project Support</h3>
+              <h3 className="text-xs font-bold tracking-wider text-[#171717]">Project Support</h3>
               <p className="text-[11px] text-[#666] mt-0.5">Consultation & delivery</p>
             </div>
             <div className="p-5 text-center transition hover:-translate-y-1">
               <div className="text-[#5A0F2F] font-bold text-xl mb-1">✦</div>
-              <h3 className="text-xs font-bold uppercase tracking-wider text-[#171717]">Trusted Brand</h3>
+              <h3 className="text-xs font-bold tracking-wider text-[#171717]">Trusted Brand</h3>
               <p className="text-[11px] text-[#666] mt-0.5">Serving clients in Doha</p>
             </div>
           </div>

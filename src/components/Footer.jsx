@@ -11,15 +11,15 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   const footerLinks = [
-    { name: "HOME", path: "/" },
-    { name: "ABOUT US", path: "/about" },
-    { name: "SERVICES", path: "/services" },
-    { name: "PRODUCTS", path: "/products/doors" },
-    { name: "PROJECTS", path: "/projects" },
-    { name: "GALLERY", path: "/gallery" },
-    { name: "CAREERS", path: "/careers" },
-    { name: "BLOG", path: "/blog" },
-    { name: "CONTACT", path: "/contact" },
+    { name: "Home", path: "/" },
+    { name: "About Us", path: "/about" },
+    { name: "Services", path: "/services" },
+    { name: "Products", path: "/products/doors" },
+    { name: "Projects", path: "/projects" },
+    { name: "Gallery", path: "/gallery" },
+    { name: "Careers", path: "/careers" },
+    { name: "Blog", path: "/blog" },
+    { name: "Contact", path: "/contact" },
   ];
 
   const socialLinks = [
@@ -75,7 +75,7 @@ const Footer = () => {
 
           {/* Links Column */}
           <div className="lg:pl-20">
-            <h4 className="text-xs font-black uppercase tracking-[0.2em] mb-8 text-white/50">
+            <h4 className="text-xs font-bold tracking-[0.15em] mb-8 text-white/70">
               Navigation
             </h4>
             <ul className="grid grid-cols-2 gap-x-4 gap-y-4">
@@ -94,8 +94,8 @@ const Footer = () => {
 
           {/* Contact Column */}
           <div className="space-y-8 lg:text-right">
-            <h4 className="text-xs font-black uppercase tracking-[0.2em] mb-2 text-white/50">
-              Get in Touch
+            <h4 className="text-xs font-bold tracking-[0.15em] mb-2 text-white/70">
+              Get In Touch
             </h4>
             <div className="space-y-2">
               <a
@@ -117,6 +117,9 @@ const Footer = () => {
                 <a
                   key={social.name}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Follow ANAM Qatar on ${social.name}`}
                   className="bg-white/10 p-3 rounded-full hover:bg-white hover:text-primary transition-all duration-300 transform hover:-translate-y-1"
                 >
                   {React.cloneElement(social.icon, { size: 18 })}

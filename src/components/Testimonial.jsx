@@ -88,9 +88,9 @@ const Testimonial = () => {
       <div className="max-w-[1400px] mx-auto px-12 flex relative z-10">
         <div className="w-3/4 text-left flex flex-col justify-center">
           <h2 className="text-5xl font-bold text-[#fff] mb-8">
-            Happy words
+            Happy Words
             <br />
-            <span className="text-[#fff]">About us</span>
+            <span className="text-[#fff]">About Us</span>
           </h2>
           <div className="">
             <div className="flex items-center gap-4">
