@@ -177,6 +177,27 @@ const ProductDetail = ({ overrideSlug }) => {
           <meta name="twitter:title" content="Flooring in Qatar | Premium Flooring Solutions | ANAM Qatar" />
           <meta name="twitter:description" content="Explore premium flooring in Qatar for residential and commercial spaces. Discover modern flooring solutions, designs, materials and professional flooring options from ANAM Qatar." />
           <meta name="twitter:image" content="https://anamqatar.com/images/flooring-qatar-hero.webp" />
+
+          {/* Structured Data for Google Ranking */}
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "Flooring in Qatar",
+              "image": "https://anamqatar.com/images/flooring-qatar-hero.webp",
+              "description": "Explore premium flooring in Qatar for residential and commercial spaces. Discover modern flooring solutions, designs, materials and professional flooring options from ANAM Qatar.",
+              "brand": {
+                "@type": "Brand",
+                "name": "ANAM Qatar",
+                "logo": "https://anamqatar.com/apple-touch-icon.png"
+              },
+              "offers": {
+                "@type": "AggregateOffer",
+                "priceCurrency": "QAR",
+                "availability": "https://schema.org/InStock"
+              }
+            })}
+          </script>
         </Helmet>
       )}
       {product.slug === "wall-panels" && (
