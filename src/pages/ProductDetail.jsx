@@ -3,15 +3,7 @@ import Layout from "../components/Layout";
 import { productData } from "../data/productData";
 import { useParams, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import WallPanelsSection from "../components/WallPanelsSection";
-import DoorsSection from "../components/DoorsSection";
-import WindowsSection from "../components/WindowsSection";
-import PartitionsSection from "../components/PartitionsSection";
-import CeilingSolutionsSection from "../components/CeilingSolutionsSection";
-import KitchenWardrobeSection from "../components/KitchenWardrobeSection";
-import FlooringHero from "../components/FlooringHero";
 import FlooringSection from "../components/FlooringSection";
-import ProfileAccessoriesSection from "../components/ProfileAccessoriesSection";
 import ProductHero from "../components/ProductHero";
 
 const findNodeAndAncestors = (nodes, targetSlug, ancestors = []) => {
@@ -154,6 +146,16 @@ const ProductDetail = ({ overrideSlug }) => {
 
   return (
     <Layout withBg>
+            {(!product.slug || product.slug === "products") && (
+        <Helmet>
+          <title>Architectural & Interior Products in Qatar | ANAM Qatar</title>
+          <meta name="title" content="Architectural & Interior Products in Qatar | ANAM Qatar" />
+          <meta name="description" content="Discover ANAM Qatar's complete range of architectural solutions, including premium flooring, wall panels, doors, windows, partitions, and ceiling solutions." />
+          <meta name="keywords" content="Architectural Products Qatar, Interior Products Qatar, Flooring Qatar, Wall Panels Qatar, Doors Qatar, Windows Qatar, Partitions Qatar, ANAM Qatar" />
+          <meta name="robots" content="index, follow" />
+          <link rel="canonical" href="https://anamqatar.com/products" />
+        </Helmet>
+      )}
       {product.slug === "flooring" && (
         <Helmet>
           <title>Best Flooring in Qatar | #1 Flooring Company in Doha | ANAM Qatar</title>
@@ -689,22 +691,8 @@ const ProductDetail = ({ overrideSlug }) => {
         </Helmet>
       )}
       <main>
-        {product.slug === "kitchen-wardrobe" && !activeSubproduct ? (
-          <KitchenWardrobeSection />
-        ) : product.slug === "windows" && !activeSubproduct ? (
-          <WindowsSection />
-        ) : product.slug === "partitions" && !activeSubproduct ? (
-          <PartitionsSection />
-        ) : product.slug === "ceiling-solutions" && !activeSubproduct ? (
-          <CeilingSolutionsSection />
-        ) : product.slug === "wall-panels" && !activeSubproduct ? (
-          <WallPanelsSection />
-        ) : product.slug === "doors" && !activeSubproduct ? (
-          <DoorsSection />
-        ) : product.slug === "flooring" && !activeSubproduct ? (
+        {product.slug === "flooring" && !activeSubproduct ? (
           <FlooringSection />
-        ) : product.slug === "profile-accessories" && !activeSubproduct ? (
-          <ProfileAccessoriesSection />
         ) : (
           <>
             {/* Top Hero Section */}
