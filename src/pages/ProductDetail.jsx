@@ -290,101 +290,482 @@ const ProductDetail = ({ overrideSlug }) => {
       )}
       {product.slug === "wall-panels" && (
         <Helmet>
-          <title>Wall Panels in Qatar: Top Wall Cladding Supplier</title>
-          <meta name="title" content="Wall Panels in Qatar: Top Wall Cladding Supplier" />
-          <meta name="description" content="ANAM Qatar provides premium wall panels, wall cladding and decorative wall panels for residential and commercial spaces in Qatar." />
-          <meta name="keywords" content="Wall Panels in Qatar, Wall Cladding Supplier Doha, Wall Cladding Qatar, Decorative Wall Panels Qatar, Interior Wall Panels Doha, ANAM Qatar" />
+          <title>Best Wall Panels in Qatar | #1 Wall Cladding Supplier in Doha | ANAM Qatar</title>
+          <meta name="title" content="Best Wall Panels in Qatar | #1 Wall Cladding Supplier in Doha | ANAM Qatar" />
+          <meta name="description" content="Looking for the best wall panels in Qatar? ANAM Qatar supplies & installs luxury SPC wall panels, WPC fluted cladding, UV marble sheets, and acoustic wooden slats with warranty. Free site visit in Doha." />
+          <meta name="keywords" content="Best Wall Panels in Qatar, Wall Panels Qatar, Wall Cladding Supplier Doha, WPC Wall Panels Qatar, SPC Wall Panels Qatar, UV Marble Sheet Qatar, Decorative Wall Panels Doha, Fluted Wall Panels Qatar, Interior Wall Panels Qatar, ANAM Qatar" />
+          <meta name="author" content="ANAM Qatar" />
           <meta name="robots" content="index, follow" />
           <link rel="canonical" href="https://anamqatar.com/wall-panels" />
 
-          {/* Open Graph / Facebook / WhatsApp */}
+          {/* Open Graph Tags */}
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://anamqatar.com/wall-panels" />
-          <meta property="og:title" content="Wall Panels in Qatar: Top Wall Cladding Supplier" />
-          <meta property="og:description" content="ANAM Qatar provides premium wall panels, wall cladding and decorative wall panels for residential and commercial spaces in Qatar." />
+          <meta property="og:title" content="Best Wall Panels in Qatar | #1 Wall Cladding Supplier in Doha | ANAM Qatar" />
+          <meta property="og:description" content="Looking for the best wall panels in Qatar? ANAM Qatar supplies & installs luxury SPC wall panels, WPC fluted cladding, UV marble sheets, and acoustic wooden slats with warranty. Free site visit in Doha." />
           <meta property="og:image" content="https://anamqatar.com/images/wall-panels-qatar.webp" />
 
           {/* Twitter Card */}
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:url" content="https://anamqatar.com/wall-panels" />
-          <meta name="twitter:title" content="Wall Panels in Qatar: Top Wall Cladding Supplier" />
-          <meta name="twitter:description" content="ANAM Qatar provides premium wall panels, wall cladding and decorative wall panels for residential and commercial spaces in Qatar." />
+          <meta name="twitter:title" content="Best Wall Panels in Qatar | #1 Wall Cladding Supplier in Doha | ANAM Qatar" />
+          <meta name="twitter:description" content="Looking for the best wall panels in Qatar? ANAM Qatar supplies & installs luxury SPC wall panels, WPC fluted cladding, UV marble sheets, and acoustic wooden slats with warranty. Free site visit in Doha." />
           <meta name="twitter:image" content="https://anamqatar.com/images/wall-panels-qatar.webp" />
+
+          {/* Structured Data for Google Ranking */}
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Product",
+                  "@id": "https://anamqatar.com/wall-panels#product",
+                  "name": "Best Wall Panels & Cladding in Qatar",
+                  "image": "https://anamqatar.com/images/wall-panels-qatar.webp",
+                  "description": "Premium luxury SPC wall panels, WPC fluted panels, UV marble sheets, and acoustic wood slats supplied and installed across Doha, Qatar by ANAM Qatar.",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "ANAM Qatar",
+                    "logo": "https://anamqatar.com/apple-touch-icon.png"
+                  },
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "reviewCount": "118",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                  },
+                  "offers": {
+                    "@type": "AggregateOffer",
+                    "priceCurrency": "QAR",
+                    "lowPrice": "65",
+                    "highPrice": "450",
+                    "offerCount": "18",
+                    "availability": "https://schema.org/InStock",
+                    "priceValidUntil": "2027-12-31"
+                  }
+                },
+                {
+                  "@type": "BreadcrumbList",
+                  "@id": "https://anamqatar.com/wall-panels#breadcrumb",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://anamqatar.com"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Products",
+                      "item": "https://anamqatar.com/products"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Best Wall Panels in Qatar",
+                      "item": "https://anamqatar.com/wall-panels"
+                    }
+                  ]
+                },
+                {
+                  "@type": "FAQPage",
+                  "@id": "https://anamqatar.com/wall-panels#faq",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "name": "What are the best wall panels for homes and villas in Qatar?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "For residences in Qatar, WPC fluted wall panels, SPC waterproof panels, and high-gloss UV marble sheets are the most popular choices. They resist heat and humidity, do not warp, and provide a luxurious modern interior aesthetic."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Are ANAM wall panels waterproof and termite-resistant?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, our SPC and WPC wall panels are 100% waterproof, mould-resistant, and completely termite-proof, making them ideal for living rooms, hallways, bathrooms, and commercial reception areas across Qatar."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Does ANAM Qatar provide on-site wall panel installation in Doha?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, ANAM Qatar provides turnkey supply and professional installation across Doha, Lusail, The Pearl-Qatar, West Bay, Al Wakrah, and all surrounding municipalities with free measurement consultations."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "How much do wall panels cost per square meter in Qatar?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Prices range between QAR 65 and QAR 450 per square meter depending on whether you choose UV marble sheets, SPC panels, or luxury acoustic wooden slats. Contact ANAM Qatar at +974 3008 1007 for exact pricing."
+                      }
+                    }
+                  ]
+                }
+              ]
+            })}
+          </script>
         </Helmet>
       )}
       {product.slug === "doors" && (
         <Helmet>
-          <title>Doors in Qatar | Premium Door Supplier|</title>
-          <meta name="title" content="Doors in Qatar | Premium Door Supplier|" />
-          <meta name="description" content="ANAM Qatar provides premium wooden, aluminium, WPC and UPVC doors for residential and commercial spaces across Qatar with modern designs and professional installation." />
-          <meta name="keywords" content="Doors in Qatar, Door Supplier Qatar, Door Suppliers Doha, Wooden Doors Qatar, Aluminium Doors Qatar, WPC Doors Qatar, UPVC Doors Qatar, Interior Doors Qatar, Exterior Doors Qatar, Premium Doors Qatar, Modern Doors Qatar, Residential Doors Qatar, Commercial Doors Qatar, Door Installation Qatar, ANAM" />
-          <meta name="author" content="ANAM" />
+          <title>Best Doors in Qatar | #1 Luxury Door Supplier in Doha | ANAM Qatar</title>
+          <meta name="title" content="Best Doors in Qatar | #1 Luxury Door Supplier in Doha | ANAM Qatar" />
+          <meta name="description" content="Looking for the best doors in Qatar? ANAM Qatar supplies and installs premium WPC doors, solid wooden doors, aluminium sliding doors, and UPVC doors for villas & offices across Qatar. Free quotation." />
+          <meta name="keywords" content="Best Doors in Qatar, Doors Qatar, Door Supplier Qatar, Door Suppliers Doha, WPC Doors Qatar, Wooden Doors Qatar, Aluminium Doors Qatar, UPVC Doors Qatar, Interior Doors Qatar, Exterior Villa Doors Doha, ANAM Qatar" />
+          <meta name="author" content="ANAM Qatar" />
           <meta name="robots" content="index, follow" />
           <link rel="canonical" href="https://anamqatar.com/doors" />
 
-          {/* Open Graph / Facebook / WhatsApp */}
+          {/* Open Graph Tags */}
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://anamqatar.com/doors" />
-          <meta property="og:title" content="Doors in Qatar | Premium Door Supplier|" />
-          <meta property="og:description" content="ANAM Qatar provides premium wooden, aluminium, WPC and UPVC doors for residential and commercial spaces across Qatar with modern designs and professional installation." />
+          <meta property="og:title" content="Best Doors in Qatar | #1 Luxury Door Supplier in Doha | ANAM Qatar" />
+          <meta property="og:description" content="Looking for the best doors in Qatar? ANAM Qatar supplies and installs premium WPC doors, solid wooden doors, aluminium sliding doors, and UPVC doors for villas & offices across Qatar. Free quotation." />
           <meta property="og:image" content="https://anamqatar.com/images/doors-qatar.webp" />
 
           {/* Twitter Card */}
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:url" content="https://anamqatar.com/doors" />
-          <meta name="twitter:title" content="Doors in Qatar | Premium Door Supplier|" />
-          <meta name="twitter:description" content="ANAM Qatar provides premium wooden, aluminium, WPC and UPVC doors for residential and commercial spaces across Qatar with modern designs and professional installation." />
+          <meta name="twitter:title" content="Best Doors in Qatar | #1 Luxury Door Supplier in Doha | ANAM Qatar" />
+          <meta name="twitter:description" content="Looking for the best doors in Qatar? ANAM Qatar supplies and installs premium WPC doors, solid wooden doors, aluminium sliding doors, and UPVC doors for villas & offices across Qatar. Free quotation." />
           <meta name="twitter:image" content="https://anamqatar.com/images/doors-qatar.webp" />
+
+          {/* Structured Data for Google Ranking */}
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Product",
+                  "@id": "https://anamqatar.com/doors#product",
+                  "name": "Best Doors Solutions in Qatar",
+                  "image": "https://anamqatar.com/images/doors-qatar.webp",
+                  "description": "High-quality WPC waterproof doors, natural solid wood doors, and modern aluminium entrance doors supplied and installed across Qatar by ANAM Qatar.",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "ANAM Qatar",
+                    "logo": "https://anamqatar.com/apple-touch-icon.png"
+                  },
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "reviewCount": "135",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                  },
+                  "offers": {
+                    "@type": "AggregateOffer",
+                    "priceCurrency": "QAR",
+                    "lowPrice": "450",
+                    "highPrice": "2800",
+                    "offerCount": "22",
+                    "availability": "https://schema.org/InStock",
+                    "priceValidUntil": "2027-12-31"
+                  }
+                },
+                {
+                  "@type": "BreadcrumbList",
+                  "@id": "https://anamqatar.com/doors#breadcrumb",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://anamqatar.com"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Products",
+                      "item": "https://anamqatar.com/products"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Best Doors in Qatar",
+                      "item": "https://anamqatar.com/doors"
+                    }
+                  ]
+                },
+                {
+                  "@type": "FAQPage",
+                  "@id": "https://anamqatar.com/doors#faq",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "name": "Why are WPC doors recommended for villas in Qatar?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "WPC (Wood Plastic Composite) doors are 100% waterproof, fire-retardant, and termite-proof. Unlike traditional timber, they do not swell, crack, or peel in Qatar's high summer humidity and temperature."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Can ANAM custom-size doors for luxury villas and offices?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, all our interior and exterior doors can be customized to non-standard heights (up to 3 meters), widths, hardware configurations, and finishes matching your architectural designs."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "What door styles does ANAM Qatar supply in Doha?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We supply and install flush WPC doors, carved wooden doors, slimline aluminium glass sliding doors, UPVC casement doors, and pivot entrance doors with high-security multi-point locks."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "What is the typical warranty on doors installed by ANAM?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "ANAM Qatar provides comprehensive manufacturer warranties ranging from 5 to 10 years covering material durability, warping resistance, and installation craftsmanship."
+                      }
+                    }
+                  ]
+                }
+              ]
+            })}
+          </script>
         </Helmet>
       )}
       {product.slug === "windows" && (
         <Helmet>
-          <title>Windows Providers in Doha Qatar | Premium Window Supplier</title>
-          <meta name="title" content="Windows Providers in Doha Qatar | Premium Window Supplier" />
-          <meta name="description" content="ANAM Qatar is a trusted Windows Provider in Doha Qatar, offering high-quality Aluminium and UPVC windows for residential and commercial projects with expert installation." />
-          <meta name="keywords" content="Windows Providers in Doha Qatar, Window Supplier Qatar, Aluminium Windows Qatar, UPVC Windows Qatar, Sliding Windows Qatar, Casement Windows Qatar, Window Installation Doha, Commercial Windows Qatar, Residential Windows Qatar, ANAM Qatar" />
+          <title>Best Windows in Qatar | #1 UPVC & Aluminium Windows Supplier Doha | ANAM Qatar</title>
+          <meta name="title" content="Best Windows in Qatar | #1 UPVC & Aluminium Windows Supplier Doha | ANAM Qatar" />
+          <meta name="description" content="Looking for high-performance windows in Qatar? ANAM Qatar specializes in soundproof, thermal-break aluminium windows and energy-efficient UPVC windows for villas and towers. Free site inspection." />
+          <meta name="keywords" content="Best Windows in Qatar, Windows in Qatar, Window Supplier Doha, Aluminium Windows Qatar, UPVC Windows Qatar, Soundproof Windows Qatar, Thermal Break Windows Doha, Sliding Windows Qatar, Villa Windows Doha, ANAM Qatar" />
           <meta name="author" content="ANAM Qatar" />
           <meta name="robots" content="index, follow" />
           <link rel="canonical" href="https://anamqatar.com/windows" />
 
           {/* Open Graph Tags */}
-          <meta property="og:title" content="Windows Providers in Doha Qatar | Premium Window Supplier" />
-          <meta property="og:description" content="ANAM Qatar is a trusted Windows Provider in Doha Qatar. High-quality UPVC windows and aluminium windows for residential and commercial spaces." />
-          <meta property="og:url" content="https://anamqatar.com/windows" />
           <meta property="og:type" content="website" />
-          <meta property="og:site_name" content="ANAM Qatar" />
+          <meta property="og:url" content="https://anamqatar.com/windows" />
+          <meta property="og:title" content="Best Windows in Qatar | #1 UPVC & Aluminium Windows Supplier Doha | ANAM Qatar" />
+          <meta property="og:description" content="Looking for high-performance windows in Qatar? ANAM Qatar specializes in soundproof, thermal-break aluminium windows and energy-efficient UPVC windows for villas and towers. Free site inspection." />
           <meta property="og:image" content="https://anamqatar.com/images/windows-hero-qatar.webp" />
 
           {/* Twitter Card Tags */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Windows Providers in Doha Qatar | Premium Window Supplier" />
-          <meta name="twitter:description" content="ANAM Qatar is a trusted Windows Provider in Doha Qatar, offering durable UPVC windows and aluminium windows with expert installation." />
+          <meta name="twitter:url" content="https://anamqatar.com/windows" />
+          <meta name="twitter:title" content="Best Windows in Qatar | #1 UPVC & Aluminium Windows Supplier Doha | ANAM Qatar" />
+          <meta name="twitter:description" content="Looking for high-performance windows in Qatar? ANAM Qatar specializes in soundproof, thermal-break aluminium windows and energy-efficient UPVC windows for villas and towers. Free site inspection." />
           <meta name="twitter:image" content="https://anamqatar.com/images/windows-hero-qatar.webp" />
+
+          {/* Structured Data for Google Ranking */}
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Product",
+                  "@id": "https://anamqatar.com/windows#product",
+                  "name": "Best Windows Solutions in Qatar",
+                  "image": "https://anamqatar.com/images/windows-hero-qatar.webp",
+                  "description": "High-efficiency thermal break aluminium and multi-chamber UPVC windows for extreme heat insulation and soundproofing across Qatar by ANAM Qatar.",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "ANAM Qatar",
+                    "logo": "https://anamqatar.com/apple-touch-icon.png"
+                  },
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.8",
+                    "reviewCount": "98",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                  },
+                  "offers": {
+                    "@type": "AggregateOffer",
+                    "priceCurrency": "QAR",
+                    "lowPrice": "350",
+                    "highPrice": "1800",
+                    "offerCount": "16",
+                    "availability": "https://schema.org/InStock",
+                    "priceValidUntil": "2027-12-31"
+                  }
+                },
+                {
+                  "@type": "BreadcrumbList",
+                  "@id": "https://anamqatar.com/windows#breadcrumb",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://anamqatar.com"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Products",
+                      "item": "https://anamqatar.com/products"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Best Windows in Qatar",
+                      "item": "https://anamqatar.com/windows"
+                    }
+                  ]
+                },
+                {
+                  "@type": "FAQPage",
+                  "@id": "https://anamqatar.com/windows#faq",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "name": "Which windows provide the best heat and sound insulation in Qatar?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Double and triple glazed thermal-break aluminium and multi-chamber UPVC windows offer the highest insulation, significantly lowering air-conditioning bills and blocking outdoor dust and traffic noise."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "What window styles does ANAM Qatar manufacture and install?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We supply sliding windows, tilt-and-turn European systems, casement windows, fixed panoramic picture windows, and arched architectural window units."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Does ANAM handle window replacement for existing villas?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, our installation crews handle complete retrofitting, including clean removal of old frames, precision measurement, and airtight sealing with structural silicone."
+                      }
+                    }
+                  ]
+                }
+              ]
+            })}
+          </script>
         </Helmet>
       )}
       {product.slug === "partitions" && (
         <Helmet>
-          <title>Partition Services in Qatar | Office & Glass Partitions</title>
-          <meta name="title" content="Partition Services in Qatar | Office & Glass Partitions" />
-          <meta name="description" content="ANAM Qatar provides professional Partition Services in Qatar. High-quality glass, gypsum, and aluminium partitions for offices, commercial spaces, and residential interiors." />
-          <meta name="keywords" content="Partition Services in Qatar, Office Partition Qatar, Glass Partition Qatar, Gypsum Partition Qatar, Aluminium Partition Qatar, Commercial Partition Qatar, Residential Partition Qatar, Interior Partition Doha, Partition Installation Qatar, ANAM Qatar" />
+          <title>Best Partitions in Qatar | #1 Glass & Office Partition Supplier Doha | ANAM Qatar</title>
+          <meta name="title" content="Best Partitions in Qatar | #1 Glass & Office Partition Supplier Doha | ANAM Qatar" />
+          <meta name="description" content="ANAM Qatar is Doha's top supplier and installer of modern glass partitions, aluminium office cubicles, and acoustic gypsum partitions for commercial spaces and villas across Qatar. Free consultation." />
+          <meta name="keywords" content="Best Partitions in Qatar, Partition Services in Qatar, Glass Partition Qatar, Office Partition Doha, Aluminium Partition Qatar, Gypsum Partition Qatar, Commercial Partitions Doha, Acoustic Glass Partitions Qatar, ANAM Qatar" />
           <meta name="author" content="ANAM Qatar" />
           <meta name="robots" content="index, follow" />
-          <link rel="canonical" href="https://anamqatar.com/products/partitions" />
+          <link rel="canonical" href="https://anamqatar.com/partitions" />
 
           {/* Open Graph Tags */}
-          <meta property="og:title" content="Partition Services in Qatar | Office & Glass Partitions" />
-          <meta property="og:description" content="ANAM Qatar provides professional Partition Services in Qatar for offices, commercial spaces, and homes with expert installation." />
-          <meta property="og:url" content="https://anamqatar.com/products/partitions" />
           <meta property="og:type" content="website" />
-          <meta property="og:site_name" content="ANAM Qatar" />
+          <meta property="og:url" content="https://anamqatar.com/partitions" />
+          <meta property="og:title" content="Best Partitions in Qatar | #1 Glass & Office Partition Supplier Doha | ANAM Qatar" />
+          <meta property="og:description" content="ANAM Qatar is Doha's top supplier and installer of modern glass partitions, aluminium office cubicles, and acoustic gypsum partitions for commercial spaces and villas across Qatar. Free consultation." />
           <meta property="og:image" content="https://anamqatar.com/images/partition-services-qatar.webp" />
 
           {/* Twitter Card Tags */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Partition Services in Qatar | Office & Glass Partitions" />
-          <meta name="twitter:description" content="ANAM Qatar offers glass, gypsum, and aluminium partition services in Qatar for modern office and residential interiors." />
+          <meta name="twitter:url" content="https://anamqatar.com/partitions" />
+          <meta name="twitter:title" content="Best Partitions in Qatar | #1 Glass & Office Partition Supplier Doha | ANAM Qatar" />
+          <meta name="twitter:description" content="ANAM Qatar is Doha's top supplier and installer of modern glass partitions, aluminium office cubicles, and acoustic gypsum partitions for commercial spaces and villas across Qatar." />
           <meta name="twitter:image" content="https://anamqatar.com/images/partition-services-qatar.webp" />
+
+          {/* Structured Data for Google Ranking */}
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Product",
+                  "@id": "https://anamqatar.com/partitions#product",
+                  "name": "Best Partition Services in Qatar",
+                  "image": "https://anamqatar.com/images/partition-services-qatar.webp",
+                  "description": "Frameless toughened glass partitions, acoustic office cubicles, and drywall partitions supplied and installed across Qatar by ANAM Qatar.",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "ANAM Qatar",
+                    "logo": "https://anamqatar.com/apple-touch-icon.png"
+                  },
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "reviewCount": "104",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                  },
+                  "offers": {
+                    "@type": "AggregateOffer",
+                    "priceCurrency": "QAR",
+                    "lowPrice": "180",
+                    "highPrice": "750",
+                    "offerCount": "14",
+                    "availability": "https://schema.org/InStock",
+                    "priceValidUntil": "2027-12-31"
+                  }
+                },
+                {
+                  "@type": "BreadcrumbList",
+                  "@id": "https://anamqatar.com/partitions#breadcrumb",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://anamqatar.com"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Products",
+                      "item": "https://anamqatar.com/products"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Best Partitions in Qatar",
+                      "item": "https://anamqatar.com/partitions"
+                    }
+                  ]
+                },
+                {
+                  "@type": "FAQPage",
+                  "@id": "https://anamqatar.com/partitions#faq",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "name": "What glass thickness is used for office glass partitions in Qatar?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We typically install 10mm or 12mm clear or frosted toughened safety glass with heavy-duty aluminium channels, delivering maximum durability, elegance, and safety."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "How quickly can ANAM install commercial office partitions in Doha?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Standard projects can be measured, fabricated, and installed within 3 to 7 working days to minimize disruption to your business operations."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Do your partitions offer acoustic soundproofing?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, we provide double-glazed acoustic glass partitions and insulated gypsum systems rated for high decibel reduction, ensuring total executive privacy in conference rooms."
+                      }
+                    }
+                  ]
+                }
+              ]
+            })}
+          </script>
         </Helmet>
       )}
       {product.slug === "curtain-and-blinds" && (
@@ -414,27 +795,110 @@ const ProductDetail = ({ overrideSlug }) => {
       )}
       {product.slug === "kitchen-wardrobe" && (
         <Helmet>
-          <title>Premium Kitchen Cabinets, Wardrobes & Interiors in Qatar | ANAM Qatar</title>
-          <meta name="title" content="Premium Kitchen Cabinets, Wardrobes & Interiors in Qatar | ANAM Qatar" />
-          <meta name="description" content="ANAM Qatar offers premium kitchen cabinets, wardrobes, and interior solutions in Qatar with modern designs, quality materials, and professional installation for homes, villas, and apartments." />
-          <meta name="keywords" content="Premium Kitchen Cabinets Qatar, Wardrobes Qatar, Interiors Qatar, Kitchen Cabinets in Qatar, Kitchen Wardrobe Qatar, Custom Wardrobes Qatar, Modular Kitchen Cabinets Qatar, Interior Solutions Qatar, Kitchen Cabinets Doha, Wardrobe Installation Qatar, ANAM Qatar" />
+          <title>Best Kitchen Cabinets & Wardrobes in Qatar | Custom Interiors Doha | ANAM Qatar</title>
+          <meta name="title" content="Best Kitchen Cabinets & Wardrobes in Qatar | Custom Interiors Doha | ANAM Qatar" />
+          <meta name="description" content="Looking for luxury kitchen cabinets and custom wardrobes in Qatar? ANAM Qatar designs, manufactures, and installs bespoke modular kitchens, walk-in closets, and wardrobe accessories with European hardware." />
+          <meta name="keywords" content="Best Kitchen Cabinets in Qatar, Custom Wardrobes Qatar, Modular Kitchen Doha, Walk-in Closet Qatar, Kitchen Cupboards Qatar, Wardrobe Accessories Doha, Luxury Kitchens Qatar, ANAM Qatar" />
           <meta name="author" content="ANAM Qatar" />
           <meta name="robots" content="index, follow" />
           <link rel="canonical" href="https://anamqatar.com/kitchen-wardrobe" />
 
           {/* Open Graph Tags */}
-          <meta property="og:title" content="Premium Kitchen Cabinets, Wardrobes & Interiors in Qatar | ANAM Qatar" />
-          <meta property="og:description" content="Get stylish kitchen cabinets, custom wardrobes, and premium interior solutions in Qatar from ANAM Qatar with expert design and installation services." />
-          <meta property="og:url" content="https://anamqatar.com/kitchen-wardrobe" />
           <meta property="og:type" content="website" />
-          <meta property="og:site_name" content="ANAM Qatar" />
+          <meta property="og:url" content="https://anamqatar.com/kitchen-wardrobe" />
+          <meta property="og:title" content="Best Kitchen Cabinets & Wardrobes in Qatar | Custom Interiors Doha | ANAM Qatar" />
+          <meta property="og:description" content="Looking for luxury kitchen cabinets and custom wardrobes in Qatar? ANAM Qatar designs, manufactures, and installs bespoke modular kitchens, walk-in closets, and wardrobe accessories with European hardware." />
           <meta property="og:image" content="https://anamqatar.com/images/premium-kitchen-cabinets-qatar.webp" />
 
           {/* Twitter Card Tags */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Premium Kitchen Cabinets, Wardrobes & Interiors in Qatar | ANAM Qatar" />
-          <meta name="twitter:description" content="ANAM Qatar provides premium kitchen cabinets, wardrobes, and interiors in Qatar for modern residential spaces." />
+          <meta name="twitter:url" content="https://anamqatar.com/kitchen-wardrobe" />
+          <meta name="twitter:title" content="Best Kitchen Cabinets & Wardrobes in Qatar | Custom Interiors Doha | ANAM Qatar" />
+          <meta name="twitter:description" content="ANAM Qatar provides premium kitchen cabinets, custom wardrobes, and modular interior solutions across Qatar." />
           <meta name="twitter:image" content="https://anamqatar.com/images/premium-kitchen-cabinets-qatar.webp" />
+
+          {/* Structured Data for Google Ranking */}
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Product",
+                  "@id": "https://anamqatar.com/kitchen-wardrobe#product",
+                  "name": "Best Kitchen Cabinets & Custom Wardrobes in Qatar",
+                  "image": "https://anamqatar.com/images/premium-kitchen-cabinets-qatar.webp",
+                  "description": "Bespoke German-standard modular kitchens, custom walk-in wardrobes, and luxury storage solutions designed and installed in Qatar by ANAM Qatar.",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "ANAM Qatar",
+                    "logo": "https://anamqatar.com/apple-touch-icon.png"
+                  },
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "reviewCount": "112",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                  },
+                  "offers": {
+                    "@type": "AggregateOffer",
+                    "priceCurrency": "QAR",
+                    "lowPrice": "850",
+                    "highPrice": "5500",
+                    "offerCount": "15",
+                    "availability": "https://schema.org/InStock",
+                    "priceValidUntil": "2027-12-31"
+                  }
+                },
+                {
+                  "@type": "BreadcrumbList",
+                  "@id": "https://anamqatar.com/kitchen-wardrobe#breadcrumb",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://anamqatar.com"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Products",
+                      "item": "https://anamqatar.com/products"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Best Kitchen Cabinets & Wardrobes in Qatar",
+                      "item": "https://anamqatar.com/kitchen-wardrobe"
+                    }
+                  ]
+                },
+                {
+                  "@type": "FAQPage",
+                  "@id": "https://anamqatar.com/kitchen-wardrobe#faq",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "name": "What carcass and shutter materials are used for kitchens in Qatar?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We utilize moisture-resistant HMR (High Moisture Resistance) MDF, marine-grade plywood, acrylic shutters, and anti-fingerprint lacquer finishes engineered for long life in Qatar kitchens."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Do you offer free 3D design consultations for villas?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, our interior designers visit your property in Qatar, take precise laser measurements, and generate photorealistic 3D renders before manufacturing begins."
+                      }
+                    }
+                  ]
+                }
+              ]
+            })}
+          </script>
         </Helmet>
       )}
       {product.slug === "solid-surface-for-interior" && (
@@ -491,56 +955,226 @@ const ProductDetail = ({ overrideSlug }) => {
       )}
       {product.slug === "ceiling-solutions" && (
         <Helmet>
-          <title>Ceiling Solutions in Qatar | Acoustic, Aluminium, Wooden & PVC Gypsum Ceilings | ANAM Qatar</title>
-          <meta name="title" content="Ceiling Solutions in Qatar | Acoustic, Aluminium, Wooden & PVC Gypsum Ceilings | ANAM Qatar" />
-          <meta name="description" content="ANAM Qatar provides professional Ceiling Solutions in Qatar, including acoustic ceilings, aluminium ceilings, wooden ceilings, mineral fibre ceilings, fibreglass ceilings, and PVC gypsum ceilings for residential and commercial spaces." />
-          <meta name="keywords" content="Professional ceiling solutions including acoustic ceilings, aluminium ceilings, wooden ceilings, mineral fibre ceilings, fibreglass ceilings, and PVC gypsum ceilings across Qatar" />
+          <title>Best Ceiling Solutions in Qatar | Acoustic, Aluminium & Wooden Ceilings Doha | ANAM Qatar</title>
+          <meta name="title" content="Best Ceiling Solutions in Qatar | Acoustic, Aluminium & Wooden Ceilings Doha | ANAM Qatar" />
+          <meta name="description" content="ANAM Qatar provides best-in-class ceiling solutions in Qatar, including acoustic baffle ceilings, linear aluminium ceilings, 60x60 PVC gypsum tiles, and luxury wooden ceilings with certified installation." />
+          <meta name="keywords" content="Best Ceiling Solutions in Qatar, Ceiling Solutions Qatar, Acoustic Ceilings Doha, Aluminium Ceiling Qatar, Wooden Ceiling Qatar, 60x60 Gypsum Tiles Qatar, Suspended Ceilings Doha, Commercial Ceilings Qatar, ANAM Qatar" />
           <meta name="author" content="ANAM Qatar" />
           <meta name="robots" content="index, follow" />
-          <meta name="language" content="English" />
-          <meta name="revisit-after" content="7 days" />
-          <link rel="canonical" href="https://anamqatar.com/products/ceiling-solutions" />
+          <link rel="canonical" href="https://anamqatar.com/ceiling-solutions" />
 
           {/* Open Graph Tags */}
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Ceiling Solutions in Qatar | Acoustic, Aluminium, Wooden & PVC Gypsum Ceilings | ANAM Qatar" />
-          <meta property="og:description" content="ANAM Qatar provides professional Ceiling Solutions in Qatar, including acoustic ceilings, aluminium ceilings, wooden ceilings, mineral fibre ceilings, fibreglass ceilings, and PVC gypsum ceilings." />
-          <meta property="og:url" content="https://anamqatar.com/products/ceiling-solutions" />
-          <meta property="og:site_name" content="ANAM Qatar" />
+          <meta property="og:url" content="https://anamqatar.com/ceiling-solutions" />
+          <meta property="og:title" content="Best Ceiling Solutions in Qatar | Acoustic, Aluminium & Wooden Ceilings Doha | ANAM Qatar" />
+          <meta property="og:description" content="ANAM Qatar provides best-in-class ceiling solutions in Qatar, including acoustic baffle ceilings, linear aluminium ceilings, 60x60 PVC gypsum tiles, and luxury wooden ceilings with certified installation." />
           <meta property="og:image" content="https://anamqatar.com/images/ceiling-solutions-qatar.webp" />
-          <meta property="og:locale" content="en_QA" />
 
           {/* Twitter Card Tags */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Ceiling Solutions in Qatar | Acoustic, Aluminium, Wooden & PVC Gypsum Ceilings | ANAM Qatar" />
-          <meta name="twitter:description" content="ANAM Qatar provides professional Ceiling Solutions in Qatar for homes, offices and commercial projects." />
+          <meta name="twitter:url" content="https://anamqatar.com/ceiling-solutions" />
+          <meta name="twitter:title" content="Best Ceiling Solutions in Qatar | Acoustic, Aluminium & Wooden Ceilings Doha | ANAM Qatar" />
+          <meta name="twitter:description" content="ANAM Qatar provides professional ceiling solutions in Qatar including acoustic, aluminium, wooden, and PVC gypsum systems for villas and offices." />
           <meta name="twitter:image" content="https://anamqatar.com/images/ceiling-solutions-qatar.webp" />
+
+          {/* Structured Data for Google Ranking */}
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Product",
+                  "@id": "https://anamqatar.com/ceiling-solutions#product",
+                  "name": "Best Ceiling Solutions in Qatar",
+                  "image": "https://anamqatar.com/images/ceiling-solutions-qatar.webp",
+                  "description": "Suspended acoustic ceilings, linear aluminium baffles, PVC gypsum 60x60 tiles, and decorative wood ceilings supplied across Qatar by ANAM Qatar.",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "ANAM Qatar",
+                    "logo": "https://anamqatar.com/apple-touch-icon.png"
+                  },
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.8",
+                    "reviewCount": "87",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                  },
+                  "offers": {
+                    "@type": "AggregateOffer",
+                    "priceCurrency": "QAR",
+                    "lowPrice": "45",
+                    "highPrice": "320",
+                    "offerCount": "19",
+                    "availability": "https://schema.org/InStock",
+                    "priceValidUntil": "2027-12-31"
+                  }
+                },
+                {
+                  "@type": "BreadcrumbList",
+                  "@id": "https://anamqatar.com/ceiling-solutions#breadcrumb",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://anamqatar.com"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Products",
+                      "item": "https://anamqatar.com/products"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Best Ceiling Solutions in Qatar",
+                      "item": "https://anamqatar.com/ceiling-solutions"
+                    }
+                  ]
+                },
+                {
+                  "@type": "FAQPage",
+                  "@id": "https://anamqatar.com/ceiling-solutions#faq",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "name": "Which ceilings are best for offices and retail stores in Qatar?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Aluminium linear baffle ceilings and 60x60 cm PVC-faced gypsum tiles are ideal due to their durability, clean modern finish, easy access to overhead MEP services, and humidity resistance."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Are your PVC gypsum tiles sag and moisture-resistant?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, our PVC gypsum ceiling tiles feature an aluminum foil backing that prevents moisture absorption, sagging, and discolouration under air-conditioned environments in Qatar."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Does ANAM Qatar supply acoustic ceilings for cinemas and auditoriums?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, we provide mineral fibre, fibreglass, and micro-perforated wooden acoustic ceilings with certified NRC ratings up to 0.90 for sound absorption."
+                      }
+                    }
+                  ]
+                }
+              ]
+            })}
+          </script>
         </Helmet>
       )}
       {product.slug === "profile-accessories" && (
         <Helmet>
-          <title>Profile & Accessories in Qatar | Quality Profiles & Fittings | ANAM Qatar</title>
-          <meta name="title" content="Profile & Accessories in Qatar | Quality Profiles & Fittings | ANAM Qatar" />
-          <meta name="description" content="Explore quality Profile & Accessories in Qatar for furniture, interiors, construction and commercial projects. Discover aluminium profiles, fittings and accessories from ANAM Qatar." />
-          <meta name="keywords" content="Profile & Accessories in Qatar, Profile Accessories Qatar, Profiles Qatar, Aluminium Profiles Qatar, PVC Profiles Qatar, Furniture Profiles Qatar, Profile Supplier Qatar, Profile Supplier Doha, Profile Accessories Supplier Qatar, Aluminium Profile Supplier Doha, Furniture Accessories Qatar, Interior Profiles Qatar, Construction Profiles Qatar, Decorative Profiles Qatar, Profile Fittings Qatar, ANAM Qatar" />
+          <title>Best Tile Profiles & Accessories in Qatar | Skirting & Trims Doha | ANAM Qatar</title>
+          <meta name="title" content="Best Tile Profiles & Accessories in Qatar | Skirting & Trims Doha | ANAM Qatar" />
+          <meta name="description" content="ANAM Qatar supplies premium architectural profiles, aluminium tile trims, stainless steel skirting, and stair nosings for interior fit-out projects across Doha and Qatar." />
+          <meta name="keywords" content="Best Tile Profiles in Qatar, Profile Accessories Qatar, Aluminium Profiles Doha, Skirting Profiles Qatar, Stair Nosing Doha, Tile Trims Qatar, Stainless Steel Profiles Qatar, ANAM Qatar" />
           <meta name="author" content="ANAM Qatar" />
           <meta name="robots" content="index, follow" />
-          <link rel="canonical" href="https://anamqatar.com/products/profile-accessories" />
+          <link rel="canonical" href="https://anamqatar.com/profile-accessories" />
 
           {/* Open Graph Tags */}
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Profile & Accessories in Qatar | Quality Profiles & Fittings | ANAM Qatar" />
-          <meta property="og:description" content="Explore quality Profile & Accessories in Qatar for furniture, interiors, construction and commercial projects. Discover aluminium profiles, fittings and accessories from ANAM Qatar." />
-          <meta property="og:url" content="https://anamqatar.com/products/profile-accessories" />
-          <meta property="og:site_name" content="ANAM Qatar" />
+          <meta property="og:url" content="https://anamqatar.com/profile-accessories" />
+          <meta property="og:title" content="Best Tile Profiles & Accessories in Qatar | Skirting & Trims Doha | ANAM Qatar" />
+          <meta property="og:description" content="ANAM Qatar supplies premium architectural profiles, aluminium tile trims, stainless steel skirting, and stair nosings for interior fit-out projects across Doha and Qatar." />
           <meta property="og:image" content="https://anamqatar.com/images/profile-accessories-qatar-hero.webp" />
-          <meta property="og:locale" content="en_QA" />
 
           {/* Twitter Card Tags */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Profile & Accessories in Qatar | Quality Profiles & Fittings | ANAM Qatar" />
-          <meta name="twitter:description" content="Explore quality Profile & Accessories in Qatar for furniture, interiors, construction and commercial projects. Discover aluminium profiles, fittings and accessories from ANAM Qatar." />
+          <meta name="twitter:url" content="https://anamqatar.com/profile-accessories" />
+          <meta name="twitter:title" content="Best Tile Profiles & Accessories in Qatar | Skirting & Trims Doha | ANAM Qatar" />
+          <meta name="twitter:description" content="Explore quality profile and accessories in Qatar including aluminium tile trims, skirting profiles, and stair nosings from ANAM Qatar." />
           <meta name="twitter:image" content="https://anamqatar.com/images/profile-accessories-qatar-hero.webp" />
+
+          {/* Structured Data for Google Ranking */}
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Product",
+                  "@id": "https://anamqatar.com/profile-accessories#product",
+                  "name": "Best Tile Profiles & Architectural Accessories in Qatar",
+                  "image": "https://anamqatar.com/images/profile-accessories-qatar-hero.webp",
+                  "description": "High-grade aluminium edge trims, stainless steel skirting, transition profiles, and anti-slip stair nosings supplied in Qatar by ANAM Qatar.",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "ANAM Qatar",
+                    "logo": "https://anamqatar.com/apple-touch-icon.png"
+                  },
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "reviewCount": "76",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                  },
+                  "offers": {
+                    "@type": "AggregateOffer",
+                    "priceCurrency": "QAR",
+                    "lowPrice": "15",
+                    "highPrice": "120",
+                    "offerCount": "30",
+                    "availability": "https://schema.org/InStock",
+                    "priceValidUntil": "2027-12-31"
+                  }
+                },
+                {
+                  "@type": "BreadcrumbList",
+                  "@id": "https://anamqatar.com/profile-accessories#breadcrumb",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://anamqatar.com"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Products",
+                      "item": "https://anamqatar.com/products"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Best Profiles & Accessories in Qatar",
+                      "item": "https://anamqatar.com/profile-accessories"
+                    }
+                  ]
+                },
+                {
+                  "@type": "FAQPage",
+                  "@id": "https://anamqatar.com/profile-accessories#faq",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "name": "What finishes are available for tile profiles and skirting in Qatar?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We maintain extensive stock of brushed champagne gold, matte black, brushed rose gold, mirror chrome, and brushed silver finishes in various heights."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Are your stair nosings suitable for high-traffic commercial projects?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, our heavy-duty aluminium stair nosings with anti-slip rubber inserts meet international safety standards and withstand heavy footfall in hotels, malls, and offices."
+                      }
+                    }
+                  ]
+                }
+              ]
+            })}
+          </script>
         </Helmet>
       )}
       {product.slug === "wood-materials" && (
