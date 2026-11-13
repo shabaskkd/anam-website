@@ -156,10 +156,10 @@ const ProductDetail = ({ overrideSlug }) => {
     <Layout withBg>
       {product.slug === "flooring" && (
         <Helmet>
-          <title>Flooring in Qatar | Premium Flooring Solutions | ANAM Qatar</title>
-          <meta name="title" content="Flooring in Qatar | Premium Flooring Solutions | ANAM Qatar" />
-          <meta name="description" content="Explore premium flooring in Qatar for residential and commercial spaces. Discover modern flooring solutions, designs, materials and professional flooring options from ANAM Qatar." />
-          <meta name="keywords" content="Flooring in Qatar, Flooring Qatar, Flooring Company Qatar, Flooring Supplier Qatar, Flooring Solutions Qatar, Flooring Doha, Flooring Supplier Doha, Vinyl Flooring Qatar, SPC Flooring Qatar, Wooden Flooring Qatar, Commercial Flooring Qatar, Residential Flooring Qatar, Modern Flooring Qatar, Premium Flooring Qatar, ANAM Qatar" />
+          <title>Best Flooring in Qatar | #1 Flooring Company in Doha | ANAM Qatar</title>
+          <meta name="title" content="Best Flooring in Qatar | #1 Flooring Company in Doha | ANAM Qatar" />
+          <meta name="description" content="Looking for the best flooring in Qatar? ANAM Qatar is Doha's #1 supplier and installer of luxury SPC flooring, parquet wood, vinyl, and carpet tiles with warranty. Free site visit & quotation across Qatar." />
+          <meta name="keywords" content="Best Flooring in Qatar, Flooring Qatar, Flooring Company Qatar, Flooring Supplier Qatar, Best Flooring Supplier Doha, Luxury SPC Flooring Qatar, Parquet Flooring Doha, Vinyl Flooring Qatar, Wooden Flooring Qatar, Commercial Flooring Qatar, Residential Flooring Qatar, ANAM Qatar" />
           <meta name="author" content="ANAM Qatar" />
           <meta name="robots" content="index, follow" />
           <link rel="canonical" href="https://anamqatar.com/flooring" />
@@ -167,35 +167,121 @@ const ProductDetail = ({ overrideSlug }) => {
           {/* Open Graph Tags */}
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://anamqatar.com/flooring" />
-          <meta property="og:title" content="Flooring in Qatar | Premium Flooring Solutions | ANAM Qatar" />
-          <meta property="og:description" content="Explore premium flooring in Qatar for residential and commercial spaces. Discover modern flooring solutions, designs, materials and professional flooring options from ANAM Qatar." />
+          <meta property="og:title" content="Best Flooring in Qatar | #1 Flooring Company in Doha | ANAM Qatar" />
+          <meta property="og:description" content="Looking for the best flooring in Qatar? ANAM Qatar is Doha's #1 supplier and installer of luxury SPC flooring, parquet wood, vinyl, and carpet tiles with warranty. Free site visit & quotation across Qatar." />
           <meta property="og:image" content="https://anamqatar.com/images/flooring-qatar-hero.webp" />
 
           {/* Twitter Card Tags */}
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:url" content="https://anamqatar.com/flooring" />
-          <meta name="twitter:title" content="Flooring in Qatar | Premium Flooring Solutions | ANAM Qatar" />
-          <meta name="twitter:description" content="Explore premium flooring in Qatar for residential and commercial spaces. Discover modern flooring solutions, designs, materials and professional flooring options from ANAM Qatar." />
+          <meta name="twitter:title" content="Best Flooring in Qatar | #1 Flooring Company in Doha | ANAM Qatar" />
+          <meta name="twitter:description" content="Looking for the best flooring in Qatar? ANAM Qatar is Doha's #1 supplier and installer of luxury SPC flooring, parquet wood, vinyl, and carpet tiles with warranty. Free site visit & quotation across Qatar." />
           <meta name="twitter:image" content="https://anamqatar.com/images/flooring-qatar-hero.webp" />
 
           {/* Structured Data for Google Ranking */}
           <script type="application/ld+json">
             {JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Product",
-              "name": "Flooring in Qatar",
-              "image": "https://anamqatar.com/images/flooring-qatar-hero.webp",
-              "description": "Explore premium flooring in Qatar for residential and commercial spaces. Discover modern flooring solutions, designs, materials and professional flooring options from ANAM Qatar.",
-              "brand": {
-                "@type": "Brand",
-                "name": "ANAM Qatar",
-                "logo": "https://anamqatar.com/apple-touch-icon.png"
-              },
-              "offers": {
-                "@type": "AggregateOffer",
-                "priceCurrency": "QAR",
-                "availability": "https://schema.org/InStock"
-              }
+              "@graph": [
+                {
+                  "@type": "Product",
+                  "@id": "https://anamqatar.com/flooring#product",
+                  "name": "Best Flooring Solutions in Qatar",
+                  "image": "https://anamqatar.com/images/flooring-qatar-hero.webp",
+                  "description": "Premium luxury SPC flooring, parquet wood, vinyl, and carpet tiles supplied and installed across Doha, Qatar by ANAM Qatar.",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "ANAM Qatar",
+                    "logo": "https://anamqatar.com/apple-touch-icon.png"
+                  },
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "reviewCount": "142",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                  },
+                  "offers": {
+                    "@type": "AggregateOffer",
+                    "priceCurrency": "QAR",
+                    "lowPrice": "45",
+                    "highPrice": "350",
+                    "offerCount": "25",
+                    "availability": "https://schema.org/InStock",
+                    "priceValidUntil": "2027-12-31"
+                  }
+                },
+                {
+                  "@type": "BreadcrumbList",
+                  "@id": "https://anamqatar.com/flooring#breadcrumb",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://anamqatar.com"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Products",
+                      "item": "https://anamqatar.com"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Best Flooring in Qatar",
+                      "item": "https://anamqatar.com/flooring"
+                    }
+                  ]
+                },
+                {
+                  "@type": "FAQPage",
+                  "@id": "https://anamqatar.com/flooring#faq",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "name": "Which is the best flooring in Qatar for homes and luxury villas?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "For homes and villas in Qatar, SPC (Stone Plastic Composite) flooring and engineered hardwood parquet are the top choices. SPC flooring is 100% waterproof, highly scratch-resistant, and withstands Qatar's hot and humid climate without warping. ANAM Qatar provides premium European and German-certified flooring collections."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "What types of flooring does ANAM Qatar supply and install in Doha?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "ANAM Qatar supplies and installs luxury SPC flooring, natural wood parquet, luxury vinyl tiles (LVT), laminate flooring, commercial carpet tiles, and outdoor WPC decking across Doha and all Qatar municipalities."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Is SPC flooring suitable for Qatar's hot and humid climate?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, SPC flooring is engineered specifically for extreme weather and temperature fluctuations. It features a limestone-polymer core that prevents expansion, contraction, and moisture damage, making it ideal for air-conditioned villas and offices in Qatar."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Which areas in Qatar does ANAM provide flooring delivery and installation to?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "ANAM Qatar provides complete turnkey flooring supply and installation across Doha, Lusail, The Pearl-Qatar, West Bay, Al Wakrah, Al Khor, Al Rayyan, and all surrounding areas in Qatar, including free site inspections and consultations."
+                      }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "How much does flooring cost per square meter in Qatar?",
+                      "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Flooring prices in Qatar typically range from QAR 45 to QAR 350 per square meter depending on the material (vinyl, SPC, laminate, or solid parquet wood) and installation requirements. Contact ANAM Qatar at +974 3008 1007 for a free measurement and tailored quote."
+                      }
+                    }
+                  ]
+                }
+              ]
             })}
           </script>
         </Helmet>

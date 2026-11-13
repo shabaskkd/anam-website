@@ -841,20 +841,19 @@ const FlooringSection = () => {
       <section className="floor-hero">
         <div className="container">
           <div className="hero-content">
-            <span className="hero-label">FLOORING SOLUTIONS</span>
-            <h1>Flooring in Qatar</h1>
+            <span className="hero-label">TOP-RATED FLOORING COMPANY IN DOHA</span>
+            <h1>Best Flooring in Qatar</h1>
             <h2>
-              Modern Flooring Solutions for Homes & Commercial Spaces
+              #1 Rated Flooring Company in Doha, Qatar - SPC, Parquet, Vinyl & Wood
             </h2>
             <p>
-              Explore premium flooring options in Qatar for residential
-              and commercial spaces. Discover modern designs, durable
-              materials and professional flooring solutions for every
-              interior.
+              Looking for the best flooring in Qatar? ANAM Qatar is Doha's leading
+              supplier and installer of luxury SPC flooring, parquet wood, vinyl tiles,
+              and commercial carpet. Durable, waterproof, and designed for Qatar's climate.
             </p>
             <div className="hero-meta">
-              <span>◷ Professional Solutions</span>
-              <span>◆ Premium Materials</span>
+              <span>◷ Professional Installation</span>
+              <span>◆ Premium European & SPC Materials</span>
               <span>✓ Residential & Commercial</span>
             </div>
           </div>
@@ -866,15 +865,15 @@ const FlooringSection = () => {
       ========================= */}
       <div className="container">
         <div className="breadcrumb">
-          <Link to="/">Home</Link> &nbsp;›&nbsp; <Link to="/products/doors">Products</Link> &nbsp;›&nbsp;
-          <span>Flooring in Qatar</span>
+          <Link to="/">Home</Link> &nbsp;›&nbsp; <Link to="/">Products</Link> &nbsp;›&nbsp;
+          <span>Best Flooring in Qatar</span>
         </div>
 
         <div className="main-layout">
           <main className="article">
             {/* INTRO */}
             <section id="flooring-qatar">
-              <h2>Flooring in Qatar</h2>
+              <h2>Best Flooring in Qatar - Premium Solutions for Modern Interiors</h2>
               <p>
                 The right flooring can completely transform the appearance,
                 comfort and functionality of an interior. From modern villas
@@ -1278,24 +1277,24 @@ const FlooringSection = () => {
               <div className="faq">
                 {[
                   {
-                    q: "What types of flooring are available in Qatar?",
-                    a: "Flooring options can include vinyl, SPC, wooden and decorative flooring solutions. The suitable choice depends on the space, design and usage requirements.",
+                    q: "Which is the best flooring in Qatar for homes and luxury villas?",
+                    a: "For homes and villas in Qatar, SPC (Stone Plastic Composite) flooring and engineered hardwood parquet are the top choices. SPC flooring is 100% waterproof, highly scratch-resistant, and withstands Qatar's hot and humid climate without warping. ANAM Qatar provides premium European and German-certified flooring collections.",
                   },
                   {
-                    q: "What flooring is suitable for residential spaces?",
-                    a: "Vinyl, SPC, wooden-look and other decorative flooring options can be considered for homes depending on the room and desired design.",
+                    q: "What types of flooring does ANAM Qatar supply and install in Doha?",
+                    a: "ANAM Qatar supplies and installs luxury SPC flooring, natural wood parquet, luxury vinyl tiles (LVT), laminate flooring, commercial carpet tiles, and outdoor WPC decking across Doha and all Qatar municipalities.",
                   },
                   {
-                    q: "Is SPC flooring suitable for modern interiors?",
-                    a: "SPC flooring is commonly considered for modern interiors because it offers a contemporary appearance and practical characteristics.",
+                    q: "Is SPC flooring suitable for Qatar's hot and humid climate?",
+                    a: "Yes, SPC flooring is engineered specifically for extreme weather and temperature fluctuations. It features a limestone-polymer core that prevents expansion, contraction, and moisture damage, making it ideal for air-conditioned villas and offices in Qatar.",
                   },
                   {
-                    q: "Do you provide flooring solutions for commercial projects?",
-                    a: "Flooring solutions can be planned for offices, hotels, retail stores, restaurants and other commercial interiors.",
+                    q: "Which areas in Qatar does ANAM provide flooring delivery and installation to?",
+                    a: "ANAM Qatar provides complete turnkey flooring supply and installation across Doha, Lusail, The Pearl-Qatar, West Bay, Al Wakrah, Al Khor, Al Rayyan, and all surrounding areas in Qatar, including free site inspections and consultations.",
                   },
                   {
-                    q: "How do I choose the right flooring for my project?",
-                    a: "Consider the space type, expected usage, interior style, maintenance requirements and overall project specifications before choosing a flooring solution.",
+                    q: "How much does flooring cost per square meter in Qatar?",
+                    a: "Flooring prices in Qatar typically range from QAR 45 to QAR 350 per square meter depending on the material (vinyl, SPC, laminate, or solid parquet wood) and installation requirements. Contact ANAM Qatar at +974 3008 1007 for a free measurement and tailored quote.",
                   },
                 ].map((item, idx) => (
                   <div

@@ -211,11 +211,11 @@ const FlooringHero = () => {
         <div className="flooring-hero-left">
           <div className="max-w-[540px]">
             <div className="flooring-hero-tag anam-hero-eyebrow">
-              Premium Flooring Solutions
+              Top-Rated Flooring Company in Doha, Qatar
             </div>
 
             <h1 className="flooring-hero-title anam-hero-title">
-              Flooring <br />
+              Best Flooring <br />
               <span className="flooring-hero-underline-wrapper inline-block relative">
                 In Qatar
                 <span className="flooring-hero-underline-bar anam-underline-bar" />
@@ -248,7 +248,7 @@ const FlooringHero = () => {
         <div className="flooring-hero-right">
           <img
             src="/images/luxury-flooring-qatar-hero.jpg"
-            alt="Luxury Flooring in Qatar - Doha Penthouse with Herringbone Parquet and Skyline View"
+            alt="Best Luxury Flooring in Qatar - SPC, Parquet & Vinyl Installation Doha"
             loading="eager"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/10 pointer-events-none" />
