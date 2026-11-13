@@ -3,7 +3,6 @@ import Layout from "../components/Layout";
 import { productData } from "../data/productData";
 import { useParams, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import FlooringSection from "../components/FlooringSection";
 import ProductHero from "../components/ProductHero";
 
 const findNodeAndAncestors = (nodes, targetSlug, ancestors = []) => {
@@ -1325,10 +1324,7 @@ const ProductDetail = ({ overrideSlug }) => {
         </Helmet>
       )}
       <main>
-        {product.slug === "flooring" && !activeSubproduct ? (
-          <FlooringSection />
-        ) : (
-          <>
+        <>
             {/* Top Hero Section */}
             {!activeSubproduct ? (
               <ProductHero
@@ -1654,7 +1650,6 @@ const ProductDetail = ({ overrideSlug }) => {
               </section>
             )}
           </>
-        )}
       </main>
     </Layout>
   );
