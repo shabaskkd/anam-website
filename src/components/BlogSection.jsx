@@ -26,7 +26,7 @@ const BlogSection = () => {
   return (
     <Layout>
       <section id="blogs" className="py-24 bg-white overflow-hidden">
-        <div className="max-w-[1400px] mx-auto px-12">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12">
           {/* Section Header */}
           <div className="mb-20">
             <span className="anam-hero-eyebrow block mb-3">

@@ -85,9 +85,9 @@ const Testimonial = () => {
         <div className="absolute inset-0 bg-black/70" />
       </div>
 
-      <div className="max-w-[1400px] mx-auto px-12 flex relative z-10">
-        <div className="w-3/4 text-left flex flex-col justify-center">
-          <h2 className="text-5xl font-bold text-[#fff] mb-8">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex flex-col lg:flex-row gap-8 lg:gap-12 relative z-10">
+        <div className="w-full lg:w-1/2 text-left flex flex-col justify-center">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#fff] mb-6">
             Happy Words
             <br />
             <span className="text-[#fff]">About Us</span>
@@ -114,7 +114,7 @@ const Testimonial = () => {
           </div>
         </div>
 
-        <div className="w-1/2 items-center">
+        <div className="w-full lg:w-1/2 items-center">
           {/* Right Side (Swiper Testimonials) */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}

@@ -1577,7 +1577,7 @@ const ProductDetail = ({ overrideSlug }) => {
             {data?.applications && (
               <section className="bg-primary py-16 px-6 text-white">
                 <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
-                  <div className="w-1/2">
+                  <div className="w-full md:w-2/3">
                     <h2 className="anam-section-title !text-white tracking-tight">
                       Ideal Applications
                     </h2>
@@ -1592,7 +1592,7 @@ const ProductDetail = ({ overrideSlug }) => {
                       ))}
                     </div>
                   </div>
-                  <div className="text-right">
+                  <div className="w-full md:w-auto text-left md:text-right">
                     <p className="text-white/70 italic mb-2">
                       Need professional advice?
                     </p>

@@ -74,20 +74,20 @@ const ProductCard = ({ product }) => {
 const FinishingSolutions = () => {
   return (
     <section className="bg-primary text-white flex items-center py-20 overflow-hidden">
-      <div className="max-w-[1400px] px-12 items-center flex">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12 items-center flex flex-col lg:flex-row gap-8 lg:gap-12">
         {/* Left Side: STATIC TEXT with Reveal Animation */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="w-2/3 space-y-8 z-20"
+          className="w-full lg:w-1/3 space-y-6 z-20"
         >
           <div>
             <span className="text-xs uppercase tracking-[0.3em] font-black opacity-60">
               Products
             </span>
-            <h2 className="text-5xl font-bold mt-4 leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mt-4 leading-tight">
               Premium Finishing Solutions
             </h2>
           </div>
@@ -118,7 +118,7 @@ const FinishingSolutions = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="overflow-hidden mt-10"
+          className="w-full lg:w-2/3 overflow-hidden mt-6 lg:mt-0"
         >
           <Swiper
             modules={[Navigation, Autoplay]}
