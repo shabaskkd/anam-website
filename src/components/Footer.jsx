@@ -56,7 +56,7 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="space-y-8">
             <div className="flex items-center gap-2 w-32 md:w-40">
-              <img
+              <img loading="lazy" decoding="async"
                 src={IMAGES.logo_white}
                 alt="Anam Logo"
                 className="w-full h-auto"

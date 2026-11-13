@@ -50,7 +50,7 @@ const TailoredServices = () => {
                 className="bg-gray-50 flex flex-col group cursor-pointer h-full border border-gray-100 group overflow-hidden relative"
               >
                 <div className="relative aspect-[4/5] overflow-hidden bg-white">
-                  <img
+                  <img loading="lazy" decoding="async"
                     src={product?.image}
                     alt={product.name}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"

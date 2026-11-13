@@ -1399,7 +1399,7 @@ const ProductDetail = ({ overrideSlug }) => {
                   <div className="space-y-16">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start bg-white p-8 md:p-12 shadow-sm border border-gray-100">
                       <div className="overflow-hidden rounded-lg">
-                        <img
+                        <img loading="lazy" decoding="async"
                           src={activeSubproduct.image || "/placeholder.jpg"}
                           alt={activeSubproduct.alt || activeSubproduct.name}
                           title={activeSubproduct.title || activeSubproduct.name}
@@ -1482,7 +1482,7 @@ const ProductDetail = ({ overrideSlug }) => {
                                 className="bg-white p-4 shadow-sm border border-gray-100 transition hover:shadow-lg cursor-pointer group"
                               >
                                 <div className="overflow-hidden h-[200px]">
-                                  <img
+                                  <img loading="lazy" decoding="async"
                                     src={sibling.image || "/placeholder.jpg"}
                                     alt={sibling.alt || sibling.name}
                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -1522,7 +1522,7 @@ const ProductDetail = ({ overrideSlug }) => {
                         >
                           <div>
                             <div className="overflow-hidden h-[220px] bg-gray-100 rounded">
-                              <img
+                              <img loading="lazy" decoding="async"
                                 src={prod.image || "/placeholder.jpg"}
                                 alt={prod.alt || prod.name}
                                 title={prod.title}

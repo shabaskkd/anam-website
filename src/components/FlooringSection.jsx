@@ -896,7 +896,7 @@ const FlooringSection = () => {
               </p>
             </section>
 
-            <img
+            <img loading="lazy" decoding="async"
               src="/images/flooring-solutions-qatar.webp"
               alt="Premium flooring solutions in Qatar"
               className="content-image"
@@ -979,7 +979,7 @@ const FlooringSection = () => {
 
               <div className="floor-types">
                 <div className="floor-card">
-                  <img
+                  <img loading="lazy" decoding="async"
                     src="/images/vinyl-flooring-qatar.webp"
                     alt="Vinyl flooring in Qatar"
                   />
@@ -996,7 +996,7 @@ const FlooringSection = () => {
                 </div>
 
                 <div className="floor-card">
-                  <img
+                  <img loading="lazy" decoding="async"
                     src="/images/spc-flooring-qatar.webp"
                     alt="SPC flooring in Qatar"
                   />
@@ -1013,7 +1013,7 @@ const FlooringSection = () => {
                 </div>
 
                 <div className="floor-card">
-                  <img
+                  <img loading="lazy" decoding="async"
                     src="/images/wooden-flooring-qatar.webp"
                     alt="Wooden flooring in Qatar"
                   />
@@ -1030,7 +1030,7 @@ const FlooringSection = () => {
                 </div>
 
                 <div className="floor-card">
-                  <img
+                  <img loading="lazy" decoding="async"
                     src="/images/decorative-flooring-qatar.webp"
                     alt="Decorative flooring in Qatar"
                   />
@@ -1397,7 +1397,7 @@ const FlooringSection = () => {
             <div className="sidebar-box">
               <h3>Related Articles</h3>
               <Link to="/wall-panels" className="related-post">
-                <img
+                <img loading="lazy" decoding="async"
                   src="/images/wall-panels-qatar.webp"
                   alt="Wall Panels in Qatar"
                 />
@@ -1408,7 +1408,7 @@ const FlooringSection = () => {
               </Link>
 
               <Link to="/wall-panels" className="related-post">
-                <img
+                <img loading="lazy" decoding="async"
                   src="/images/wpc-wall-panels-qatar.webp"
                   alt="WPC Wall Panels Qatar"
                 />
@@ -1419,7 +1419,7 @@ const FlooringSection = () => {
               </Link>
 
               <Link to="/doors" className="related-post">
-                <img
+                <img loading="lazy" decoding="async"
                   src="/images/doors-qatar.webp"
                   alt="Doors in Qatar"
                 />
@@ -1430,7 +1430,7 @@ const FlooringSection = () => {
               </Link>
 
               <Link to="/kitchen-wardrobe" className="related-post">
-                <img
+                <img loading="lazy" decoding="async"
                   src="/images/kitchen-cabinets-qatar.webp"
                   alt="Kitchen Cabinets Qatar"
                 />

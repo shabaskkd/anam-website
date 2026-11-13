@@ -60,7 +60,7 @@ const BlogSection = () => {
               >
                 <Link to={`/blog/${post.slug}`}>
                   <div className="relative overflow-hidden aspect-[4/3] mb-8 shadow-sm group-hover:shadow-xl transition-all duration-500">
-                    <img
+                    <img loading="lazy" decoding="async"
                       src={post.image}
                       alt={post.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"

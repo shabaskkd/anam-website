@@ -67,7 +67,7 @@ const ProjectsPage = () => {
                   transition={{ duration: 0.4 }}
                   className="relative group break-inside-avoid rounded-[2.5rem] overflow-hidden bg-white shadow-md hover:shadow-2xl transition-shadow"
                 >
-                  <img
+                  <img loading="lazy" decoding="async"
                     src={`${project.src}?auto=format&fit=crop&q=80&w=800`}
                     alt={project.title}
                     className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"

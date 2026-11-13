@@ -427,7 +427,7 @@ const WallPanelsSection = () => {
                 className="group bg-white border border-[#e8e8e8] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col"
               >
                 <div className="relative h-[240px] overflow-hidden bg-gray-100">
-                  <img
+                  <img loading="lazy" decoding="async"
                     src={cat.image}
                     alt={cat.name}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"

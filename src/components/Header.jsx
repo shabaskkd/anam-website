@@ -81,7 +81,7 @@ const Header = () => {
         >
           <div className="w-20 md:w-[180px]">
             <Link to={"/"}>
-              <img
+              <img loading="lazy" decoding="async"
                 src={IMAGES.logo_white}
                 alt="Logo"
                 className="w-full h-auto"
@@ -279,7 +279,7 @@ const Header = () => {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between p-6 border-b border-gray-100">
-              <img src={IMAGES.logo} alt="Logo" className="w-20" />
+              <img loading="lazy" decoding="async" src={IMAGES.logo} alt="Logo" className="w-20" />
               <button
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="p-2 text-black"

@@ -60,7 +60,7 @@ const ArchitectureProcess = () => {
             </div>
           </div>
           {/* <div className="w-1/2">
-            <img src={IMAGES.plan_3d} alt="3d plan" />
+            <img loading="lazy" decoding="async" src={IMAGES.plan_3d} alt="3d plan" />
           </div> */}
         </div>
 
@@ -75,7 +75,7 @@ const ArchitectureProcess = () => {
               className="bg-white overflow-hidden py-4 px-4 shadow-sm hover:shadow-xl transition-shadow duration-500 group border border-gray-100"
             >
               <div className="w-full h-[150px] overflow-hidden mb-8">
-                <img
+                <img loading="lazy" decoding="async"
                   src={step.image}
                   alt={step.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"

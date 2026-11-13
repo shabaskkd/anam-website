@@ -10,7 +10,7 @@ const ServiceSection = () => {
         <div className="md:h-[400px] h-[200px]">
           <div className="relative w-full max-w-sm h-full overflow-hidden group">
             <div className="relative h-full group-hover:scale-110 transition-transform duration-700">
-              <img
+              <img loading="lazy" decoding="async"
                 src={qatar}
                 alt="Industrial Background"
                 className="w-full h-full object-cover"

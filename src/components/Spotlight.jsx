@@ -128,7 +128,7 @@ const Spotlight = () => {
         {slides.map((slide, i) => (
           <SwiperSlide key={i} className="overflow-hidden">
             <div className="relative w-full h-full flex items-center justify-center text-left">
-              <img
+              <img loading="lazy" decoding="async"
                 src={slide.image}
                 alt=""
                 className="bg-image absolute inset-0 w-full h-full object-cover"

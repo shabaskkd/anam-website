@@ -48,7 +48,7 @@ const ProductShowcaseSection = () => {
             }`}
           >
             <div className={`relative ${item.reverse ? "lg:order-2" : ""}`}>
-              <img
+              <img loading="lazy" decoding="async"
                 src={item.image}
                 alt={item.title}
                 className="w-full h-[420px] object-cover"

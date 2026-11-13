@@ -57,7 +57,7 @@ const BlogDetail = () => {
           <p className="text-gray-500 mb-8 font-medium">By {blog.author}</p>
 
           <div className="overflow-hidden rounded-lg mb-12 shadow-md">
-            <img src={blog.image} alt={blog.title} className="w-full object-cover max-h-[500px]" />
+            <img loading="lazy" decoding="async" src={blog.image} alt={blog.title} className="w-full object-cover max-h-[500px]" />
           </div>
 
           <article

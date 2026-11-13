@@ -9,7 +9,7 @@ const AboutSection = () => {
       <div className="text-[#1a1a1a] font-sans pt-10">
         {/* Hero Banner */}
         <div className="relative h-[200px] md:h-[440px] w-full flex items-center justify-center overflow-hidden">
-          <img
+          <img loading="lazy" decoding="async"
             src={IMAGES.master_3d}
             alt="Architecture"
             className="w-full md:w-2/3 mx-auto z-10 relative"

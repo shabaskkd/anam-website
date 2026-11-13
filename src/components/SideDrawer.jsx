@@ -77,7 +77,7 @@ const SideDrawer = ({ isOpen, onClose }) => {
                 key={i}
                 className="aspect-square rounded-2xl overflow-hidden group"
               >
-                <img
+                <img loading="lazy" decoding="async"
                   src={`/images/wall-panel-1.webp`}
                   alt="Gallery"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"

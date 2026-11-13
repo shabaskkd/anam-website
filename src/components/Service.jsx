@@ -24,7 +24,7 @@ export default function ServicesPage() {
       <section className="w-full bg-[#fbf9f8] text-[#171717]">
         {/* HERO BANNER */}
         <div className="relative h-[55vh] min-h-[380px] w-full overflow-hidden bg-primary">
-          <img
+          <img loading="lazy" decoding="async"
             src="/images/wall-panel-1.webp"
             alt="ANAM Qatar Services"
             className="w-full h-full object-cover opacity-35 mix-blend-overlay"
@@ -64,7 +64,7 @@ export default function ServicesPage() {
                 className="bg-white rounded-xl overflow-hidden border border-gray-100 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col group hover:-translate-y-1.5"
               >
                 <div className="relative h-64 overflow-hidden">
-                  <img
+                  <img loading="lazy" decoding="async"
                     src={service.image}
                     alt={service.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"

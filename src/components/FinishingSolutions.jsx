@@ -57,7 +57,7 @@ const ProductCard = ({ product }) => {
       style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
       className="relative w-full h-[400px] overflow-hidden shadow-2xl bg-black"
     >
-      <img
+      <img loading="lazy" decoding="async"
         src={product.image}
         alt={product.title}
         className="w-full h-full object-cover opacity-70"

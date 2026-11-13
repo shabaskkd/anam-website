@@ -164,7 +164,7 @@ const HeroSection = () => {
                   }}
                   className="w-full h-full"
                 >
-                  <img
+                  <img loading="lazy" decoding="async"
                     src={HERO_IMAGES[imageIndex]}
                     alt="Interior Design"
                     className="w-full h-full object-cover"

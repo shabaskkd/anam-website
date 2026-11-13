@@ -958,7 +958,7 @@ const ProfileAccessoriesSection = () => {
               </p>
             </section>
 
-            <img
+            <img loading="lazy" decoding="async"
               src="/images/profile-accessories-qatar.webp"
               alt="Profile and accessories in Qatar"
               className="content-image"
@@ -1046,7 +1046,7 @@ const ProfileAccessoriesSection = () => {
 
               <div className="profile-grid">
                 <div className="profile-card">
-                  <img
+                  <img loading="lazy" decoding="async"
                     src="/images/aluminium-profiles-qatar.webp"
                     alt="Aluminium profiles in Qatar"
                   />
@@ -1061,7 +1061,7 @@ const ProfileAccessoriesSection = () => {
                 </div>
 
                 <div className="profile-card">
-                  <img
+                  <img loading="lazy" decoding="async"
                     src="/images/furniture-profiles-qatar.webp"
                     alt="Furniture profiles in Qatar"
                   />
@@ -1076,7 +1076,7 @@ const ProfileAccessoriesSection = () => {
                 </div>
 
                 <div className="profile-card">
-                  <img
+                  <img loading="lazy" decoding="async"
                     src="/images/decorative-profiles-qatar.webp"
                     alt="Decorative profiles in Qatar"
                   />
@@ -1091,7 +1091,7 @@ const ProfileAccessoriesSection = () => {
                 </div>
 
                 <div className="profile-card">
-                  <img
+                  <img loading="lazy" decoding="async"
                     src="/images/edge-profiles-qatar.webp"
                     alt="Edge profiles in Qatar"
                   />
@@ -1105,7 +1105,7 @@ const ProfileAccessoriesSection = () => {
                 </div>
 
                 <div className="profile-card">
-                  <img
+                  <img loading="lazy" decoding="async"
                     src="/images/construction-profiles-qatar.webp"
                     alt="Construction profiles in Qatar"
                   />
@@ -1119,7 +1119,7 @@ const ProfileAccessoriesSection = () => {
                 </div>
 
                 <div className="profile-card">
-                  <img
+                  <img loading="lazy" decoding="async"
                     src="/images/profile-fittings-qatar.webp"
                     alt="Profile fittings in Qatar"
                   />
@@ -1729,7 +1729,7 @@ const ProfileAccessoriesSection = () => {
             <div className="sidebar-box">
               <h3>Related Products</h3>
               <Link to="/products/carpentry-accessories" className="related-post">
-                <img
+                <img loading="lazy" decoding="async"
                   src="/images/carpentry-accessories-qatar.webp"
                   alt="Carpentry Accessories Qatar"
                 />
@@ -1740,7 +1740,7 @@ const ProfileAccessoriesSection = () => {
               </Link>
 
               <Link to="/kitchen-wardrobe" className="related-post">
-                <img
+                <img loading="lazy" decoding="async"
                   src="/images/kitchen-cabinets-qatar.webp"
                   alt="Premium Kitchen Cabinets Qatar"
                 />
@@ -1751,7 +1751,7 @@ const ProfileAccessoriesSection = () => {
               </Link>
 
               <Link to="/doors" className="related-post">
-                <img
+                <img loading="lazy" decoding="async"
                   src="/images/doors-qatar.webp"
                   alt="Doors in Qatar"
                 />
@@ -1762,7 +1762,7 @@ const ProfileAccessoriesSection = () => {
               </Link>
 
               <Link to="/windows" className="related-post">
-                <img
+                <img loading="lazy" decoding="async"
                   src="/images/windows-qatar.webp"
                   alt="Windows Providers in Doha Qatar"
                 />

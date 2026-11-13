@@ -151,7 +151,7 @@ const Testimonial = () => {
 
                     <div className="flex items-center gap-4">
                       <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-white shadow-lg">
-                        <img
+                        <img loading="lazy" decoding="async"
                           src={item.image}
                           alt={item.name}
                           className="w-full h-full object-cover"
