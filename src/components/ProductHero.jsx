@@ -38,16 +38,20 @@ const ProductHero = ({
       <style>{`
         .product-hero-grid {
           display: grid;
-          grid-template-columns: 44% 56%;
-          min-height: 560px;
+          grid-template-columns: 46% 54%;
+          height: clamp(480px, 42vw, 560px);
+          min-height: 480px;
+          max-height: 560px;
           position: relative;
+          overflow: hidden;
         }
 
         .product-hero-left {
           background: #ffffff;
           display: flex;
           align-items: center;
-          padding: 64px 8% 64px 10%;
+          padding: 44px 8% 44px 10%;
+          height: 100%;
           position: relative;
           z-index: 10;
         }
@@ -66,7 +70,7 @@ const ProductHero = ({
           font-weight: 700;
           letter-spacing: 1.8px;
           text-transform: uppercase;
-          margin-bottom: 16px;
+          margin-bottom: 14px;
         }
 
         .product-hero-tag::before {
@@ -79,12 +83,12 @@ const ProductHero = ({
 
         .product-hero-title {
           font-family: Arial, Helvetica, sans-serif;
-          font-size: clamp(42px, 5vw, 68px);
+          font-size: clamp(38px, 4.2vw, 62px);
           line-height: .98;
           font-weight: normal;
           color: #171717;
           letter-spacing: -2px;
-          margin: 0 0 24px;
+          margin: 0 0 20px;
         }
 
         .product-hero-title span {
@@ -107,17 +111,17 @@ const ProductHero = ({
 
         .product-hero-p1 {
           color: #444;
-          font-size: 16px;
-          line-height: 1.65;
-          margin-bottom: 16px;
+          font-size: 15.5px;
+          line-height: 1.6;
+          margin-bottom: 12px;
           max-width: 520px;
         }
 
         .product-hero-p2 {
           color: #666;
-          font-size: 14.5px;
-          line-height: 1.65;
-          margin-bottom: 32px;
+          font-size: 14px;
+          line-height: 1.6;
+          margin-bottom: 28px;
           max-width: 520px;
         }
 
@@ -127,7 +131,7 @@ const ProductHero = ({
           gap: 12px;
           background: #5A0F2F;
           color: #ffffff;
-          padding: 16px 30px;
+          padding: 15px 28px;
           font-size: 12px;
           font-weight: 800;
           letter-spacing: 0.16em;
@@ -156,12 +160,15 @@ const ProductHero = ({
 
         .product-hero-right {
           position: relative;
-          min-height: 560px;
+          height: 100%;
+          width: 100%;
           overflow: hidden;
           background: #111;
         }
 
         .product-hero-right img {
+          position: absolute;
+          inset: 0;
           width: 100%;
           height: 100%;
           object-fit: cover;
@@ -176,11 +183,11 @@ const ProductHero = ({
 
         .product-floating-badge {
           position: absolute;
-          bottom: 28px;
-          right: 28px;
+          bottom: 24px;
+          right: 24px;
           background: #5A0F2F;
           color: #ffffff;
-          padding: 14px 22px;
+          padding: 12px 20px;
           z-index: 15;
           border: 1px solid rgba(255, 255, 255, 0.15);
           box-shadow: 0 14px 35px rgba(0, 0, 0, 0.4);
@@ -200,12 +207,17 @@ const ProductHero = ({
         @media (max-width: 1024px) {
           .product-hero-grid {
             grid-template-columns: 1fr;
+            height: auto;
+            max-height: none;
           }
           .product-hero-left {
             padding: 48px 6%;
+            height: auto;
           }
           .product-hero-right {
-            min-height: 400px;
+            position: relative;
+            height: 380px;
+            min-height: 380px;
           }
         }
 
@@ -224,7 +236,8 @@ const ProductHero = ({
             padding: 10px 16px;
           }
           .product-hero-right {
-            min-height: 300px;
+            height: 280px;
+            min-height: 280px;
           }
         }
       `}</style>
@@ -252,23 +265,24 @@ const ProductHero = ({
               onClick={handleClick}
               className="product-hero-btn"
             >
-              {ctaText} <span>→</span>
+              {ctaText}
+              <span>→</span>
             </a>
           </div>
         </div>
 
-        {/* Right Photo Area */}
+        {/* Right Visual Image */}
         <div className="product-hero-right">
           <img
-            src={image || "/placeholder.jpg"}
-            alt={`${title} in Qatar`}
             loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            src={image}
+            alt={`${title} in Qatar - ANAM Qatar`}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/10 pointer-events-none" />
-
-          {/* Floating Luxury Badge */}
           <div className="product-floating-badge">
-            <div className="product-badge-dot animate-pulse" />
+            <span className="product-badge-dot animate-pulse" />
             <div>
               <div className="text-[10px] font-bold tracking-[0.15em] text-[#C9A86A]">
                 {badgeSubtitle}
