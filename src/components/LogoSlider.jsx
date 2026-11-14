@@ -1,3 +1,4 @@
+import React from "react";
 import logo1 from "../assets/images/logos/logo1.png";
 import logo2 from "../assets/images/logos/logo2.png";
 import logo3 from "../assets/images/logos/logo3.png";
@@ -24,166 +25,245 @@ import screenshotLogo from "../assets/images/logos/screenshot-logo.png";
 import shufaLogo from "../assets/images/logos/Shufa-Logo@3x.png";
 import unnamed from "../assets/images/logos/unnamed.png";
 
-// Row 1: 13 logos
+// Row 1: 12 partner logos
 const row1Logos = [
-  logo1,
-  logo2,
-  logo3,
-  logo4,
-  logo6,
-  logo7,
-  clicks,
-  dnbco,
-  fmm,
-  gtc,
-  intertech,
-  jungleZone,
+  { src: logo1, alt: "Partner 1" },
+  { src: logo2, alt: "Partner 2" },
+  { src: logo3, alt: "Partner 3" },
+  { src: logo4, alt: "Partner 4" },
+  { src: logo6, alt: "Partner 6" },
+  { src: logo7, alt: "Partner 7" },
+  { src: clicks, alt: "Clicks" },
+  { src: dnbco, alt: "DnBco" },
+  { src: fmm, alt: "FMM" },
+  { src: gtc, alt: "GTC" },
+  { src: intertech, alt: "Inter-Tech" },
+  { src: jungleZone, alt: "Jungle Zone" },
 ];
 
-// Row 2: 12 logos
+// Row 2: 12 partner logos
 const row2Logos = [
-  keypact,
-  logo3Custom,
-  logoWhite,
-  logoDefault,
-  logoWebp,
-  logo22,
-  logoGreen,
-  loopMobility,
-  mgqHeader,
-  screenshotLogo,
-  shufaLogo,
-  unnamed,
+  { src: keypact, alt: "Keypact" },
+  { src: logo3Custom, alt: "Partner 3 Custom" },
+  { src: logoWhite, alt: "Partner Prestige" },
+  { src: logoDefault, alt: "Partner Brand" },
+  { src: logoWebp, alt: "Partner Group" },
+  { src: logo22, alt: "Partner 22" },
+  { src: logoGreen, alt: "Green Building Partner" },
+  { src: loopMobility, alt: "Loop Mobility" },
+  { src: mgqHeader, alt: "MGQ" },
+  { src: screenshotLogo, alt: "Enterprise Partner" },
+  { src: shufaLogo, alt: "Shufa" },
+  { src: unnamed, alt: "Qatar Partner" },
 ];
 
 export default function LogoSlider() {
   return (
-    <div className="w-full overflow-hidden relative py-8 space-y-8">
-      <style>
-        {`
-          /* Right → Left (Current Row 1 animation) */
-          @keyframes marquee-left {
-            0%   { transform: translateX(0%); }
-            100% { transform: translateX(-100%); }
+    <section className="w-full overflow-hidden relative py-12 md:py-16 bg-[#f9f4ef]">
+      <style>{`
+        /* Smooth, 60fps GPU-accelerated marquee animations */
+        @keyframes marquee-to-left {
+          0% {
+            transform: translate3d(0, 0, 0);
           }
-
-          /* Left → Right (Opposite Row 2 animation) */
-          @keyframes marquee-right {
-            0%   { transform: translateX(-100%); }
-            100% { transform: translateX(0%); }
+          100% {
+            transform: translate3d(-100%, 0, 0);
           }
+        }
 
-          .slider-track {
-            display: flex;
-            width: max-content;
+        @keyframes marquee-to-right {
+          0% {
+            transform: translate3d(-100%, 0, 0);
           }
-
-          .slider-row:hover .animate-row-left,
-          .slider-row:hover .animate-row-right {
-            animation-play-state: paused;
+          100% {
+            transform: translate3d(0, 0, 0);
           }
+        }
 
+        .slider-track {
+          display: flex;
+          width: max-content;
+          will-change: transform;
+        }
+
+        .animate-row-left {
+          display: flex;
+          align-items: center;
+          flex-shrink: 0;
+          animation: marquee-to-left 42s linear infinite;
+          will-change: transform;
+        }
+
+        .animate-row-right {
+          display: flex;
+          align-items: center;
+          flex-shrink: 0;
+          animation: marquee-to-right 42s linear infinite;
+          will-change: transform;
+        }
+
+        /* Responsive speeds */
+        @media (max-width: 768px) {
           .animate-row-left {
-            display: flex;
-            flex-shrink: 0;
-            animation: marquee-left 50s linear infinite;
-            will-change: transform;
+            animation-duration: 28s;
           }
-
           .animate-row-right {
-            display: flex;
-            flex-shrink: 0;
-            animation: marquee-right 50s linear infinite;
-            will-change: transform;
+            animation-duration: 28s;
           }
+        }
 
+        .slider-row:hover .animate-row-left,
+        .slider-row:hover .animate-row-right {
+          animation-play-state: paused;
+        }
+
+        .logo-item {
+          flex-shrink: 0;
+          padding: 0 10px;
+        }
+
+        @media (min-width: 768px) {
           .logo-item {
-            flex-shrink: 0;
-            padding: 0 36px;
-            opacity: 0.85;
-            transition: all 0.3s ease;
+            padding: 0 16px;
           }
+        }
 
-          .logo-item:hover {
-            opacity: 1;
-            transform: scale(1.05);
+        .logo-card {
+          width: 130px;
+          height: 64px;
+          background: #ffffff;
+          border: 1px solid rgba(0, 0, 0, 0.06);
+          border-radius: 12px;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 10px 14px;
+          transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        @media (max-width: 768px) {
+          .logo-card {
+            width: 110px;
+            height: 54px;
+            padding: 8px 10px;
+            border-radius: 10px;
           }
-        `}
-      </style>
+        }
 
-      {/* Row 1: 13 Logos (Current Animation: Right to Left) */}
-      <div className="slider-row relative overflow-hidden w-full">
-        <div className="slider-track">
-          <div className="animate-row-left">
-            {row1Logos.map((logo, i) => (
-              <div
-                key={`r1-${i}`}
-                className="logo-item flex items-center justify-center"
-              >
-                <img
-                  src={logo}
-                  className="h-10 md:h-12 w-auto max-w-[130px] object-contain"
-                  alt={`partner-logo-row1-${i}`}
-                  loading="lazy"
-                />
-              </div>
-            ))}
+        .logo-card:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 8px 20px rgba(90, 15, 47, 0.12);
+          border-color: rgba(90, 15, 47, 0.2);
+        }
+
+        .logo-card img {
+          max-width: 100%;
+          max-height: 100%;
+          width: auto;
+          height: auto;
+          object-fit: contain;
+          filter: grayscale(20%);
+          opacity: 0.88;
+          transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .logo-card:hover img {
+          filter: grayscale(0%);
+          opacity: 1;
+          transform: scale(1.05);
+        }
+      `}</style>
+
+      {/* Header Eyebrow */}
+      <div className="max-w-7xl mx-auto text-center mb-8 md:mb-12 px-6">
+        <span className="anam-hero-eyebrow justify-center !text-xs tracking-[0.22em]">
+          Trusted Industry Partners
+        </span>
+        <h2 className="anam-section-title !text-xl sm:!text-2xl md:!text-3xl !mb-0 text-gray-900">
+          Collaborating with Leading Enterprises Across Qatar
+        </h2>
+      </div>
+
+      {/* Edge Gradient Mask Overlays for Smooth In/Out Fades */}
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-12 sm:w-24 md:w-36 bg-gradient-to-r from-[#f9f4ef] via-[#f9f4ef]/80 to-transparent z-10" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-12 sm:w-24 md:w-36 bg-gradient-to-l from-[#f9f4ef] via-[#f9f4ef]/80 to-transparent z-10" />
+
+      <div className="space-y-4 md:space-y-6 relative">
+        {/* Row 1: Right to Left (Continuous Loop) */}
+        <div className="slider-row relative overflow-hidden w-full">
+          <div className="slider-track">
+            {/* Primary Track */}
+            <div className="animate-row-left">
+              {row1Logos.map((logo, i) => (
+                <div key={`r1-${i}`} className="logo-item">
+                  <div className="logo-card">
+                    <img
+                      src={logo.src}
+                      alt={logo.alt}
+                      loading="eager"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Duplicate Seamless Loop Track */}
+            <div className="animate-row-left" aria-hidden="true">
+              {row1Logos.map((logo, i) => (
+                <div key={`r1-dup-${i}`} className="logo-item">
+                  <div className="logo-card">
+                    <img
+                      src={logo.src}
+                      alt={logo.alt}
+                      loading="eager"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
+        </div>
 
-          <div className="animate-row-left" aria-hidden="true">
-            {row1Logos.map((logo, i) => (
-              <div
-                key={`r1-dup-${i}`}
-                className="logo-item flex items-center justify-center"
-              >
-                <img
-                  src={logo}
-                  className="h-10 md:h-12 w-auto max-w-[130px] object-contain"
-                  alt={`partner-logo-row1-dup-${i}`}
-                  loading="lazy"
-                />
-              </div>
-            ))}
+        {/* Row 2: Left to Right (Continuous Loop) */}
+        <div className="slider-row relative overflow-hidden w-full">
+          <div className="slider-track">
+            {/* Primary Track */}
+            <div className="animate-row-right">
+              {row2Logos.map((logo, i) => (
+                <div key={`r2-${i}`} className="logo-item">
+                  <div className="logo-card">
+                    <img
+                      src={logo.src}
+                      alt={logo.alt}
+                      loading="eager"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Duplicate Seamless Loop Track */}
+            <div className="animate-row-right" aria-hidden="true">
+              {row2Logos.map((logo, i) => (
+                <div key={`r2-dup-${i}`} className="logo-item">
+                  <div className="logo-card">
+                    <img
+                      src={logo.src}
+                      alt={logo.alt}
+                      loading="eager"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
-
-      {/* Row 2: 12 Logos (Opposite Animation: Left to Right) */}
-      <div className="slider-row relative overflow-hidden w-full">
-        <div className="slider-track">
-          <div className="animate-row-right">
-            {row2Logos.map((logo, i) => (
-              <div
-                key={`r2-${i}`}
-                className="logo-item flex items-center justify-center"
-              >
-                <img
-                  src={logo}
-                  className="h-10 md:h-12 w-auto max-w-[130px] object-contain"
-                  alt={`partner-logo-row2-${i}`}
-                  loading="lazy"
-                />
-              </div>
-            ))}
-          </div>
-
-          <div className="animate-row-right" aria-hidden="true">
-            {row2Logos.map((logo, i) => (
-              <div
-                key={`r2-dup-${i}`}
-                className="logo-item flex items-center justify-center"
-              >
-                <img
-                  src={logo}
-                  className="h-10 md:h-12 w-auto max-w-[130px] object-contain"
-                  alt={`partner-logo-row2-dup-${i}`}
-                  loading="lazy"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
   );
 }
