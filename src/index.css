@@ -236,27 +236,28 @@ h4.anam-h4,
 .flooring-custom-page .hero-content p,
 .profile-accessories-custom-page .pa-hero p,
 .lead-p {
-  font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif !important;
   font-size: 16px !important;
   line-height: 1.68 !important;
-  color: #4b5563 !important;
+  color: #374151 !important;
   margin-bottom: 20px !important;
   max-width: 650px !important;
 }
 
 /* --------------------------------------------------------
-   7. STANDARD BODY PARAGRAPHS
+   7. STANDARD BODY PARAGRAPHS & ALL PARAGRAPH ELEMENTS
    -------------------------------------------------------- */
+p,
 .anam-body-p,
 .article p,
 .prose p,
 .flooring-custom-page .article p,
 .profile-accessories-custom-page .article p,
 .product-hero-p2 {
-  font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif !important;
   font-size: 15px !important;
   line-height: 1.72 !important;
-  color: #4a4a4a !important;
+  color: #374151 !important;
   margin-bottom: 16px !important;
 }
 
@@ -268,12 +269,26 @@ h4.anam-h4,
 .profile-content p,
 .application p,
 .process-item p,
-.related-post p {
-  font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
-  font-size: 13.5px !important;
+.related-post p,
+.product-card p {
+  font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif !important;
+  font-size: 14px !important;
   line-height: 1.6 !important;
-  color: #6b7280 !important;
+  color: #4b5563 !important;
   margin: 0 !important;
+}
+
+/* --------------------------------------------------------
+   9. FOOTER SECTION FONT & VISIBILITY HARDENING
+   -------------------------------------------------------- */
+footer,
+footer p,
+footer a,
+footer li,
+footer span,
+footer div,
+footer h4 {
+  font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif !important;
 }
 
 /* Optical centering for icon + text pairings */
