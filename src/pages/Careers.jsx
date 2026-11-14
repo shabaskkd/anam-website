@@ -399,7 +399,7 @@ export default function CareerPage() {
             </div>
             <div
               style={{
-                fontFamily: "Arial, Helvetica, sans-serif",
+                fontFamily: "'Raleway', sans-serif",
                 fontSize: 26,
                 fontWeight: 700,
                 color: s.textDark,

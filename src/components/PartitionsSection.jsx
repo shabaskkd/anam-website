@@ -158,7 +158,7 @@ const PartitionsSection = () => {
             --anam-border: #e8e1e4;
             --anam-white: #fff;
 
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Raleway', sans-serif;
             color: var(--anam-text);
             line-height: 1.6;
             background: #fff;

@@ -57,7 +57,7 @@ const ProfileAccessoriesSection = () => {
     <div className="profile-accessories-custom-page">
       <style>{`
         .profile-accessories-custom-page {
-          font-family: Arial, Helvetica, sans-serif;
+          font-family: 'Raleway', sans-serif;
           background: #fff;
           color: #242424;
           line-height: 1.7;

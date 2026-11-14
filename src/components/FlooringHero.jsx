@@ -29,11 +29,11 @@ const FlooringHero = () => {
         }
 
         .flooring-hero-wrapper {
-          font-family: Arial, Helvetica, sans-serif;
+          font-family: 'Raleway', sans-serif;
         }
 
         .flooring-hero-tag {
-          font-family: Arial, Helvetica, sans-serif;
+          font-family: 'Raleway', sans-serif;
           display: inline-flex;
           align-items: center;
           gap: 10px;
@@ -54,7 +54,7 @@ const FlooringHero = () => {
         }
 
         .flooring-hero-title {
-          font-family: Arial, Helvetica, sans-serif;
+          font-family: 'Raleway', sans-serif;
           font-size: clamp(42px, 5vw, 68px);
           line-height: .98;
           font-weight: normal;

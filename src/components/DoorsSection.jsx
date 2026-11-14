@@ -163,10 +163,10 @@ const DoorsSection = () => {
           z-index: 10;
         }
         .doors-container {
-          font-family: Arial, Helvetica, sans-serif;
+          font-family: 'Raleway', sans-serif;
         }
         .door-hero-tag {
-          font-family: Arial, Helvetica, sans-serif;
+          font-family: 'Raleway', sans-serif;
           display: inline-flex;
           align-items: center;
           gap: 10px;
@@ -185,7 +185,7 @@ const DoorsSection = () => {
           background: #5A0F2F;
         }
         .door-hero-title {
-          font-family: Arial, Helvetica, sans-serif;
+          font-family: 'Raleway', sans-serif;
           font-size: clamp(42px, 5vw, 68px);
           line-height: .98;
           font-weight: normal;

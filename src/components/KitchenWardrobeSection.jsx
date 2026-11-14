@@ -38,7 +38,7 @@ const KitchenWardrobeSection = () => {
             --kw-border: #e8e1e4;
             --kw-white: #ffffff;
 
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Raleway', sans-serif;
             color: var(--kw-text);
             background: #fff;
             line-height: 1.6;

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import Layout from "../components/Layout";
 import { getServiceBySlug } from "../data/serviceData";
 
@@ -16,26 +17,73 @@ const ServiceDetail = () => {
       <Layout withBg>
         <div className="py-40 text-center px-6">
           <p className="font-bold text-2xl mb-4">Service not found</p>
+          <Link to="/services" className="text-primary underline">
+            Back to all services
+          </Link>
         </div>
       </Layout>
     );
   }
 
+  const pageTitle = `${service.name} in Qatar | Best Contracting Solutions Doha - ANAM Qatar`;
+  const pageDescription = `${service.tagline} ANAM Trading & Contracting provides expert ${service.name.toLowerCase()} in Doha, Lusail, and throughout Qatar. Professional craftsmanship since 2012.`;
+  const pageUrl = `https://anamqatar.com/services/${service.slug}`;
+
   return (
     <Layout withBg>
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <meta
+          name="keywords"
+          content={`${service.name.toLowerCase()} Qatar, best ${service.name.toLowerCase()} Doha, general contracting Qatar, interior fit out Doha, ANAM services Qatar`}
+        />
+        <link rel="canonical" href={pageUrl} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:url" content={pageUrl} />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content={service.image} />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": service.name,
+          "serviceType": service.name,
+          "description": service.tagline,
+          "provider": {
+            "@type": "HomeAndConstructionBusiness",
+            "name": "ANAM Trading & Contracting",
+            "url": "https://anamqatar.com",
+            "telephone": "+974-5032-5050",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Doha",
+              "addressCountry": "QA"
+            }
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Qatar"
+          }
+        })}</script>
+      </Helmet>
+
       <main>
         <section
-          className="relative h-[60vh] flex items-center px-10 bg-cover bg-center bg-gray-900"
+          className="relative h-[60vh] min-h-[420px] flex items-center px-10 bg-cover bg-center bg-gray-900"
           style={{
             backgroundImage: `url(${service.image})`,
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-t from-[#5a0f2f]/80 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#5a0f2f]/90 via-black/50 to-black/30" />
           <div className="z-10 max-w-7xl mx-auto w-full absolute bottom-12 text-center left-1/2 -translate-x-1/2 px-4">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/25 text-white text-xs font-bold uppercase tracking-widest mb-3">
+              ANAM Qatar Specialized Service
+            </span>
             <h1 className="anam-hero-title !text-white text-center">
               {service.name}
             </h1>
-            <p className="anam-lead-p !text-white/90 text-center mx-auto mt-3">
+            <p className="anam-lead-p !text-white/90 text-center mx-auto mt-2 max-w-2xl">
               {service.tagline}
             </p>
           </div>

@@ -276,7 +276,7 @@ const CeilingSolutionsSection = () => {
             --border: #e9e3e5;
             --white: #ffffff;
 
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Raleway', sans-serif;
             color: var(--black);
             background: #fff;
             line-height: 1.6;

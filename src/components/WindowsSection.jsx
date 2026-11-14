@@ -179,7 +179,7 @@ const WindowsSection = () => {
             --border: #e8e8e8;
             --white: #fff;
 
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Raleway', sans-serif;
             color: var(--text);
             background: #fff;
             line-height: 1.6;

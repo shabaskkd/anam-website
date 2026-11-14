@@ -57,11 +57,11 @@ const ProductHero = ({
         }
 
         .product-hero-wrapper {
-          font-family: Arial, Helvetica, sans-serif;
+          font-family: 'Raleway', sans-serif;
         }
 
         .product-hero-tag {
-          font-family: Arial, Helvetica, sans-serif;
+          font-family: 'Raleway', sans-serif;
           display: inline-flex;
           align-items: center;
           gap: 10px;
@@ -82,7 +82,7 @@ const ProductHero = ({
         }
 
         .product-hero-title {
-          font-family: Arial, Helvetica, sans-serif;
+          font-family: 'Raleway', sans-serif;
           font-size: clamp(38px, 4.2vw, 62px);
           line-height: .98;
           font-weight: normal;

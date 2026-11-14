@@ -26,7 +26,7 @@ const FlooringSection = () => {
     <div className="flooring-custom-page">
       <style>{`
         .flooring-custom-page {
-          font-family: Arial, Helvetica, sans-serif;
+          font-family: 'Raleway', sans-serif;
           background: #fff;
           color: #222;
           line-height: 1.7;
