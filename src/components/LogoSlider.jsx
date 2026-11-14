@@ -9,18 +9,18 @@ import clicks from "../assets/images/logos/clicks.png";
 import dnbco from "../assets/images/logos/DnBco-logo-2-1.png";
 import fmm from "../assets/images/logos/FMM.png";
 import gtc from "../assets/images/logos/GTC.png";
-import intertech from "../assets/images/logos/Inter-tech_logo-removebg.png.avif";
+import intertech from "../assets/images/logos/Inter-tech_logo-removebg.png";
 import jungleZone from "../assets/images/logos/jungle-zone.jpg";
 
 import keypact from "../assets/images/logos/keypact-logo-white@3x.png";
 import logo3Custom from "../assets/images/logos/logo-3.png";
 import logoWhite from "../assets/images/logos/logo-white@3x.png";
 import logoDefault from "../assets/images/logos/logo.png";
-import logoWebp from "../assets/images/logos/logo.webp";
-import logo22 from "../assets/images/logos/LOGO22.png.webp";
+import logoWebp from "../assets/images/logos/logo.png";
+import logo22 from "../assets/images/logos/LOGO22.png";
 import logoGreen from "../assets/images/logos/LogoGreen.png";
 import loopMobility from "../assets/images/logos/Loop Mobility@3x.png";
-import mgqHeader from "../assets/images/logos/mgq+header.png.webp";
+import mgqHeader from "../assets/images/logos/mgq+header.png";
 import screenshotLogo from "../assets/images/logos/screenshot-logo.png";
 import shufaLogo from "../assets/images/logos/Shufa-Logo@3x.png";
 import unnamed from "../assets/images/logos/unnamed.png";
@@ -65,33 +65,86 @@ export default function LogoSlider() {
   return (
     <section className="w-full overflow-hidden relative py-12 md:py-16 bg-[#f9f4ef] select-none">
       <style>{`
-        /* Mathematically seamless single-track infinite marquees */
-        /* All items share a single flexbox parent - overlap is physically impossible */
-        @keyframes marquee-scroll-left {
+        /* ========================================================
+           APPLE WEBKIT & RETINA DISPLAY BULLETPROOF HARDENING
+           - Fixes WebKit 3D compositing stacking bug on iOS
+           - Enforces strict deterministic slot widths (no image layout shifts)
+           - Prevents iOS Safari overflow:hidden render bleed with mask-image
+           - Zero touch-gesture freezing or sticky hover states
+           ======================================================== */
+
+        @-webkit-keyframes marquee-scroll-left {
           0% {
+            -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
           }
           100% {
+            -webkit-transform: translate3d(-50%, 0, 0);
             transform: translate3d(-50%, 0, 0);
+          }
+        }
+
+        @keyframes marquee-scroll-left {
+          0% {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+          }
+          100% {
+            -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+          }
+        }
+
+        @-webkit-keyframes marquee-scroll-right {
+          0% {
+            -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+          }
+          100% {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
           }
         }
 
         @keyframes marquee-scroll-right {
           0% {
+            -webkit-transform: translate3d(-50%, 0, 0);
             transform: translate3d(-50%, 0, 0);
           }
           100% {
+            -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
           }
         }
 
+        /* Container with iOS Safari overflow:hidden clipping fix */
+        .slider-row {
+          position: relative;
+          overflow: hidden;
+          width: 100%;
+          -webkit-mask-image: -webkit-radial-gradient(white, black);
+          mask-image: radial-gradient(white, black);
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+          isolation: isolate;
+          contain: paint layout;
+        }
+
+        /* Animated tracks: GPU-accelerated and isolated */
         .slider-marquee-left {
           display: flex;
           align-items: center;
           width: max-content;
           flex-wrap: nowrap;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          -webkit-perspective: 1000px;
+          perspective: 1000px;
+          -webkit-transform-style: flat;
+          transform-style: flat;
+          -webkit-animation: marquee-scroll-left 38s linear infinite;
           animation: marquee-scroll-left 38s linear infinite;
-          will-change: transform;
+          will-change: -webkit-transform, transform;
         }
 
         .slider-marquee-right {
@@ -99,47 +152,64 @@ export default function LogoSlider() {
           align-items: center;
           width: max-content;
           flex-wrap: nowrap;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          -webkit-perspective: 1000px;
+          perspective: 1000px;
+          -webkit-transform-style: flat;
+          transform-style: flat;
+          -webkit-animation: marquee-scroll-right 38s linear infinite;
           animation: marquee-scroll-right 38s linear infinite;
-          will-change: transform;
+          will-change: -webkit-transform, transform;
         }
 
-        /* Mobile speeds: smooth and balanced */
+        /* Mobile speeds: smooth, readable, non-jarring */
         @media (max-width: 768px) {
           .slider-marquee-left {
+            -webkit-animation-duration: 26s;
             animation-duration: 26s;
           }
           .slider-marquee-right {
+            -webkit-animation-duration: 26s;
             animation-duration: 26s;
           }
         }
 
-        /* ONLY pause on hover for real mouse pointers, never on mobile touch */
+        /* ONLY pause on hover for desktop fine mouse pointers - never iOS touch */
         @media (hover: hover) and (pointer: fine) {
           .slider-row:hover .slider-marquee-left,
           .slider-row:hover .slider-marquee-right {
+            -webkit-animation-play-state: paused;
             animation-play-state: paused;
           }
         }
 
-        /* Strict flex spacing ensuring cards never collide */
+        /* Deterministic slot width: locks geometry so WebKit never recalculates loop math */
         .logo-item {
-          flex: 0 0 auto;
-          padding: 0 6px;
+          flex: 0 0 132px;
+          width: 132px;
+          max-width: 132px;
+          min-width: 132px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-sizing: border-box;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          -webkit-transform: translateZ(0);
+          transform: translateZ(0);
         }
 
-        @media (min-width: 640px) {
+        @media (min-width: 768px) {
           .logo-item {
-            padding: 0 10px;
+            flex: 0 0 168px;
+            width: 168px;
+            max-width: 168px;
+            min-width: 168px;
           }
         }
 
-        @media (min-width: 1024px) {
-          .logo-item {
-            padding: 0 14px;
-          }
-        }
-
-        /* Polished cards with optimal contrast and mobile dimensions */
+        /* Luxury card surfaces with optimal contrast */
         .logo-card {
           width: 120px;
           height: 58px;
@@ -147,13 +217,18 @@ export default function LogoSlider() {
           border: 1px solid rgba(0, 0, 0, 0.08);
           border-radius: 10px;
           box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
-          display: inline-flex;
+          display: flex;
           align-items: center;
           justify-content: center;
           padding: 6px 12px;
           box-sizing: border-box;
           flex-shrink: 0;
-          transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+          transition: -webkit-transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
+                      transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
                       box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
                       border-color 0.25s cubic-bezier(0.16, 1, 0.3, 1);
         }
@@ -170,15 +245,18 @@ export default function LogoSlider() {
 
         @media (hover: hover) and (pointer: fine) {
           .logo-card:hover {
+            -webkit-transform: translateY(-2px);
             transform: translateY(-2px);
             box-shadow: 0 8px 22px rgba(90, 15, 47, 0.12);
             border-color: rgba(90, 15, 47, 0.25);
           }
           .logo-card:hover img {
+            -webkit-transform: scale(1.04);
             transform: scale(1.04);
           }
         }
 
+        /* Image protection against iOS selection/drag and rendering bugs */
         .logo-card img {
           max-width: 100%;
           max-height: 100%;
@@ -189,8 +267,14 @@ export default function LogoSlider() {
           opacity: 1;
           filter: none;
           pointer-events: none;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
           user-select: none;
-          transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+          -webkit-user-drag: none;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          transition: -webkit-transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+                      transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
         }
       `}</style>
 
@@ -224,6 +308,7 @@ export default function LogoSlider() {
                     alt={logo.alt}
                     loading="eager"
                     decoding="async"
+                    draggable={false}
                   />
                 </div>
               </div>
@@ -246,6 +331,7 @@ export default function LogoSlider() {
                     alt={logo.alt}
                     loading="eager"
                     decoding="async"
+                    draggable={false}
                   />
                 </div>
               </div>
