@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import logo1 from "../assets/images/logos/logo1.png";
 import logo2 from "../assets/images/logos/logo2.png";
 import logo3 from "../assets/images/logos/logo3.png";
@@ -58,103 +58,125 @@ const row2Logos = [
 ];
 
 export default function LogoSlider() {
+  // Duplicated once to enable mathematically seamless 50% loop
+  const row1Doubled = useMemo(() => [...row1Logos, ...row1Logos], []);
+  const row2Doubled = useMemo(() => [...row2Logos, ...row2Logos], []);
+
   return (
-    <section className="w-full overflow-hidden relative py-12 md:py-16 bg-[#f9f4ef]">
+    <section className="w-full overflow-hidden relative py-12 md:py-16 bg-[#f9f4ef] select-none">
       <style>{`
-        /* Smooth, 60fps GPU-accelerated marquee animations */
-        @keyframes marquee-to-left {
+        /* Mathematically seamless single-track infinite marquees */
+        /* All items share a single flexbox parent - overlap is physically impossible */
+        @keyframes marquee-scroll-left {
           0% {
             transform: translate3d(0, 0, 0);
           }
           100% {
-            transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
           }
         }
 
-        @keyframes marquee-to-right {
+        @keyframes marquee-scroll-right {
           0% {
-            transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
           }
           100% {
             transform: translate3d(0, 0, 0);
           }
         }
 
-        .slider-track {
+        .slider-marquee-left {
           display: flex;
+          align-items: center;
           width: max-content;
+          flex-wrap: nowrap;
+          animation: marquee-scroll-left 38s linear infinite;
           will-change: transform;
         }
 
-        .animate-row-left {
+        .slider-marquee-right {
           display: flex;
           align-items: center;
-          flex-shrink: 0;
-          animation: marquee-to-left 42s linear infinite;
+          width: max-content;
+          flex-wrap: nowrap;
+          animation: marquee-scroll-right 38s linear infinite;
           will-change: transform;
         }
 
-        .animate-row-right {
-          display: flex;
-          align-items: center;
-          flex-shrink: 0;
-          animation: marquee-to-right 42s linear infinite;
-          will-change: transform;
-        }
-
-        /* Responsive speeds */
+        /* Mobile speeds: smooth and balanced */
         @media (max-width: 768px) {
-          .animate-row-left {
-            animation-duration: 28s;
+          .slider-marquee-left {
+            animation-duration: 26s;
           }
-          .animate-row-right {
-            animation-duration: 28s;
+          .slider-marquee-right {
+            animation-duration: 26s;
           }
         }
 
-        .slider-row:hover .animate-row-left,
-        .slider-row:hover .animate-row-right {
-          animation-play-state: paused;
+        /* ONLY pause on hover for real mouse pointers, never on mobile touch */
+        @media (hover: hover) and (pointer: fine) {
+          .slider-row:hover .slider-marquee-left,
+          .slider-row:hover .slider-marquee-right {
+            animation-play-state: paused;
+          }
         }
 
+        /* Strict flex spacing ensuring cards never collide */
         .logo-item {
+          flex: 0 0 auto;
+          padding: 0 6px;
+        }
+
+        @media (min-width: 640px) {
+          .logo-item {
+            padding: 0 10px;
+          }
+        }
+
+        @media (min-width: 1024px) {
+          .logo-item {
+            padding: 0 14px;
+          }
+        }
+
+        /* Polished cards with optimal contrast and mobile dimensions */
+        .logo-card {
+          width: 120px;
+          height: 58px;
+          background: #ffffff;
+          border: 1px solid rgba(0, 0, 0, 0.08);
+          border-radius: 10px;
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          padding: 6px 12px;
+          box-sizing: border-box;
           flex-shrink: 0;
-          padding: 0 10px;
+          transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
+                      box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
+                      border-color 0.25s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
         @media (min-width: 768px) {
-          .logo-item {
-            padding: 0 16px;
-          }
-        }
-
-        .logo-card {
-          width: 130px;
-          height: 64px;
-          background: #ffffff;
-          border: 1px solid rgba(0, 0, 0, 0.06);
-          border-radius: 12px;
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 10px 14px;
-          transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-
-        @media (max-width: 768px) {
           .logo-card {
-            width: 110px;
-            height: 54px;
-            padding: 8px 10px;
-            border-radius: 10px;
+            width: 144px;
+            height: 68px;
+            padding: 8px 16px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
           }
         }
 
-        .logo-card:hover {
-          transform: translateY(-2px);
-          box-shadow: 0 8px 20px rgba(90, 15, 47, 0.12);
-          border-color: rgba(90, 15, 47, 0.2);
+        @media (hover: hover) and (pointer: fine) {
+          .logo-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 22px rgba(90, 15, 47, 0.12);
+            border-color: rgba(90, 15, 47, 0.25);
+          }
+          .logo-card:hover img {
+            transform: scale(1.04);
+          }
         }
 
         .logo-card img {
@@ -163,19 +185,16 @@ export default function LogoSlider() {
           width: auto;
           height: auto;
           object-fit: contain;
-          filter: grayscale(20%);
-          opacity: 0.88;
-          transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-
-        .logo-card:hover img {
-          filter: grayscale(0%);
+          display: block;
           opacity: 1;
-          transform: scale(1.05);
+          filter: none;
+          pointer-events: none;
+          user-select: none;
+          transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
         }
       `}</style>
 
-      {/* Header Eyebrow */}
+      {/* Header Eyebrow & Title */}
       <div className="max-w-7xl mx-auto text-center mb-8 md:mb-12 px-6">
         <span className="anam-hero-eyebrow justify-center !text-xs tracking-[0.22em]">
           Trusted Industry Partners
@@ -185,82 +204,52 @@ export default function LogoSlider() {
         </h2>
       </div>
 
-      {/* Edge Gradient Mask Overlays for Smooth In/Out Fades */}
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-12 sm:w-24 md:w-36 bg-gradient-to-r from-[#f9f4ef] via-[#f9f4ef]/80 to-transparent z-10" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-12 sm:w-24 md:w-36 bg-gradient-to-l from-[#f9f4ef] via-[#f9f4ef]/80 to-transparent z-10" />
+      {/* Edge Gradient Mask Overlays - subtle on mobile so logos stay fully visible */}
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-8 sm:w-20 md:w-32 bg-gradient-to-r from-[#f9f4ef] via-[#f9f4ef]/90 to-transparent z-10" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-8 sm:w-20 md:w-32 bg-gradient-to-l from-[#f9f4ef] via-[#f9f4ef]/90 to-transparent z-10" />
 
       <div className="space-y-4 md:space-y-6 relative">
-        {/* Row 1: Right to Left (Continuous Loop) */}
+        {/* Row 1: Right-to-Left Continuous Single-Track Loop */}
         <div className="slider-row relative overflow-hidden w-full">
-          <div className="slider-track">
-            {/* Primary Track */}
-            <div className="animate-row-left">
-              {row1Logos.map((logo, i) => (
-                <div key={`r1-${i}`} className="logo-item">
-                  <div className="logo-card">
-                    <img
-                      src={logo.src}
-                      alt={logo.alt}
-                      loading="eager"
-                      decoding="async"
-                    />
-                  </div>
+          <div className="slider-marquee-left">
+            {row1Doubled.map((logo, index) => (
+              <div
+                key={`r1-${index}`}
+                className="logo-item"
+                aria-hidden={index >= row1Logos.length ? "true" : undefined}
+              >
+                <div className="logo-card">
+                  <img
+                    src={logo.src}
+                    alt={logo.alt}
+                    loading="eager"
+                    decoding="async"
+                  />
                 </div>
-              ))}
-            </div>
-
-            {/* Duplicate Seamless Loop Track */}
-            <div className="animate-row-left" aria-hidden="true">
-              {row1Logos.map((logo, i) => (
-                <div key={`r1-dup-${i}`} className="logo-item">
-                  <div className="logo-card">
-                    <img
-                      src={logo.src}
-                      alt={logo.alt}
-                      loading="eager"
-                      decoding="async"
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
 
-        {/* Row 2: Left to Right (Continuous Loop) */}
+        {/* Row 2: Left-to-Right Continuous Single-Track Loop */}
         <div className="slider-row relative overflow-hidden w-full">
-          <div className="slider-track">
-            {/* Primary Track */}
-            <div className="animate-row-right">
-              {row2Logos.map((logo, i) => (
-                <div key={`r2-${i}`} className="logo-item">
-                  <div className="logo-card">
-                    <img
-                      src={logo.src}
-                      alt={logo.alt}
-                      loading="eager"
-                      decoding="async"
-                    />
-                  </div>
+          <div className="slider-marquee-right">
+            {row2Doubled.map((logo, index) => (
+              <div
+                key={`r2-${index}`}
+                className="logo-item"
+                aria-hidden={index >= row2Logos.length ? "true" : undefined}
+              >
+                <div className="logo-card">
+                  <img
+                    src={logo.src}
+                    alt={logo.alt}
+                    loading="eager"
+                    decoding="async"
+                  />
                 </div>
-              ))}
-            </div>
-
-            {/* Duplicate Seamless Loop Track */}
-            <div className="animate-row-right" aria-hidden="true">
-              {row2Logos.map((logo, i) => (
-                <div key={`r2-dup-${i}`} className="logo-item">
-                  <div className="logo-card">
-                    <img
-                      src={logo.src}
-                      alt={logo.alt}
-                      loading="eager"
-                      decoding="async"
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
