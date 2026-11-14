@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense, lazy, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import ScrollToTop from "./components/ScrollToTop";
@@ -21,13 +21,33 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 
 function PageLoader() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-white">
-      <div className="w-8 h-8 border-4 border-[#800020] border-t-transparent rounded-full animate-spin" />
+    <div className="min-h-screen flex flex-col items-center justify-center bg-[#050507]">
+      <div className="w-12 h-12 rounded-xl bg-[#4B0B22] border border-[#C9A86A]/40 flex items-center justify-center shadow-lg shadow-[#4B0B22]/30 mb-4 animate-pulse">
+        <img src="/favicon.svg" alt="ANAM" className="w-7 h-7 object-contain" />
+      </div>
+      <div className="w-24 h-1 bg-white/10 rounded-full overflow-hidden">
+        <div className="h-full bg-gradient-to-r from-[#4B0B22] via-[#C9A86A] to-[#DFBE82] rounded-full animate-pulse" />
+      </div>
     </div>
   );
 }
 
 function App() {
+  useEffect(() => {
+    // Release the preloader gate once fonts and initial DOM are ready
+    if (typeof document !== "undefined" && document.fonts) {
+      document.fonts.ready.then(() => {
+        if (typeof window !== "undefined" && window.__dismissAnamPreloader) {
+          window.__dismissAnamPreloader();
+        }
+      });
+    } else {
+      if (typeof window !== "undefined" && window.__dismissAnamPreloader) {
+        window.__dismissAnamPreloader();
+      }
+    }
+  }, []);
+
   return (
     <BrowserRouter>
       <ScrollToTop />
