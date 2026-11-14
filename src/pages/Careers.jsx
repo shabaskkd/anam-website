@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import Layout from "../components/Layout";
 
 const jobs = [
@@ -103,6 +104,16 @@ export default function CareerPage() {
 
   return (
     <Layout>
+      <Helmet>
+        <title>Careers at ANAM Trading &amp; Contracting | Jobs in Qatar</title>
+        <meta name="description" content="Join ANAM Trading &amp; Contracting — Qatar's leading interior solutions company. Explore career opportunities in flooring, wall panels, doors, landscaping &amp; construction in Doha." />
+        <meta name="keywords" content="careers Qatar, jobs Doha, interior jobs Qatar, construction jobs Qatar, flooring jobs Qatar, ANAM careers" />
+        <link rel="canonical" href="https://anamqatar.com/careers" />
+        <meta property="og:title" content="Careers at ANAM Qatar | Interior Solutions Jobs Doha" />
+        <meta property="og:description" content="Join Qatar's best interior solutions team. Apply for jobs in flooring, wall panels, doors and more." />
+        <meta property="og:url" content="https://anamqatar.com/careers" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div style={{ maxWidth: 900, margin: "0 auto", padding: "0 24px 80px" }}>
         {/* HERO */}
         <div>
@@ -505,3 +516,4 @@ function ModalListItem({ children }) {
     </li>
   );
 }
+

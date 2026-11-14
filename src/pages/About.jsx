@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import Layout from "../components/Layout";
 import { IMAGES } from "../utils/assets";
 import MasonryGallery from "../components/MasanoryGallery";
@@ -6,6 +7,24 @@ import MasonryGallery from "../components/MasanoryGallery";
 const AboutSection = () => {
   return (
     <Layout withBg>
+      <Helmet>
+        <title>About ANAM Trading &amp; Contracting | Qatar's Leading Interior Solutions Since 2012</title>
+        <meta name="description" content="Learn about ANAM Trading &amp; Contracting — established in Qatar in 2012. Qatar's most trusted supplier of flooring, wall panels, doors, solid surfaces, curtains, partitions &amp; landscaping in Doha." />
+        <meta name="keywords" content="about ANAM Qatar, interior solutions Qatar, flooring company Qatar, best interior company Doha, Qatar fit-out company, ANAM trading contracting" />
+        <link rel="canonical" href="https://anamqatar.com/about" />
+        <meta property="og:title" content="About ANAM Qatar | Leading Interior Solutions Since 2012" />
+        <meta property="og:description" content="Qatar's most trusted supplier of premium flooring, wall panels, doors &amp; landscaping. Serving Doha since 2012." />
+        <meta property="og:url" content="https://anamqatar.com/about" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "url": "https://anamqatar.com/about",
+          "name": "About ANAM Trading and Contracting Qatar",
+          "description": "Qatar leading supplier of flooring, wall panels, doors, solid surfaces, curtains, partitions and landscaping since 2012.",
+          "mainEntity": { "@id": "https://anamqatar.com/#localbusiness" }
+        })}</script>
+      </Helmet>
       <div className="text-[#1a1a1a] font-sans pt-10">
         {/* Hero Banner */}
         <div className="relative h-[200px] md:h-[440px] w-full flex items-center justify-center overflow-hidden">
