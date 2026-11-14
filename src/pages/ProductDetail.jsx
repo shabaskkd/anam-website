@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Layout from "../components/Layout";
 import { productData } from "../data/productData";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import ProductHero from "../components/ProductHero";
 
@@ -1565,9 +1565,9 @@ const ProductDetail = ({ overrideSlug }) => {
 
                     {/* CTA */}
                     <div className="flex justify-center">
-                      <button className="mt-10 bg-primary text-white px-10 py-4 font-bold hover:bg-black transition uppercase text-sm tracking-widest shadow-lg">
+                      <Link to="/contact" className="mt-10 inline-block bg-primary text-white px-10 py-4 font-bold hover:bg-black transition uppercase text-sm tracking-widest shadow-lg">
                         Request a Quote ↗
-                      </button>
+                      </Link>
                     </div>
                   </>
                 )}

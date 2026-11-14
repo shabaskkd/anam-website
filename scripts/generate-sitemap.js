@@ -21,6 +21,7 @@ function serviceItemToSlug(item) {
 // 1. Static Pages
 const staticPages = [
   { path: "", priority: "1.0", changefreq: "daily" },
+  { path: "products", priority: "0.9", changefreq: "weekly" },
   { path: "flooring", priority: "0.9", changefreq: "weekly" },
   { path: "wall-panels", priority: "0.9", changefreq: "weekly" },
   { path: "doors", priority: "0.9", changefreq: "weekly" },

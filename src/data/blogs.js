@@ -13,7 +13,7 @@ export const BLOGS = [
     content: `
   <p>Modern interiors are no longer just about choosing the right furniture or paint colour. Walls play an important role in defining the overall character of a home. A well-designed feature wall can make a simple room look elegant, luxurious and visually interesting.</p>
 
-  <p>For homeowners looking for practical and stylish interior solutions, <strong>wall panels in Qatar</strong> have become an attractive choice. They are available in different colours, textures, patterns and finishes, making them suitable for modern apartments, luxury villas, majlis interiors, bedrooms and living spaces.</p>
+  <p>For homeowners looking for practical and stylish interior solutions, <a href="/wall-panels" class="text-primary font-bold hover:underline">wall panels in Qatar</a> have become an attractive choice. They are available in different colours, textures, patterns and finishes, making them suitable for modern apartments, luxury villas, majlis interiors, bedrooms and living spaces.</p>
 
   <p>Whether you prefer a natural wooden appearance, a luxury marble effect or a contemporary textured finish, the right wall panel can completely transform an interior.</p>
 
@@ -37,7 +37,7 @@ export const BLOGS = [
   <p>A marble-effect panel combined with suitable lighting can create a premium focal point without making the room feel overcrowded.</p>
 
   <h2>2. WPC Fluted Wall Panels for a Warm, Modern Look</h2>
-  <p>If you want to bring warmth and texture into your interior, WPC wall panels in Qatar are an excellent design option.</p>
+  <p>If you want to bring warmth and texture into your interior, <a href="/wall-panels" class="text-primary font-bold hover:underline">WPC wall panels in Qatar</a> are an excellent design option.</p>
   <p>Fluted WPC panels feature vertical lines that add depth and architectural character to a wall. They can be used independently or combined with other materials such as marble-effect surfaces, paint or lighting.</p>
   <p>They are ideal for:</p>
   <ul>
@@ -209,7 +209,7 @@ export const BLOGS = [
     content: `
   <p>Interior design is changing rapidly, and homeowners, architects and businesses are looking for materials that combine style, durability and easy maintenance. One solution that has become increasingly popular for contemporary interiors is <strong>WPC wall panels</strong>.</p>
 
-  <p>With their attractive wood-inspired appearance, textured finishes and versatile applications, <a href="/wall-panels" class="text-primary font-bold hover:underline">WPC wall panels in Qatar</a> can be used to create modern feature walls in villas, apartments, offices, hotels, restaurants and other commercial spaces.</p>
+  <p>With their attractive wood-inspired appearance, textured finishes and versatile applications, <a href="/wall-panels" class="text-primary font-bold hover:underline"><a href="/wall-panels" class="text-primary font-bold hover:underline">WPC wall panels in Qatar</a></a> can be used to create modern feature walls in villas, apartments, offices, hotels, restaurants and other commercial spaces.</p>
 
   <p>From elegant living-room walls and TV units to bedroom backdrops and majlis interiors, WPC panels provide plenty of opportunities to create a distinctive look without relying on traditional wall finishes alone.</p>
 

@@ -58,7 +58,7 @@ const TailoredServices = () => {
                   <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300" />
                 </div>
 
-                <div className="p-6 flex items-center justify-between bg-gradient-to-t from-primary to-transparent text-white absolute w-full left-0 -bottom-[100%] group-hover:bottom-0 transition-all duration-500">
+                <div className="p-4 sm:p-6 flex items-center justify-between bg-gradient-to-t from-primary via-primary/90 to-transparent text-white absolute w-full left-0 bottom-0 md:-bottom-[100%] md:group-hover:bottom-0 transition-all duration-500">
                   <h5 className="text-sm font-bold text-white leading-tight tracking-wider">
                     {product?.name}
                   </h5>

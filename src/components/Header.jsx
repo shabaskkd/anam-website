@@ -74,18 +74,14 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 w-full z-50 bg-primary">
-      <div className="max-w-[1280px] mx-auto h-[70px] md:h-[90px] flex items-center justify-between relative">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 h-[70px] md:h-[90px] flex items-center justify-between relative">
         {/* Logo Section */}
         <div
           className={`flex items-center gap-3 shrink-0 ${isSearchOpen ? "hidden md:flex" : "flex"}`}
         >
           <div className="w-20 md:w-[180px]">
             <Link to={"/"}>
-              <img loading="lazy" decoding="async"
-                src={IMAGES.logo_white}
-                alt="Logo"
-                className="w-full h-auto"
-              />
+              <img loading="eager" fetchPriority="high" decoding="async" src={IMAGES.logo_white} alt="ANAM Qatar Logo" className="w-full h-auto" />
             </Link>
           </div>
         </div>

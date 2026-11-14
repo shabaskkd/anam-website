@@ -36,11 +36,8 @@ const PROCESS_STEPS = [
 const ArchitectureProcess = () => {
   return (
     <section
-      className="pt-10 overflow-hidden bg-no-repeat bg-contain bg-bottom"
-      style={{
-        backgroundImage:
-          "url(https://demo2.themelexus.com/antra/wp-content/uploads/2025/06/h1-bg02.png)",
-      }}
+      className="pt-12 pb-16 overflow-hidden bg-gradient-to-b from-[#fdfbf9] to-white"
+      
     >
       <div className="container mx-auto px-6">
         <div className="md:mb-20 mb-10 gap-8 flex flex-col lg:flex-row">

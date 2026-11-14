@@ -22,7 +22,7 @@ const ServiceSection = () => {
 
         <div className="flex flex-col justify-between h-auto py-4">
           <div className="space-y-8">
-            <p className="text-zinc-400 text-md md:text-lg leading-relaxed max-w-2xl">
+            <p className="text-gray-600 text-md md:text-lg leading-relaxed max-w-2xl">
               Welcome to{" "}
               <span className="text-primary font-semibold ">
                 ANAM Trading &amp; Contracting
@@ -32,7 +32,7 @@ const ServiceSection = () => {
               architectural design, and high-end finishes, we ensure every space
               is crafted for both beauty and lasting durability.
             </p>
-            <p className="text-zinc-400 text-md md:text-lg leading-relaxed max-w-2xl">
+            <p className="text-gray-600 text-md md:text-lg leading-relaxed max-w-2xl">
               At ANAM Trading &amp; Contracting, our focus is on you and what you want to
               achieve. We pride ourselves on forging strong, lasting
               relationships that help us to continue to thrive and develop.
