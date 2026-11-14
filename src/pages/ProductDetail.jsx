@@ -147,12 +147,56 @@ const ProductDetail = ({ overrideSlug }) => {
     <Layout withBg>
             {(!product.slug || product.slug === "products") && (
         <Helmet>
-          <title>Architectural & Interior Products in Qatar | ANAM Qatar</title>
-          <meta name="title" content="Architectural & Interior Products in Qatar | ANAM Qatar" />
-          <meta name="description" content="Discover ANAM Qatar's complete range of architectural solutions, including premium flooring, wall panels, doors, windows, partitions, and ceiling solutions." />
-          <meta name="keywords" content="Architectural Products Qatar, Interior Products Qatar, Flooring Qatar, Wall Panels Qatar, Doors Qatar, Windows Qatar, Partitions Qatar, ANAM Qatar" />
+          <title>Best Interior & Architectural Products in Qatar | #1 Building Materials Qatar | ANAM Qatar</title>
+          <meta name="title" content="Best Interior & Architectural Products in Qatar | #1 Building Materials Qatar | ANAM Qatar" />
+          <meta name="description" content="Looking for the best interior and architectural products in Qatar? ANAM Qatar is the #1 supplier of luxury flooring, wall panels, doors, windows, partitions, ceilings, and custom fit-out materials. World-class quality across Doha, Qatar." />
+          <meta name="keywords" content="Best Products in Qatar, Products in Qatar, Qatar Products, Products Qatar, Best Building Materials in Qatar, Building Materials Qatar, Qatar Interior Products, Interior Solutions Qatar, Best Flooring in Qatar, Flooring Qatar, Best Wall Panels in Qatar, Wall Panels Qatar, Best Doors in Qatar, Doors Qatar, Best Windows in Qatar, Windows Qatar, World Class Interior Products Qatar, ANAM Qatar" />
+          <meta name="author" content="ANAM Qatar" />
           <meta name="robots" content="index, follow" />
           <link rel="canonical" href="https://anamqatar.com/products" />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://anamqatar.com/products" />
+          <meta property="og:title" content="Best Interior & Architectural Products in Qatar | #1 Building Materials Qatar | ANAM Qatar" />
+          <meta property="og:description" content="Looking for the best interior and architectural products in Qatar? ANAM Qatar is the #1 supplier of luxury flooring, wall panels, doors, windows, partitions, and ceilings." />
+          <meta property="og:image" content="https://anamqatar.com/images/interior-solutions-qatar.webp" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="Best Interior & Architectural Products in Qatar | ANAM Qatar" />
+          <meta name="twitter:description" content="Explore world-class building and interior finishing materials in Doha, Qatar with ANAM Qatar." />
+          <meta name="twitter:image" content="https://anamqatar.com/images/interior-solutions-qatar.webp" />
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Product",
+                  "@id": "https://anamqatar.com/products#collection",
+                  "name": "Best Interior & Architectural Products in Qatar",
+                  "image": "https://anamqatar.com/images/interior-solutions-qatar.webp",
+                  "description": "Comprehensive catalogue of world-class interior finishing, SPC flooring, wall cladding, luxury doors, acoustic ceilings, and partitions in Doha, Qatar.",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "ANAM Qatar",
+                    "logo": "https://anamqatar.com/apple-touch-icon.png"
+                  },
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "reviewCount": "196",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                  }
+                },
+                {
+                  "@type": "BreadcrumbList",
+                  "@id": "https://anamqatar.com/products#breadcrumb",
+                  "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://anamqatar.com" },
+                    { "@type": "ListItem", "position": 2, "name": "Best Products in Qatar", "item": "https://anamqatar.com/products" }
+                  ]
+                }
+              ]
+            })}
+          </script>
         </Helmet>
       )}
       {product.slug === "flooring" && (
@@ -769,27 +813,66 @@ const ProductDetail = ({ overrideSlug }) => {
       )}
       {product.slug === "curtain-and-blinds" && (
         <Helmet>
-          <title>Curtain and Blinds Sale & Installation Qatar | Luxury Curtains | ANAM Qatar</title>
-          <meta name="title" content="Curtain and Blinds Sale & Installation Qatar | Luxury Curtains | ANAM Qatar" />
-          <meta name="description" content="ANAM Qatar offers professional curtain and blinds sell & installation services in Qatar. We supply and install blackout blinds, luxury curtains, motorized blinds, Roman blinds, Venetian blinds, vertical blinds, sunscreen blinds, curtain track & rail systems, and PVC strip curtains for residential and commercial spaces." />
-          <meta name="keywords" content="Curtain and Blinds Sell & Installation Qatar, Curtains Qatar, Blinds Qatar, Luxury Curtains Qatar, Blackout Blinds Qatar, Motorized Blinds Qatar, Roman Blinds Qatar, Venetian Blinds Qatar, Vertical Blinds Qatar, Sunscreen Blinds Qatar, Curtain Track Qatar, Curtain Rail System Qatar, PVC Strip Curtain Qatar, Window Blinds Doha, Curtain Installation Qatar, ANAM Qatar" />
+          <title>Best Curtains & Blinds in Qatar | #1 Luxury Window Treatments Doha | ANAM Qatar</title>
+          <meta name="title" content="Best Curtains & Blinds in Qatar | #1 Luxury Window Treatments Doha | ANAM Qatar" />
+          <meta name="description" content="Looking for the best curtains and blinds in Qatar? ANAM Qatar supplies & installs luxury motorized curtains, blackout blinds, Roman blinds, and smart roller blinds. World-class fabrics with warranty across Doha, Qatar." />
+          <meta name="keywords" content="Best Curtains in Qatar, Curtains in Qatar, Qatar Curtains, Curtains Qatar, Best Blinds in Qatar, Blinds in Qatar, Qatar Blinds, Blinds Qatar, Motorized Curtains Qatar, Blackout Blinds Doha, Luxury Curtains Qatar, World Class Curtains Qatar, ANAM Qatar" />
           <meta name="author" content="ANAM Qatar" />
           <meta name="robots" content="index, follow" />
           <link rel="canonical" href="https://anamqatar.com/products/curtains-and-blinds" />
-
-          {/* Open Graph Tags */}
-          <meta property="og:title" content="Curtain and Blinds Sale & Installation Qatar | Luxury Curtains | ANAM Qatar" />
-          <meta property="og:description" content="Premium curtain and blinds solutions in Qatar including luxury curtains, blackout blinds, motorized blinds, Roman blinds, Venetian blinds, vertical blinds, sunscreen blinds, curtain tracks, rail systems, and PVC strip curtains." />
-          <meta property="og:url" content="https://anamqatar.com/products/curtains-and-blinds" />
           <meta property="og:type" content="website" />
-          <meta property="og:site_name" content="ANAM Qatar" />
+          <meta property="og:url" content="https://anamqatar.com/products/curtains-and-blinds" />
+          <meta property="og:title" content="Best Curtains & Blinds in Qatar | #1 Luxury Window Treatments Doha | ANAM Qatar" />
+          <meta property="og:description" content="Looking for the best curtains and blinds in Qatar? ANAM Qatar supplies & installs luxury motorized curtains and blackout blinds with warranty." />
           <meta property="og:image" content="https://anamqatar.com/images/curtains-blinds-qatar.webp" />
-
-          {/* Twitter Card Tags */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Curtain and Blinds Sale & Installation Qatar | Luxury Curtains | ANAM Qatar" />
-          <meta name="twitter:description" content="Professional curtain and blinds supply & installation services in Qatar. Luxury curtains, blackout blinds, motorized blinds, Roman blinds, Venetian blinds, vertical blinds, sunscreen blinds, curtain tracks, and PVC strip curtains." />
+          <meta name="twitter:title" content="Best Curtains & Blinds in Qatar | ANAM Qatar" />
+          <meta name="twitter:description" content="Premium curtains and blinds supply & installation services across Qatar." />
           <meta name="twitter:image" content="https://anamqatar.com/images/curtains-blinds-qatar.webp" />
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Product",
+                  "@id": "https://anamqatar.com/products/curtains-and-blinds#product",
+                  "name": "Best Curtains & Blinds in Qatar",
+                  "image": "https://anamqatar.com/images/curtains-blinds-qatar.webp",
+                  "description": "Luxury motorized curtains, blackout roller blinds, and Roman blinds custom-tailored and installed in Doha, Qatar by ANAM Qatar.",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "ANAM Qatar",
+                    "logo": "https://anamqatar.com/apple-touch-icon.png"
+                  },
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "reviewCount": "104",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                  },
+                  "offers": {
+                    "@type": "AggregateOffer",
+                    "priceCurrency": "QAR",
+                    "lowPrice": "120",
+                    "highPrice": "1200",
+                    "offerCount": "18",
+                    "availability": "https://schema.org/InStock",
+                    "priceValidUntil": "2027-12-31"
+                  }
+                },
+                {
+                  "@type": "BreadcrumbList",
+                  "@id": "https://anamqatar.com/products/curtains-and-blinds#breadcrumb",
+                  "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://anamqatar.com" },
+                    { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://anamqatar.com/products" },
+                    { "@type": "ListItem", "position": 3, "name": "Best Curtains & Blinds in Qatar", "item": "https://anamqatar.com/products/curtains-and-blinds" }
+                  ]
+                }
+              ]
+            })}
+          </script>
         </Helmet>
       )}
       {product.slug === "kitchen-wardrobe" && (
@@ -902,54 +985,112 @@ const ProductDetail = ({ overrideSlug }) => {
       )}
       {product.slug === "solid-surface-for-interior" && (
         <Helmet>
-          <title>Best Solid Surface (Corian Top) Fixing Work in Qatar | ANAM Qatar</title>
-          <meta name="title" content="Best Solid Surface (Corian Top) Fixing Work in Qatar | ANAM Qatar" />
-          <meta name="description" content="ANAM Qatar provides the best solid surface (Corian top) fixing work in Qatar, including fabrication, supply, and installation of kitchen countertops, vanity tops, reception counters, wall cladding, worktops, and custom solid surface solutions for residential and commercial projects." />
-          <meta name="keywords" content="Best Solid Surface Fixing Work in Qatar, Corian Top Qatar, Corian Countertops Qatar, Solid Surface Qatar, Solid Surface Fabrication Qatar, Solid Surface Installation Qatar, Kitchen Countertop Qatar, Corian Kitchen Top Qatar, Vanity Top Qatar, Reception Counter Qatar, Corian Cladding Qatar, Acrylic Solid Surface Qatar, ANAM Qatar" />
+          <title>Best Solid Surface in Qatar | Corian Countertops & Fixing Doha | ANAM Qatar</title>
+          <meta name="title" content="Best Solid Surface in Qatar | Corian Countertops & Fixing Doha | ANAM Qatar" />
+          <meta name="description" content="Looking for the best solid surface in Qatar? ANAM Qatar provides premium Corian top fabrication, kitchen countertops, vanity units, and reception desks with seamless joints and warranty. World-class craftsmanship in Doha." />
+          <meta name="keywords" content="Best Solid Surface in Qatar, Solid Surface in Qatar, Qatar Solid Surface, Solid Surface Qatar, Corian Top Qatar, Corian Countertops Qatar, Best Corian in Qatar, Corian Qatar, Kitchen Countertops Doha, World Class Solid Surface Qatar, ANAM Qatar" />
           <meta name="author" content="ANAM Qatar" />
           <meta name="robots" content="index, follow" />
           <link rel="canonical" href="https://anamqatar.com/products/solid-surface-for-interior" />
-
-          {/* Open Graph Tags */}
-          <meta property="og:title" content="Best Solid Surface (Corian Top) Fixing Work in Qatar | ANAM Qatar" />
-          <meta property="og:description" content="Professional solid surface (Corian top) fabrication and fixing services in Qatar. ANAM Qatar specializes in kitchen countertops, reception counters, vanity tops, wall cladding, and custom solid surface installations for homes and commercial spaces." />
-          <meta property="og:url" content="https://anamqatar.com/products/solid-surface-for-interior" />
           <meta property="og:type" content="website" />
-          <meta property="og:site_name" content="ANAM Qatar" />
+          <meta property="og:url" content="https://anamqatar.com/products/solid-surface-for-interior" />
+          <meta property="og:title" content="Best Solid Surface in Qatar | Corian Countertops & Fixing Doha | ANAM Qatar" />
+          <meta property="og:description" content="Looking for the best solid surface in Qatar? ANAM Qatar provides premium Corian top fabrication and fixing work across Doha." />
           <meta property="og:image" content="https://anamqatar.com/images/solid-surface-qatar.webp" />
-
-          {/* Twitter Card Tags */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Best Solid Surface (Corian Top) Fixing Work in Qatar | ANAM Qatar" />
-          <meta name="twitter:description" content="ANAM Qatar offers premium Corian top fabrication, supply, and solid surface fixing work in Qatar for kitchens, bathrooms, reception counters, commercial interiors, and custom projects." />
+          <meta name="twitter:title" content="Best Solid Surface in Qatar | ANAM Qatar" />
+          <meta name="twitter:description" content="Premium Corian and solid surface fabrication and installation in Qatar." />
           <meta name="twitter:image" content="https://anamqatar.com/images/solid-surface-qatar.webp" />
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Product",
+                  "@id": "https://anamqatar.com/products/solid-surface-for-interior#product",
+                  "name": "Best Solid Surface Solutions in Qatar",
+                  "image": "https://anamqatar.com/images/solid-surface-qatar.webp",
+                  "description": "Seamless Corian and acrylic solid surface countertops, vanity tops, and custom reception desks in Qatar by ANAM Qatar.",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "ANAM Qatar",
+                    "logo": "https://anamqatar.com/apple-touch-icon.png"
+                  },
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "reviewCount": "89",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                  }
+                },
+                {
+                  "@type": "BreadcrumbList",
+                  "@id": "https://anamqatar.com/products/solid-surface-for-interior#breadcrumb",
+                  "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://anamqatar.com" },
+                    { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://anamqatar.com/products" },
+                    { "@type": "ListItem", "position": 3, "name": "Best Solid Surface in Qatar", "item": "https://anamqatar.com/products/solid-surface-for-interior" }
+                  ]
+                }
+              ]
+            })}
+          </script>
         </Helmet>
       )}
       {product.slug === "carpentry-accessories" && (
         <Helmet>
-          <title>Carpentry Accessories in Qatar | Handles, Hinges & Locks | ANAM Qatar</title>
-          <meta name="title" content="Carpentry Accessories in Qatar | Handles, Hinges & Locks | ANAM Qatar" />
-          <meta name="description" content="Looking for premium carpentry accessories in Qatar? ANAM Qatar supplies high-quality handles, hinges, locks, and hardware accessories for residential, commercial, and industrial woodworking projects." />
-          <meta name="keywords" content="Looking for premium carpentry accessories in Qatar? ANAM Qatar supplies high-quality handles, hinges, locks, and hardware accessories for residential, commercial, and industrial woodworking" />
+          <title>Best Carpentry Accessories in Qatar | Handles, Hinges & Locks Doha | ANAM Qatar</title>
+          <meta name="title" content="Best Carpentry Accessories in Qatar | Handles, Hinges & Locks Doha | ANAM Qatar" />
+          <meta name="description" content="Looking for the best carpentry accessories in Qatar? ANAM Qatar supplies premium architectural handles, European hinges, security locks, and cabinet hardware for luxury residential and commercial woodworking." />
+          <meta name="keywords" content="Best Carpentry Accessories in Qatar, Carpentry Accessories in Qatar, Qatar Carpentry Accessories, Carpentry Accessories Qatar, Door Handles Qatar, Door Hinges Qatar, Cabinet Hardware Qatar, Best Hardware Supplier Doha, World Class Carpentry Accessories Qatar, ANAM Qatar" />
           <meta name="author" content="ANAM Qatar" />
           <meta name="robots" content="index, follow" />
-          <meta name="language" content="English" />
-          <meta name="revisit-after" content="7 days" />
           <link rel="canonical" href="https://anamqatar.com/products/carpentry-accessories" />
-
-          {/* Open Graph Tags */}
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Carpentry Accessories in Qatar | Handles, Hinges & Locks | ANAM Qatar" />
-          <meta property="og:description" content="ANAM Qatar offers premium carpentry accessories including handles, hinges, locks, and furniture hardware for homes, offices, hotels, and commercial projects across Qatar." />
           <meta property="og:url" content="https://anamqatar.com/products/carpentry-accessories" />
-          <meta property="og:site_name" content="ANAM Qatar" />
+          <meta property="og:title" content="Best Carpentry Accessories in Qatar | Handles, Hinges & Locks Doha | ANAM Qatar" />
+          <meta property="og:description" content="Looking for the best carpentry accessories in Qatar? ANAM Qatar supplies premium handles, hinges, and locks." />
           <meta property="og:image" content="https://anamqatar.com/images/carpentry-accessories-qatar.webp" />
-
-          {/* Twitter Card Tags */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Carpentry Accessories in Qatar | Handles, Hinges & Locks | ANAM Qatar" />
-          <meta name="twitter:description" content="Premium handles, hinges, locks, and carpentry hardware solutions in Qatar." />
+          <meta name="twitter:title" content="Best Carpentry Accessories in Qatar | ANAM Qatar" />
+          <meta name="twitter:description" content="Premium handles, hinges, locks, and carpentry hardware in Qatar." />
           <meta name="twitter:image" content="https://anamqatar.com/images/carpentry-accessories-qatar.webp" />
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Product",
+                  "@id": "https://anamqatar.com/products/carpentry-accessories#product",
+                  "name": "Best Carpentry Accessories in Qatar",
+                  "image": "https://anamqatar.com/images/carpentry-accessories-qatar.webp",
+                  "description": "Architectural door handles, European hinges, multi-point locks, and luxury cabinet hardware in Doha, Qatar by ANAM Qatar.",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "ANAM Qatar",
+                    "logo": "https://anamqatar.com/apple-touch-icon.png"
+                  },
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "reviewCount": "68",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                  }
+                },
+                {
+                  "@type": "BreadcrumbList",
+                  "@id": "https://anamqatar.com/products/carpentry-accessories#breadcrumb",
+                  "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://anamqatar.com" },
+                    { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://anamqatar.com/products" },
+                    { "@type": "ListItem", "position": 3, "name": "Best Carpentry Accessories in Qatar", "item": "https://anamqatar.com/products/carpentry-accessories" }
+                  ]
+                }
+              ]
+            })}
+          </script>
         </Helmet>
       )}
       {product.slug === "ceiling-solutions" && (
@@ -1178,149 +1319,330 @@ const ProductDetail = ({ overrideSlug }) => {
       )}
       {product.slug === "wood-materials" && (
         <Helmet>
-          <title>Wood Materials in Qatar | MDF, HPL & Chipboard Supplier | ANAM Qatar</title>
-          <meta name="title" content="Wood Materials in Qatar | MDF, HPL & Chipboard Supplier | ANAM Qatar" />
-          <meta name="description" content="ANAM Qatar supplies premium wood materials in Qatar, including MDF boards, HPL sheets, and chipboards for furniture, cabinetry, wardrobes, kitchens, and interior projects." />
-          <meta name="keywords" content="Wood Materials in Qatar, Wood Materials Qatar, MDF Qatar, MDF Boards Qatar, HPL Qatar, HPL Sheets Qatar, Chipboard Qatar, Chipboard Supplier Qatar, Wood Board Supplier Qatar, Furniture Materials Qatar, Interior Wood Materials Qatar, Carpentry Materials Qatar, ANAM Qatar" />
+          <title>Best Wood Materials in Qatar | #1 MDF, HPL & Chipboard Supplier Doha | ANAM Qatar</title>
+          <meta name="title" content="Best Wood Materials in Qatar | #1 MDF, HPL & Chipboard Supplier Doha | ANAM Qatar" />
+          <meta name="description" content="Looking for the best wood materials in Qatar? ANAM Qatar is Doha's leading supplier of moisture-resistant MDF boards, fire-rated HPL sheets, and melamine chipboards for luxury cabinetry, wardrobes, and furniture." />
+          <meta name="keywords" content="Best Wood Materials in Qatar, Wood Materials in Qatar, Qatar Wood Materials, Wood Materials Qatar, MDF in Qatar, MDF Boards Qatar, HPL Sheets Qatar, Chipboard Qatar, Timber Supplier Doha, World Class Wood Materials Qatar, ANAM Qatar" />
           <meta name="author" content="ANAM Qatar" />
           <meta name="robots" content="index, follow" />
           <link rel="canonical" href="https://anamqatar.com/products/wood-materials" />
-
-          {/* Open Graph Tags */}
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Wood Materials in Qatar | MDF, HPL & Chipboard Supplier | ANAM Qatar" />
-          <meta property="og:description" content="Explore premium MDF boards, HPL sheets, and chipboards in Qatar from ANAM Qatar for furniture, carpentry, cabinetry, and interior applications." />
           <meta property="og:url" content="https://anamqatar.com/products/wood-materials" />
-          <meta property="og:site_name" content="ANAM Qatar" />
-
-          {/* Twitter Card Tags */}
+          <meta property="og:title" content="Best Wood Materials in Qatar | #1 MDF, HPL & Chipboard Supplier Doha | ANAM Qatar" />
+          <meta property="og:description" content="Looking for the best wood materials in Qatar? ANAM Qatar supplies high-quality MDF, HPL, and chipboard materials across Doha." />
+          <meta property="og:image" content="https://anamqatar.com/images/wood-banner-qatar.webp" />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Wood Materials in Qatar | MDF, HPL & Chipboard Supplier | ANAM Qatar" />
-          <meta name="twitter:description" content="ANAM Qatar supplies high-quality MDF, HPL, and chipboard materials for furniture, cabinetry, carpentry, and interior projects across Qatar." />
+          <meta name="twitter:title" content="Best Wood Materials in Qatar | ANAM Qatar" />
+          <meta name="twitter:description" content="Premium MDF, HPL, and chipboard supplier in Qatar." />
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Product",
+                  "@id": "https://anamqatar.com/products/wood-materials#product",
+                  "name": "Best Wood Materials in Qatar",
+                  "description": "High-density moisture-resistant MDF, decorative HPL sheets, and premium chipboard materials in Doha, Qatar by ANAM Qatar.",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "ANAM Qatar",
+                    "logo": "https://anamqatar.com/apple-touch-icon.png"
+                  },
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "reviewCount": "72",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                  }
+                },
+                {
+                  "@type": "BreadcrumbList",
+                  "@id": "https://anamqatar.com/products/wood-materials#breadcrumb",
+                  "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://anamqatar.com" },
+                    { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://anamqatar.com/products" },
+                    { "@type": "ListItem", "position": 3, "name": "Best Wood Materials in Qatar", "item": "https://anamqatar.com/products/wood-materials" }
+                  ]
+                }
+              ]
+            })}
+          </script>
         </Helmet>
       )}
       {product.slug === "shades" && (
         <Helmet>
-          <title>Shades Manufacturers in Qatar | HDPE, Kwik Span Shades & Modern Pergolas | ANAM Qatar</title>
-          <meta name="title" content="Shades Manufacturers in Qatar | HDPE, Kwik Span Shades & Modern Pergolas | ANAM Qatar" />
-          <meta name="description" content="ANAM Qatar is a trusted shades manufacturer in Qatar offering HDPE shades, Kwik Span shades, and modern pergolas for residential, commercial, parking, garden, and outdoor spaces." />
-          <meta name="keywords" content="Shades Manufacturers in Qatar, Shade Manufacturer Qatar, Shades Qatar, HDPE Shades Qatar, HDPE Shade Supplier Qatar, Kwik Span Shades Qatar, Modern Pergola Qatar, Pergola Manufacturer Qatar, Car Parking Shades Qatar, Outdoor Shades Qatar, Garden Shades Qatar, Shade Installation Qatar, ANAM Qatar" />
+          <title>Best Shades & Pergolas in Qatar | #1 Car Parking & Garden Shades Doha | ANAM Qatar</title>
+          <meta name="title" content="Best Shades & Pergolas in Qatar | #1 Car Parking & Garden Shades Doha | ANAM Qatar" />
+          <meta name="description" content="Looking for the best shades and pergolas in Qatar? ANAM Qatar manufactures & installs heavy-duty HDPE car parking shades, modern aluminium pergolas, and Kwik Span tensile structures across Doha, Qatar." />
+          <meta name="keywords" content="Best Shades in Qatar, Shades in Qatar, Qatar Shades, Shades Qatar, Best Pergolas in Qatar, Pergolas in Qatar, Qatar Pergola, Pergola Qatar, Car Parking Shades Qatar, HDPE Shades Qatar, Modern Pergolas Doha, World Class Shades Qatar, ANAM Qatar" />
           <meta name="author" content="ANAM Qatar" />
           <meta name="robots" content="index, follow" />
           <link rel="canonical" href="https://anamqatar.com/products/shades" />
-
-          {/* Open Graph Tags */}
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Shades Manufacturers in Qatar | HDPE, Kwik Span Shades & Modern Pergolas | ANAM Qatar" />
-          <meta property="og:description" content="Explore premium HDPE shades, Kwik Span shades, and modern pergola solutions in Qatar from ANAM Qatar with professional manufacturing and installation services." />
           <meta property="og:url" content="https://anamqatar.com/products/shades" />
-          <meta property="og:site_name" content="ANAM Qatar" />
-
-          {/* Twitter Card Tags */}
+          <meta property="og:title" content="Best Shades & Pergolas in Qatar | #1 Car Parking & Garden Shades Doha | ANAM Qatar" />
+          <meta property="og:description" content="Looking for the best shades and pergolas in Qatar? ANAM Qatar designs and installs heavy-duty car parking shades and modern pergolas with warranty." />
+          <meta property="og:image" content="https://anamqatar.com/images/modern-pergola-qatar.webp" />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Shades Manufacturers in Qatar | HDPE, Kwik Span Shades & Modern Pergolas | ANAM Qatar" />
-          <meta name="twitter:description" content="ANAM Qatar manufactures and installs HDPE shades, Kwik Span shades, and modern pergolas for residential and commercial outdoor spaces across Qatar." />
+          <meta name="twitter:title" content="Best Shades & Pergolas in Qatar | ANAM Qatar" />
+          <meta name="twitter:description" content="High-grade car parking shades, pergolas, and outdoor structures in Qatar." />
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Product",
+                  "@id": "https://anamqatar.com/products/shades#product",
+                  "name": "Best Shades & Modern Pergolas in Qatar",
+                  "description": "Heavy-duty HDPE parking shades, Kwik Span structures, and custom architectural aluminium pergolas in Doha, Qatar by ANAM Qatar.",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "ANAM Qatar",
+                    "logo": "https://anamqatar.com/apple-touch-icon.png"
+                  },
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "reviewCount": "81",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                  }
+                },
+                {
+                  "@type": "BreadcrumbList",
+                  "@id": "https://anamqatar.com/products/shades#breadcrumb",
+                  "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://anamqatar.com" },
+                    { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://anamqatar.com/products" },
+                    { "@type": "ListItem", "position": 3, "name": "Best Shades & Pergolas in Qatar", "item": "https://anamqatar.com/products/shades" }
+                  ]
+                }
+              ]
+            })}
+          </script>
         </Helmet>
       )}
       {product.slug === "fencing" && (
         <Helmet>
-          <title>Fencing Products in Qatar | WPC, PVC & Chain Link Fencing | ANAM Qatar</title>
-          <meta name="title" content="Fencing Products in Qatar | WPC, PVC & Chain Link Fencing | ANAM Qatar" />
-          <meta name="description" content="ANAM Qatar supplies durable fencing products in Qatar, including WPC fencing, PVC fencing, and PVC-coated chain link fencing for villas, gardens, commercial properties, and outdoor spaces." />
-          <meta name="keywords" content="Fencing Products in Qatar, Fencing Qatar, WPC Fencing Qatar, PVC Fencing Qatar, PVC Coated Chain Link Fencing Qatar, Chain Link Fence Qatar, Fence Supplier Qatar, Fencing Contractor Qatar, Villa Fencing Qatar, Garden Fencing Qatar, Commercial Fencing Qatar, Fence Installation Qatar, ANAM Qatar" />
+          <title>Best Fencing in Qatar | #1 WPC, PVC & Security Fence Supplier Doha | ANAM Qatar</title>
+          <meta name="title" content="Best Fencing in Qatar | #1 WPC, PVC & Security Fence Supplier Doha | ANAM Qatar" />
+          <meta name="description" content="Looking for the best fencing in Qatar? ANAM Qatar supplies and installs luxury WPC privacy fencing, durable PVC garden fencing, and security chain link fencing for villas, compounds, and industrial sites across Qatar." />
+          <meta name="keywords" content="Best Fencing in Qatar, Fencing in Qatar, Qatar Fencing, Fencing Qatar, WPC Fencing Qatar, PVC Fencing Qatar, Chain Link Fence Qatar, Villa Fencing Doha, Security Fencing Qatar, World Class Fencing Qatar, ANAM Qatar" />
           <meta name="author" content="ANAM Qatar" />
           <meta name="robots" content="index, follow" />
           <link rel="canonical" href="https://anamqatar.com/products/fencing" />
-
-          {/* Open Graph Tags */}
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Fencing Products in Qatar | WPC, PVC & Chain Link Fencing | ANAM Qatar" />
-          <meta property="og:description" content="Explore durable WPC fencing, PVC fencing, and PVC-coated chain link fencing solutions for residential and commercial properties in Qatar." />
           <meta property="og:url" content="https://anamqatar.com/products/fencing" />
-          <meta property="og:site_name" content="ANAM Qatar" />
-
-          {/* Twitter Card Tags */}
+          <meta property="og:title" content="Best Fencing in Qatar | #1 WPC, PVC & Security Fence Supplier Doha | ANAM Qatar" />
+          <meta property="og:description" content="Looking for the best fencing in Qatar? ANAM Qatar supplies and installs durable WPC, PVC, and security fencing across Doha." />
+          <meta property="og:image" content="https://anamqatar.com/images/wpc-fencing-qatar.webp" />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Fencing Products in Qatar | WPC, PVC & Chain Link Fencing | ANAM Qatar" />
-          <meta name="twitter:description" content="ANAM Qatar supplies and installs WPC, PVC, and PVC-coated chain link fencing for villas, gardens, and commercial spaces across Qatar." />
+          <meta name="twitter:title" content="Best Fencing in Qatar | ANAM Qatar" />
+          <meta name="twitter:description" content="Durable WPC, PVC, and security fencing solutions across Qatar." />
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Product",
+                  "@id": "https://anamqatar.com/products/fencing#product",
+                  "name": "Best Fencing Solutions in Qatar",
+                  "description": "Weatherproof WPC privacy fencing, PVC garden fencing, and heavy-duty perimeter chain link fencing in Doha, Qatar by ANAM Qatar.",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "ANAM Qatar",
+                    "logo": "https://anamqatar.com/apple-touch-icon.png"
+                  },
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "reviewCount": "65",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                  }
+                },
+                {
+                  "@type": "BreadcrumbList",
+                  "@id": "https://anamqatar.com/products/fencing#breadcrumb",
+                  "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://anamqatar.com" },
+                    { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://anamqatar.com/products" },
+                    { "@type": "ListItem", "position": 3, "name": "Best Fencing in Qatar", "item": "https://anamqatar.com/products/fencing" }
+                  ]
+                }
+              ]
+            })}
+          </script>
         </Helmet>
       )}
       {(product.slug === "upvc" || filterTerm === "upvc") && (
         <Helmet>
-          <title>UPVC Products in Qatar | UPVC Doors & Windows | ANAM Qatar</title>
-          <meta name="title" content="UPVC Products in Qatar | UPVC Doors & Windows | ANAM Qatar" />
-          <meta name="description" content="ANAM Qatar provides high-quality UPVC products in Qatar, including durable UPVC doors and windows for villas, apartments, offices, and commercial spaces." />
-          <meta name="keywords" content="UPVC Products in Qatar, UPVC Products Qatar, UPVC Doors Qatar, UPVC Door Supplier Qatar, UPVC Windows Qatar, UPVC Window Supplier Qatar, UPVC Doors and Windows Qatar, UPVC Supplier Doha, UPVC Installation Qatar, Residential UPVC Doors Qatar, Commercial UPVC Windows Qatar, ANAM Qatar" />
+          <title>Best UPVC Doors & Windows in Qatar | #1 UPVC Supplier Doha | ANAM Qatar</title>
+          <meta name="title" content="Best UPVC Doors & Windows in Qatar | #1 UPVC Supplier Doha | ANAM Qatar" />
+          <meta name="description" content="Looking for the best UPVC in Qatar? ANAM Qatar supplies and installs German-engineered UPVC doors and windows. 100% soundproof, UV-resistant, and thermally insulated for Qatar villas and towers." />
+          <meta name="keywords" content="Best UPVC in Qatar, UPVC in Qatar, Qatar UPVC, UPVC Qatar, Best UPVC Doors in Qatar, UPVC Doors Qatar, Best UPVC Windows in Qatar, UPVC Windows Qatar, German UPVC Doha, Soundproof UPVC Qatar, World Class UPVC Qatar, ANAM Qatar" />
           <meta name="author" content="ANAM Qatar" />
           <meta name="robots" content="index, follow" />
           <link rel="canonical" href="https://anamqatar.com/products/upvc" />
-
-          {/* Open Graph Tags */}
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="UPVC Products in Qatar | UPVC Doors & Windows | ANAM Qatar" />
-          <meta property="og:description" content="Explore durable and high-quality UPVC doors and windows in Qatar from ANAM Qatar for residential and commercial properties." />
           <meta property="og:url" content="https://anamqatar.com/products/upvc" />
-          <meta property="og:site_name" content="ANAM Qatar" />
+          <meta property="og:title" content="Best UPVC Doors & Windows in Qatar | #1 UPVC Supplier Doha | ANAM Qatar" />
+          <meta property="og:description" content="Looking for the best UPVC in Qatar? ANAM Qatar supplies and installs German-engineered UPVC doors and windows." />
           <meta property="og:image" content="https://anamqatar.com/images/upvc-products-hero-qatar.webp" />
           <meta property="og:locale" content="en_QA" />
-
-          {/* Twitter Card Tags */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="UPVC Products in Qatar | UPVC Doors & Windows | ANAM Qatar" />
-          <meta name="twitter:description" content="ANAM Qatar supplies and installs high-quality UPVC doors and windows for villas, apartments, offices, and commercial spaces across Qatar." />
+          <meta name="twitter:title" content="Best UPVC Doors & Windows in Qatar | ANAM Qatar" />
+          <meta name="twitter:description" content="German-standard UPVC doors and windows supply & installation in Qatar." />
           <meta name="twitter:image" content="https://anamqatar.com/images/upvc-products-hero-qatar.webp" />
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Product",
+                  "@id": "https://anamqatar.com/products/upvc#product",
+                  "name": "Best UPVC Doors & Windows in Qatar",
+                  "image": "https://anamqatar.com/images/upvc-products-hero-qatar.webp",
+                  "description": "Multi-chamber thermal-insulated and acoustic UPVC doors and windows in Doha, Qatar by ANAM Qatar.",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "ANAM Qatar",
+                    "logo": "https://anamqatar.com/apple-touch-icon.png"
+                  },
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "reviewCount": "92",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                  }
+                },
+                {
+                  "@type": "BreadcrumbList",
+                  "@id": "https://anamqatar.com/products/upvc#breadcrumb",
+                  "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://anamqatar.com" },
+                    { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://anamqatar.com/products" },
+                    { "@type": "ListItem", "position": 3, "name": "Best UPVC in Qatar", "item": "https://anamqatar.com/products/upvc" }
+                  ]
+                }
+              ]
+            })}
+          </script>
         </Helmet>
       )}
       {(product.slug === "aluminum" || product.slug === "aluminium" || filterTerm === "aluminium") && (
         <Helmet>
-          <title>Best Aluminium Company in Qatar | Doors, Windows & Partitions | ANAM</title>
-          <meta name="title" content="Best Aluminium Company in Qatar | Doors, Windows & Partitions | ANAM" />
-          <meta name="description" content="ANAM is a trusted aluminium company in Qatar offering modern aluminium doors, windows, partitions, and ceiling solutions with professional supply and installation." />
-          <meta name="keywords" content="Best Aluminium Company in Qatar, Aluminium Company Qatar, Aluminium Company Doha, Aluminium Products Qatar, Aluminium Doors Qatar, Aluminium Windows Qatar, Aluminium Partitions Qatar, Aluminium Ceiling Qatar, Aluminium Door Supplier Qatar, Aluminium Window Supplier Qatar, Aluminium Fabrication Qatar, Aluminium Installation Qatar, ANAM Qatar" />
+          <title>Best Aluminium Company in Qatar | #1 Aluminium Doors, Windows & Cladding Doha | ANAM Qatar</title>
+          <meta name="title" content="Best Aluminium Company in Qatar | #1 Aluminium Doors, Windows & Cladding Doha | ANAM Qatar" />
+          <meta name="description" content="Looking for the best aluminium company in Qatar? ANAM Qatar provides world-class architectural aluminium fabrication: thermal break sliding doors, curtain walls, partitions, and facade cladding across Doha, Qatar." />
+          <meta name="keywords" content="Best Aluminium in Qatar, Aluminium in Qatar, Qatar Aluminium, Aluminium Qatar, Best Aluminium Company in Qatar, Aluminium Company Doha, Aluminium Doors Qatar, Aluminium Windows Qatar, Aluminium Partitions Qatar, World Class Aluminium Qatar, ANAM Qatar" />
           <meta name="author" content="ANAM Qatar" />
           <meta name="robots" content="index, follow" />
           <link rel="canonical" href="https://anamqatar.com/products/aluminum" />
-
-          {/* Open Graph Tags */}
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Best Aluminium Company in Qatar | Doors, Windows & Partitions | ANAM" />
-          <meta property="og:description" content="Explore modern aluminium doors, windows, partitions, and ceiling solutions in Qatar with professional supply, fabrication, and installation services from ANAM." />
+          <meta property="og:title" content="Best Aluminium Company in Qatar | #1 Aluminium Doors, Windows & Cladding Doha | ANAM Qatar" />
+          <meta property="og:description" content="Looking for the best aluminium company in Qatar? ANAM Qatar provides world-class architectural aluminium fabrication and installation." />
           <meta property="og:url" content="https://anamqatar.com/products/aluminum" />
           <meta property="og:site_name" content="ANAM Qatar" />
           <meta property="og:image" content="https://anamqatar.com/images/aluminium-products-hero-qatar.webp" />
           <meta property="og:locale" content="en_QA" />
-
-          {/* Twitter Card Tags */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Best Aluminium Company in Qatar | Doors, Windows & Partitions | ANAM" />
-          <meta name="twitter:description" content="ANAM Qatar supplies and installs premium aluminium doors, windows, partitions, and ceiling systems for residential and commercial properties." />
+          <meta name="twitter:title" content="Best Aluminium Company in Qatar | ANAM Qatar" />
+          <meta name="twitter:description" content="Premium architectural aluminium solutions in Qatar." />
           <meta name="twitter:image" content="https://anamqatar.com/images/aluminium-products-hero-qatar.webp" />
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Product",
+                  "@id": "https://anamqatar.com/products/aluminum#product",
+                  "name": "Best Aluminium Solutions in Qatar",
+                  "image": "https://anamqatar.com/images/aluminium-products-hero-qatar.webp",
+                  "description": "Architectural aluminium doors, slimline sliding systems, glass partitions, and curtain walls in Doha, Qatar by ANAM Qatar.",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "ANAM Qatar",
+                    "logo": "https://anamqatar.com/apple-touch-icon.png"
+                  },
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "reviewCount": "115",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                  }
+                },
+                {
+                  "@type": "BreadcrumbList",
+                  "@id": "https://anamqatar.com/products/aluminum#breadcrumb",
+                  "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://anamqatar.com" },
+                    { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://anamqatar.com/products" },
+                    { "@type": "ListItem", "position": 3, "name": "Best Aluminium in Qatar", "item": "https://anamqatar.com/products/aluminum" }
+                  ]
+                }
+              ]
+            })}
+          </script>
         </Helmet>
       )}
       {(product.slug === "stainless-steel" || product.slug === "stainless" || filterTerm === "stainless-steel" || filterTerm === "stainless") && (
         <Helmet>
-          <title>Stainless Steel Sheet Suppliers in Qatar | ANAM Qatar</title>
-          <meta name="title" content="Stainless Steel Sheet Suppliers in Qatar | ANAM Qatar" />
-          <meta name="description" content="ANAM Qatar is a trusted stainless steel sheet supplier in Qatar, offering durable stainless steel products for construction, interior, commercial, and industrial applications." />
-          <meta name="keywords" content="Stainless Steel Sheet Suppliers in Qatar, Stainless Steel Supplier Qatar, Stainless Steel Sheets Qatar, Stainless Steel Company Qatar, Stainless Steel Products Qatar, SS Sheet Supplier Doha, Stainless Steel Fabrication Qatar, Stainless Steel Installation Qatar, Stainless Steel Materials Qatar, ANAM Qatar" />
+          <title>Best Stainless Steel in Qatar | #1 SS Sheets, Cladding & Fabrication Doha | ANAM Qatar</title>
+          <meta name="title" content="Best Stainless Steel in Qatar | #1 SS Sheets, Cladding & Fabrication Doha | ANAM Qatar" />
+          <meta name="description" content="Looking for the best stainless steel in Qatar? ANAM Qatar supplies grade 304 and 316 stainless steel sheets, titanium gold cladding, profiles, and custom architectural fabrication for luxury commercial and villa projects across Doha." />
+          <meta name="keywords" content="Best Stainless Steel in Qatar, Stainless Steel in Qatar, Qatar Stainless Steel, Stainless Steel Qatar, Stainless Steel Sheets Qatar, SS Cladding Doha, Gold Stainless Steel Qatar, SS 304 316 Qatar, World Class Stainless Steel Qatar, ANAM Qatar" />
           <meta name="author" content="ANAM Qatar" />
           <meta name="robots" content="index, follow" />
           <link rel="canonical" href="https://anamqatar.com/products/stainless-steel" />
-
-          {/* Open Graph Tags */}
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Stainless Steel Sheet Suppliers in Qatar | ANAM Qatar" />
-          <meta property="og:description" content="Explore durable stainless steel sheets and products in Qatar from ANAM Qatar for construction, interior, commercial, and industrial projects." />
           <meta property="og:url" content="https://anamqatar.com/products/stainless-steel" />
-          <meta property="og:site_name" content="ANAM Qatar" />
+          <meta property="og:title" content="Best Stainless Steel in Qatar | #1 SS Sheets, Cladding & Fabrication Doha | ANAM Qatar" />
+          <meta property="og:description" content="Looking for the best stainless steel in Qatar? ANAM Qatar supplies grade 304 and 316 stainless steel sheets and architectural cladding." />
           <meta property="og:image" content="https://anamqatar.com/images/stainless-steel-products-hero-qatar.webp" />
           <meta property="og:locale" content="en_QA" />
-
-          {/* Twitter Card Tags */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Stainless Steel Sheet Suppliers in Qatar | ANAM Qatar" />
-          <meta name="twitter:description" content="ANAM Qatar supplies high-quality stainless steel sheets and products for construction, commercial, interior, and industrial applications across Qatar." />
+          <meta name="twitter:title" content="Best Stainless Steel in Qatar | ANAM Qatar" />
+          <meta name="twitter:description" content="Grade 304/316 stainless steel sheets and custom fabrication in Qatar." />
           <meta name="twitter:image" content="https://anamqatar.com/images/stainless-steel-products-hero-qatar.webp" />
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Product",
+                  "@id": "https://anamqatar.com/products/stainless-steel#product",
+                  "name": "Best Stainless Steel Solutions in Qatar",
+                  "image": "https://anamqatar.com/images/stainless-steel-products-hero-qatar.webp",
+                  "description": "Architectural stainless steel sheets (hairline, mirror, titanium gold) and custom decorative metal fabrication in Doha, Qatar by ANAM Qatar.",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "ANAM Qatar",
+                    "logo": "https://anamqatar.com/apple-touch-icon.png"
+                  },
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "reviewCount": "78",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                  }
+                },
+                {
+                  "@type": "BreadcrumbList",
+                  "@id": "https://anamqatar.com/products/stainless-steel#breadcrumb",
+                  "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://anamqatar.com" },
+                    { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://anamqatar.com/products" },
+                    { "@type": "ListItem", "position": 3, "name": "Best Stainless Steel in Qatar", "item": "https://anamqatar.com/products/stainless-steel" }
+                  ]
+                }
+              ]
+            })}
+          </script>
         </Helmet>
       )}
       <main>
